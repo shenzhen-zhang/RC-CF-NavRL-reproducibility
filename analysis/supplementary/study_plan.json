@@ -1,0 +1,3725 @@
+{
+  "status": "PREPARED_NOT_TRAINED",
+  "protocol_version": "fresh_public_navrl_v3_20261020",
+  "study_cohort": "native_training_scene_bound_v1",
+  "project": "recorded://fresh_project_scenefix1",
+  "output": "recorded://fresh_runs_v3_scenefix1",
+  "initializer": "recorded://public_assets/navrl_checkpoint.pt",
+  "expected_initializer_sha256": "51fa3dbdc6ba89626b5dad3a4638deb53d40aa6f0caa9b289657da4a8e0b60c3",
+  "initializer_provenance": {
+    "kind": "public_released_checkpoint",
+    "url": "https://raw.githubusercontent.com/Zhefan-Xu/NavRL/3725bcc2e7c1be4ecf1455d922299ae85042603a/quick-demos/ckpts/navrl_checkpoint.pt",
+    "sha256": "51fa3dbdc6ba89626b5dad3a4638deb53d40aa6f0caa9b289657da4a8e0b60c3"
+  },
+  "official_commit": "3725bcc2e7c1be4ecf1455d922299ae85042603a",
+  "study_relationship": "New experiment from released NavRL, not reproduction of missing FT initializer or old results",
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "evaluation_seeds": [
+    1183109,
+    1294127,
+    1405151,
+    1516183,
+    1627211,
+    1738247,
+    1849289,
+    1960313,
+    2071349,
+    2182387,
+    2293429,
+    2404471,
+    2515519,
+    2626573,
+    2737631,
+    2848697,
+    2959769,
+    3070849
+  ],
+  "frames_per_run": 114688,
+  "updates_per_run": 56,
+  "num_envs": 64,
+  "max_episode_length": 2200,
+  "gamma_cost": 0.99,
+  "budget": 0.05,
+  "variant_configurations": {
+    "F11_full": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 1.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "F01_no_gate": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 1.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.0,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "always_on",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.0
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "F10_no_Lcf": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 0.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "F00_no_gate_no_Lcf": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 0.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.0,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "always_on",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.0
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "P_free_nominal": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": false,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 1.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "Q_scalar": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 1.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 1,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "W0_no_warmup": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 0,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 1.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.15,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "T0_no_teacher": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 0.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.0,
+          "safe_anchor_coefficient": 0.0,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.0,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.0
+          },
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "num_quantiles": 32,
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    },
+    "E_ppolag_reference": {
+      "algo": {
+        "method": {
+          "isolate_auxiliary_gradients": false,
+          "freeze_pretrained_task_policy": false,
+          "use_decoupled_safety_encoder": false,
+          "safety_warmup_updates": 0,
+          "num_quantiles": 1,
+          "safety_critic_coefficient": 1.0,
+          "counterfactual_coefficient": 0.0,
+          "adaptive_safety_lambda": true,
+          "dual_learning_rate": 0.005,
+          "initial_safety_lambda": 0.0,
+          "distillation_coefficient": 0.0,
+          "safe_anchor_coefficient": 0.0,
+          "adapter_shift_coefficient": 0.0,
+          "safe_gate_coefficient": 0.0,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "actor_adapter": {
+            "enabled": false,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.0,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": 0.0,
+            "learning_rate": 0.0005,
+            "gate_coefficient": 0.0
+          },
+          "risk_selector": {
+            "enabled": false,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": false
+          },
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      }
+    }
+  },
+  "differences_from_full": {
+    "F11_full": {},
+    "F01_no_gate": {
+      "algo.method.actor_adapter.gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      },
+      "algo.method.actor_adapter.gate_mode": {
+        "full": "learned",
+        "variant": "always_on"
+      },
+      "algo.method.safe_gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      }
+    },
+    "F10_no_Lcf": {
+      "algo.method.counterfactual_coefficient": {
+        "full": 1.0,
+        "variant": 0.0
+      }
+    },
+    "F00_no_gate_no_Lcf": {
+      "algo.method.actor_adapter.gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      },
+      "algo.method.actor_adapter.gate_mode": {
+        "full": "learned",
+        "variant": "always_on"
+      },
+      "algo.method.counterfactual_coefficient": {
+        "full": 1.0,
+        "variant": 0.0
+      },
+      "algo.method.safe_gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      }
+    },
+    "P_free_nominal": {
+      "algo.method.freeze_pretrained_task_policy": {
+        "full": true,
+        "variant": false
+      }
+    },
+    "Q_scalar": {
+      "algo.method.num_quantiles": {
+        "full": 32,
+        "variant": 1
+      }
+    },
+    "W0_no_warmup": {
+      "algo.method.safety_warmup_updates": {
+        "full": 16,
+        "variant": 0
+      }
+    },
+    "T0_no_teacher": {
+      "algo.method.actor_adapter.gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      },
+      "algo.method.counterfactual_coefficient": {
+        "full": 1.0,
+        "variant": 0.0
+      },
+      "algo.method.distillation_coefficient": {
+        "full": 0.15,
+        "variant": 0.0
+      },
+      "algo.method.safe_anchor_coefficient": {
+        "full": 0.75,
+        "variant": 0.0
+      },
+      "algo.method.safe_gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      }
+    },
+    "E_ppolag_reference": {
+      "algo.method.actor_adapter.enabled": {
+        "full": true,
+        "variant": false
+      },
+      "algo.method.actor_adapter.gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      },
+      "algo.method.actor_adapter.initial_gate_bias": {
+        "full": -3.0,
+        "variant": 0.0
+      },
+      "algo.method.actor_adapter.learning_rate": {
+        "full": 0.0001,
+        "variant": 0.0005
+      },
+      "algo.method.actor_adapter.maximum_mean_shift": {
+        "full": 0.06,
+        "variant": 0.0
+      },
+      "algo.method.adapter_shift_coefficient": {
+        "full": 0.25,
+        "variant": 0.0
+      },
+      "algo.method.counterfactual_coefficient": {
+        "full": 1.0,
+        "variant": 0.0
+      },
+      "algo.method.distillation_coefficient": {
+        "full": 0.15,
+        "variant": 0.0
+      },
+      "algo.method.freeze_pretrained_task_policy": {
+        "full": true,
+        "variant": false
+      },
+      "algo.method.isolate_auxiliary_gradients": {
+        "full": true,
+        "variant": false
+      },
+      "algo.method.num_quantiles": {
+        "full": 32,
+        "variant": 1
+      },
+      "algo.method.risk_selector.enabled": {
+        "full": true,
+        "variant": false
+      },
+      "algo.method.risk_selector.require_tail_dominance": {
+        "full": true,
+        "variant": false
+      },
+      "algo.method.safe_anchor_coefficient": {
+        "full": 0.75,
+        "variant": 0.0
+      },
+      "algo.method.safe_gate_coefficient": {
+        "full": 0.2,
+        "variant": 0.0
+      },
+      "algo.method.safety_warmup_updates": {
+        "full": 16,
+        "variant": 0
+      },
+      "algo.method.use_decoupled_safety_encoder": {
+        "full": true,
+        "variant": false
+      }
+    }
+  },
+  "scenes": {
+    "canonical_D80": {
+      "path": "recorded://fresh_project_scenefix1/configs/canonical_navrl_dynamic_scene_seed7_80obs_v1.json",
+      "sha256": "737d7708d47dc3c3ac47881fad137cb61cc800d97be8b524b04e4d1f74944c0b"
+    },
+    "exact_D80": {
+      "path": "recorded://fresh_project_scenefix1/configs/v19_paper_aligned_exact_scenes_20260810/configured_80_actual_80_seed7.json",
+      "sha256": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3"
+    }
+  },
+  "training_scene_inputs": {
+    "protocol": "navrl_native_training_scenes_v1",
+    "manifest": "recorded://training_scenes_scenefix1/manifest.json",
+    "manifest_sha256": "8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+    "selection_rule": "first_native_construction_per_seed_no_policy_no_rollout",
+    "num_envs_at_capture": 64,
+    "static_obstacle_count": 350,
+    "dynamic_obstacle_count": 80,
+    "scenes": {
+      "0": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "1": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "2": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "3": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "4": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "5": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "6": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "7": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "8": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "9": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "7001": {
+        "seed": 7001,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7001.json",
+        "sha256": "0a98f7c9a14cb19d51bf9ed3f60400dd889541c28ae1aa25e39a650496ba1e45"
+      }
+    }
+  },
+  "training_jobs": [
+    {
+      "variant": "F11_full",
+      "training_seed": 0,
+      "run_id": "fresh_v3_F11_full_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s0/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 1,
+      "run_id": "fresh_v3_F11_full_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s1/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 2,
+      "run_id": "fresh_v3_F11_full_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s2/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 3,
+      "run_id": "fresh_v3_F11_full_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s3/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 4,
+      "run_id": "fresh_v3_F11_full_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s4/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 5,
+      "run_id": "fresh_v3_F11_full_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s5/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 6,
+      "run_id": "fresh_v3_F11_full_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s6/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 7,
+      "run_id": "fresh_v3_F11_full_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s7/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 8,
+      "run_id": "fresh_v3_F11_full_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s8/hydra"
+      ]
+    },
+    {
+      "variant": "F11_full",
+      "training_seed": 9,
+      "run_id": "fresh_v3_F11_full_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F11_full",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F11_full_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F11_full_s9/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 0,
+      "run_id": "fresh_v3_F01_no_gate_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s0/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 1,
+      "run_id": "fresh_v3_F01_no_gate_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s1/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 2,
+      "run_id": "fresh_v3_F01_no_gate_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s2/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 3,
+      "run_id": "fresh_v3_F01_no_gate_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s3/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 4,
+      "run_id": "fresh_v3_F01_no_gate_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s4/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 5,
+      "run_id": "fresh_v3_F01_no_gate_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s5/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 6,
+      "run_id": "fresh_v3_F01_no_gate_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s6/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 7,
+      "run_id": "fresh_v3_F01_no_gate_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s7/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 8,
+      "run_id": "fresh_v3_F01_no_gate_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s8/hydra"
+      ]
+    },
+    {
+      "variant": "F01_no_gate",
+      "training_seed": 9,
+      "run_id": "fresh_v3_F01_no_gate_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F01_no_gate",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F01_no_gate_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F01_no_gate_s9/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 0,
+      "run_id": "fresh_v3_F10_no_Lcf_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s0/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 1,
+      "run_id": "fresh_v3_F10_no_Lcf_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s1/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 2,
+      "run_id": "fresh_v3_F10_no_Lcf_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s2/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 3,
+      "run_id": "fresh_v3_F10_no_Lcf_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s3/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 4,
+      "run_id": "fresh_v3_F10_no_Lcf_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s4/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 5,
+      "run_id": "fresh_v3_F10_no_Lcf_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s5/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 6,
+      "run_id": "fresh_v3_F10_no_Lcf_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s6/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 7,
+      "run_id": "fresh_v3_F10_no_Lcf_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s7/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 8,
+      "run_id": "fresh_v3_F10_no_Lcf_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s8/hydra"
+      ]
+    },
+    {
+      "variant": "F10_no_Lcf",
+      "training_seed": 9,
+      "run_id": "fresh_v3_F10_no_Lcf_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F10_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F10_no_Lcf_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F10_no_Lcf_s9/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 0,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s0/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 1,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s1/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 2,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s2/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 3,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s3/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 4,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s4/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 5,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s5/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 6,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s6/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 7,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s7/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 8,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s8/hydra"
+      ]
+    },
+    {
+      "variant": "F00_no_gate_no_Lcf",
+      "training_seed": 9,
+      "run_id": "fresh_v3_F00_no_gate_no_Lcf_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_F00_no_gate_no_Lcf",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_F00_no_gate_no_Lcf_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_F00_no_gate_no_Lcf_s9/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 0,
+      "run_id": "fresh_v3_P_free_nominal_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s0/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 1,
+      "run_id": "fresh_v3_P_free_nominal_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s1/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 2,
+      "run_id": "fresh_v3_P_free_nominal_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s2/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 3,
+      "run_id": "fresh_v3_P_free_nominal_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s3/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 4,
+      "run_id": "fresh_v3_P_free_nominal_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s4/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 5,
+      "run_id": "fresh_v3_P_free_nominal_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s5/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 6,
+      "run_id": "fresh_v3_P_free_nominal_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s6/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 7,
+      "run_id": "fresh_v3_P_free_nominal_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s7/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 8,
+      "run_id": "fresh_v3_P_free_nominal_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s8/hydra"
+      ]
+    },
+    {
+      "variant": "P_free_nominal",
+      "training_seed": 9,
+      "run_id": "fresh_v3_P_free_nominal_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_P_free_nominal",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_P_free_nominal_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_P_free_nominal_s9/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 0,
+      "run_id": "fresh_v3_Q_scalar_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s0/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 1,
+      "run_id": "fresh_v3_Q_scalar_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s1/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 2,
+      "run_id": "fresh_v3_Q_scalar_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s2/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 3,
+      "run_id": "fresh_v3_Q_scalar_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s3/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 4,
+      "run_id": "fresh_v3_Q_scalar_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s4/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 5,
+      "run_id": "fresh_v3_Q_scalar_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s5/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 6,
+      "run_id": "fresh_v3_Q_scalar_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s6/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 7,
+      "run_id": "fresh_v3_Q_scalar_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s7/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 8,
+      "run_id": "fresh_v3_Q_scalar_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s8/hydra"
+      ]
+    },
+    {
+      "variant": "Q_scalar",
+      "training_seed": 9,
+      "run_id": "fresh_v3_Q_scalar_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_Q_scalar",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_Q_scalar_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_Q_scalar_s9/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 0,
+      "run_id": "fresh_v3_W0_no_warmup_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s0/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 1,
+      "run_id": "fresh_v3_W0_no_warmup_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s1/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 2,
+      "run_id": "fresh_v3_W0_no_warmup_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s2/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 3,
+      "run_id": "fresh_v3_W0_no_warmup_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s3/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 4,
+      "run_id": "fresh_v3_W0_no_warmup_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s4/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 5,
+      "run_id": "fresh_v3_W0_no_warmup_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s5/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 6,
+      "run_id": "fresh_v3_W0_no_warmup_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s6/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 7,
+      "run_id": "fresh_v3_W0_no_warmup_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s7/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 8,
+      "run_id": "fresh_v3_W0_no_warmup_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s8/hydra"
+      ]
+    },
+    {
+      "variant": "W0_no_warmup",
+      "training_seed": 9,
+      "run_id": "fresh_v3_W0_no_warmup_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_W0_no_warmup",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_W0_no_warmup_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_W0_no_warmup_s9/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 0,
+      "run_id": "fresh_v3_T0_no_teacher_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s0/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 1,
+      "run_id": "fresh_v3_T0_no_teacher_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s1/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 2,
+      "run_id": "fresh_v3_T0_no_teacher_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s2/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 3,
+      "run_id": "fresh_v3_T0_no_teacher_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s3/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 4,
+      "run_id": "fresh_v3_T0_no_teacher_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s4/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 5,
+      "run_id": "fresh_v3_T0_no_teacher_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s5/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 6,
+      "run_id": "fresh_v3_T0_no_teacher_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s6/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 7,
+      "run_id": "fresh_v3_T0_no_teacher_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s7/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 8,
+      "run_id": "fresh_v3_T0_no_teacher_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s8/hydra"
+      ]
+    },
+    {
+      "variant": "T0_no_teacher",
+      "training_seed": 9,
+      "run_id": "fresh_v3_T0_no_teacher_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_T0_no_teacher",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_T0_no_teacher_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_T0_no_teacher_s9/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 0,
+      "run_id": "fresh_v3_E_ppolag_reference_s0",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s0/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 0,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=0",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed0.json",
+        "training_scene_snapshot_sha256=b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s0",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s0/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 1,
+      "run_id": "fresh_v3_E_ppolag_reference_s1",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s1/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 1,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=1",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed1.json",
+        "training_scene_snapshot_sha256=65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s1",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s1/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 2,
+      "run_id": "fresh_v3_E_ppolag_reference_s2",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s2/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 2,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=2",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed2.json",
+        "training_scene_snapshot_sha256=9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s2",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s2/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 3,
+      "run_id": "fresh_v3_E_ppolag_reference_s3",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s3/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 3,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=3",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed3.json",
+        "training_scene_snapshot_sha256=d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s3",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s3/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 4,
+      "run_id": "fresh_v3_E_ppolag_reference_s4",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s4/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 4,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=4",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed4.json",
+        "training_scene_snapshot_sha256=0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s4",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s4/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 5,
+      "run_id": "fresh_v3_E_ppolag_reference_s5",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s5/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 5,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=5",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed5.json",
+        "training_scene_snapshot_sha256=81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s5",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s5/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 6,
+      "run_id": "fresh_v3_E_ppolag_reference_s6",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s6/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 6,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=6",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed6.json",
+        "training_scene_snapshot_sha256=a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s6",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s6/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 7,
+      "run_id": "fresh_v3_E_ppolag_reference_s7",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s7/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 7,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=7",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed7.json",
+        "training_scene_snapshot_sha256=8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s7",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s7/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 8,
+      "run_id": "fresh_v3_E_ppolag_reference_s8",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s8/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 8,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=8",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed8.json",
+        "training_scene_snapshot_sha256=954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s8",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s8/hydra"
+      ]
+    },
+    {
+      "variant": "E_ppolag_reference",
+      "training_seed": 9,
+      "run_id": "fresh_v3_E_ppolag_reference_s9",
+      "expected_checkpoint": "recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s9/checkpoint_final.pt",
+      "training_scene": {
+        "seed": 9,
+        "snapshot": "recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+      },
+      "argv": [
+        "methods/radcppo_navrl/train.py",
+        "experiment=reviewer_E_ppolag_reference",
+        "checkpoint=recorded://public_assets/navrl_checkpoint.pt",
+        "headless=true",
+        "max_frame_num=114688",
+        "env.num_envs=64",
+        "seed=9",
+        "eval_interval=0",
+        "save_interval=0",
+        "training_scene_manifest=recorded://training_scenes_scenefix1/manifest.json",
+        "training_scene_manifest_sha256=8a08c812f5a51338c2645287608070fed6ee2ab391ae0de83a3943c3617ca84b",
+        "training_scene_snapshot=recorded://training_scenes_scenefix1/training_scene_seed9.json",
+        "training_scene_snapshot_sha256=93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e",
+        "train_output_dir=recorded://fresh_runs_v3_scenefix1/training",
+        "wandb.run_id=fresh_v3_E_ppolag_reference_s9",
+        "hydra.run.dir=recorded://fresh_runs_v3_scenefix1/training/fresh_v3_E_ppolag_reference_s9/hydra"
+      ]
+    }
+  ],
+  "frozen_navrl_baseline": {
+    "policy_kind": "official_navrl",
+    "evaluations_per_case": 1,
+    "independent_training_seeds": 0,
+    "released_checkpoint_sha256": "51fa3dbdc6ba89626b5dad3a4638deb53d40aa6f0caa9b289657da4a8e0b60c3",
+    "checkpoint": "recorded://public_assets/navrl_checkpoint.pt",
+    "note": "Released NavRL IS the shared start; one baseline only, never duplicate as FT baseline."
+  },
+  "primary_evaluation": {
+    "scene": "canonical_D80",
+    "mode": "actor",
+    "shield": "none"
+  },
+  "source_sha256": {
+    "00_代码包说明.md": "d9609b4133ddf427a45df5620e6d1c2ccabe5b0a5278eebebb8eb6f2982f16cb",
+    "REVIEWER_STUDY_README.txt": "49e3865ff994aff7328453fa4036a35923e5f5cc7274789a3137f3b6daf7ee93",
+    "configs/canonical_navrl_dynamic_scene_seed7_80obs_v1.json": "737d7708d47dc3c3ac47881fad137cb61cc800d97be8b524b04e4d1f74944c0b",
+    "configs/manifests/v19_mechanism_smoke_manifest.json": "94fb59cdf9397b4dab5ece04dffa9501e312a5227b8f163de1882275197bfa25",
+    "configs/ood_navrl_dynamic_scene_seed17_80obs_v1.json": "ddb2040db4a52226fc001387d220ce28b225e5c867ce40dd9b324595d78165c5",
+    "configs/ood_navrl_dynamic_scene_seed29_80obs_v1.json": "d2ad6912a32c7590be65480f8af57bb0faf675d11526a93cecfe4da41b28d6a8",
+    "configs/ood_navrl_dynamic_scene_seed43_80obs_v1.json": "89f08462a25cdc1bd6d35e3d3a0d8809b5e312cb0dabe5024a0556e5e36b0728",
+    "configs/v19_paper_aligned_exact_scenes_20260810/configured_100_actual_100_seed7.json": "7de9605798170e422a44823e22d37c27f3262a648a11ec9d2dfeff000cd2d103",
+    "configs/v19_paper_aligned_exact_scenes_20260810/configured_120_actual_120_seed7.json": "cbf856adf2df0e3f3792c2e17a17eebb5a74e564a4c8a0bc3d47170b8f965895",
+    "configs/v19_paper_aligned_exact_scenes_20260810/configured_60_actual_60_seed7.json": "b985437b3ae41dba6a9b14eaa2a6829dbf5678d88903a9142be2489781e9ab9a",
+    "configs/v19_paper_aligned_exact_scenes_20260810/configured_80_actual_80_seed7.json": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3",
+    "configs/v19_paper_aligned_exact_scenes_20260810/scene_index.json": "df41e1a0ab096267e724ac58851840fa902e2a11506310d819375fd790a22f00",
+    "configs/v19_progressive_difficulty_v2_20260809/difficulty_1_easy_32obs.json": "aa8082b4ab99026c039c79577148ff16fbdfb63824e1ddf6bc6104a623859be4",
+    "configs/v19_progressive_difficulty_v2_20260809/difficulty_2_moderate_48obs.json": "c0699f07a6fa3a3af4358eadfe48953b3daaad52c0f143d6d40b50b79366a9c3",
+    "configs/v19_progressive_difficulty_v2_20260809/difficulty_3_hard_64obs.json": "9753689e803b424e43ac434a867f4452192e4ec3bdc0cc80b74f11b35dbbafb3",
+    "configs/v19_progressive_difficulty_v2_20260809/difficulty_4_extreme_80obs.json": "b4a89341d905746f33e65bdd91323c0cc1062b9e5c654a4e64244a0692461d98",
+    "configs/v19_progressive_difficulty_v2_20260809/difficulty_scene_index.json": "0b2c64e9624f7f554ffa4a83a282e602824ddf4779c7340e417f9147bf6c5b9c",
+    "docs/FRESH_STUDY_PROTOCOL.md": "49748a5f55237d1e8098d717a596e2d699565a7be4f1fcd8ff8998b1bcc5fe24",
+    "docs/RC-CF-CVaR-NavRL_v19_三个模块机制分析预注册_20260806.txt": "1068b593bd545d9b2ef778300d1c41c3ee4bc8915b9e60dc373def999417578e",
+    "docs/RC-CF-CVaR-NavRL_v19_强基线统计功效补强预注册_20260806.txt": "bd3e798c91d021c3b1e8a18b52e157fa047682f35710d1070035a4b0a248b820",
+    "docs/RC-CF-CVaR-NavRL_v19_未见动态障碍场景泛化预注册_20260806.txt": "3b7b3d3d59c171ffbee93d87ee1e063ffa3a786c86a5d348b5a190b636fed676",
+    "docs/RC-CF-CVaR-NavRL_v19_消融统计功效补强预注册_20260806.txt": "3d76873584b291929fd30fe848613d670f928cf1fa36473773f8a99fe88f7a86",
+    "docs/RC-CF-NavRL_v19_Mean-Risk同口径核心消融预注册_20260811.md": "72e4f8beae6568939df083b5554a5375d05ad89ad38db8eb1f6827c6104472ce",
+    "docs/RC-CF-NavRL_v19_精确障碍物计数修订记录_20260810.md": "2f93f8ff018ff3905454617dc9d6a81c5dabaa9e690ba375c8f0bc9355c39a31",
+    "docs/RC-CF-NavRL_v19_补充证据预注册_20260809.md": "a5a890d3a76e7809bc1010a0bedf4071f7c73295317393671b32029de9c97816",
+    "docs/RC-CF-NavRL_v19_论文对齐复核预注册_20260810.md": "cfa870a2e1672bee4a2c62aad2f827569c0d44b039360043f399c64099e2c49f",
+    "docs/RC-CF-NavRL_v19_部署安全盾扩展预注册_20260811.md": "098aba151e0d16e5e89ae7710fbe92359b97c727d5c6e8b845dfa8da43c3583f",
+    "docs/RC-CF-NavRL_代码与复现说明.md": "766260ad6ae291d24ea192825fbdab51a49f8aa329b0a31fd7886cc449d57ec3",
+    "docs/RTX5090_Isaac兼容环境复现说明.md": "2ebd826fe8c2b58c30e4d626ef79d08dfca9046dc744df9dfd62f1a52359b026",
+    "docs/RUNTIME_HEADLESS_PATCH.md": "9ffb3d4e8f339056e3eb8e8fd88e4d9c3b84fc96bc2ace70fb59994226ec2b31",
+    "docs/TEACHER_REPLAY_PROTOCOL.md": "56dcd2a16e07f9401ba1376c1a82bd463d70e3fe2cb2a1d1b33d539f42575f1d",
+    "external/NavRL_official_3725bcc/isaac-training/training/scripts/env.py": "50c53d44b2663841e9f7fa1a86599407a87043f089dd8c6125048d999ff3541d",
+    "methods/radcppo_navrl/benchmark_v19_deployment_runtime.py": "4d2012ba68d75c1869a0872a43b157448a230a0d889fe75895306f63049d016d",
+    "methods/radcppo_navrl/cfg/drone.yaml": "bdf425dea7ba8b7b145d46977a120046a397fba19b5d50f60a1ac073e3ee3e7c",
+    "methods/radcppo_navrl/cfg/experiment/fixed_gate.yaml": "b765e67d026760e8e9d2dd5e12103b3fd80f6eed6e5cbfb820c4011e4f9d9f21",
+    "methods/radcppo_navrl/cfg/experiment/fixed_lambda.yaml": "193c5066134b23ee2dd24c2b39377ef7453321b55abcc9ef726b3a1fac791cea",
+    "methods/radcppo_navrl/cfg/experiment/full.yaml": "3ef4aa2f4cd26fd7cc63b90241ff8fccdb0aa70e5dc0f74a25a42dbc4f22165d",
+    "methods/radcppo_navrl/cfg/experiment/instant_velocity_teacher.yaml": "b5d80737fa4d66d052437bcb987f66b372805e8aef569e97956e47e6efd91c8e",
+    "methods/radcppo_navrl/cfg/experiment/joint_auxiliary_gradients.yaml": "066738a0a67d8dfe075f0fa120cbc919c61e93445e6dcb9d28b5d08186d85467",
+    "methods/radcppo_navrl/cfg/experiment/m1_distillation.yaml": "5b1730d1c59bf15eaca18f70264e0af23b19e8314f0ee0bac73fe7b8a0cbbbcc",
+    "methods/radcppo_navrl/cfg/experiment/m2_scalar_expected.yaml": "13298599fb8f522d95598ad9163366bbf74c7df56ebe1afd0e74a27d8142b6d6",
+    "methods/radcppo_navrl/cfg/experiment/m3_quantile_no_counterfactual.yaml": "3b1da5064720c0f24976088c90b166ca61a1a4c10568fd481f87173f4af6651c",
+    "methods/radcppo_navrl/cfg/experiment/mean_risk.yaml": "37140160e9d57e16ac3f2b044b42556fcf22c32fb540cd9c947d4de69f285aa9",
+    "methods/radcppo_navrl/cfg/experiment/navrl_finetune.yaml": "8118d410f7188868bf7a9453edd920a652ff27d39408698d02811af9de516828",
+    "methods/radcppo_navrl/cfg/experiment/no_counterfactual.yaml": "3b1da5064720c0f24976088c90b166ca61a1a4c10568fd481f87173f4af6651c",
+    "methods/radcppo_navrl/cfg/experiment/no_distillation.yaml": "7ab5e7e8ce77fc78b55a64db833ef3f843585a3841646078973dcf848f7927dd",
+    "methods/radcppo_navrl/cfg/experiment/no_gate.yaml": "b383065e1fae062a224619e17a328f161fd801aca41ce4673fffadb8b38f924a",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_E_ppolag_reference.yaml": "108d37343be29711793d1d514642214267c6e93af764b7b56d6c168f29f7dc86",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_F00_no_gate_no_Lcf.yaml": "89685f4cf887e18b92315ce04a2fba6ea272ae511de7ab382b1f7196309c5317",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_F01_no_gate.yaml": "ca7f2b243b6da7ad7f873468c696ca6dfad6479099dc6c9cff4dce162fd3ab16",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_F10_no_Lcf.yaml": "748a523c99c0dff36c6013bbcac1bffc41688370a125c8f116b1f71630b7b945",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_F11_full.yaml": "88b894a0f7bd2da79d509a123f48a994a98fc846b83bfc25ae701717c41f6fe8",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_P_free_nominal.yaml": "f3dfa309810f4d1f630e296e56fdc3d53793451dfed95f00346c0305ceadacc2",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_Q_scalar.yaml": "3c50a2ae8c7ae31bd1bfa14e32a2aaaa144bdd3810603a6b71bafa340c4b0da0",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_T0_no_teacher.yaml": "953a2c45f25a6b124a252268b4897b71ff5840f126525cfa3e218b39ecf7eb47",
+    "methods/radcppo_navrl/cfg/experiment/reviewer_W0_no_warmup.yaml": "cf7c6714bd06fef3a584a999c16dba1c2fcc8952b07b1210606f1a220955a0d3",
+    "methods/radcppo_navrl/cfg/experiment/v10_mean_residual.yaml": "13cd78194e18ee8af75cee2aaee48643fda8b09bfc45f5bdd0f5abfa62bb8a4b",
+    "methods/radcppo_navrl/cfg/experiment/v11_critic_warmup.yaml": "b6d6d13d60a42bacec742f45c2fb7873be79a17d565709724c006f09219d5239",
+    "methods/radcppo_navrl/cfg/experiment/v11_joint_task_safe.yaml": "60f085e2e66c5b9c96e443b8e8a7f9cdb4b3a55cc45adae0b823efb53347b9a5",
+    "methods/radcppo_navrl/cfg/experiment/v12_continuous_warmup.yaml": "55f335c2bb5975ae8cca1883aaddbd2f59d967da30651a7b3b4e1d8e3017f82c",
+    "methods/radcppo_navrl/cfg/experiment/v13_residual_transfer.yaml": "3d18c7db5723fa0b93e1a8b1bdca69b092e3806ae5c38271dd4c28d2590e79b2",
+    "methods/radcppo_navrl/cfg/experiment/v14_critic_selector.yaml": "9ec3561a8a6c4fb76fe96dd84859c33dd9d753357ee27ac3604b1d1cd0471dae",
+    "methods/radcppo_navrl/cfg/experiment/v16_blended_projection.yaml": "ed933f5ed35801e08a9c9feb2002938952770bbf8cafac9ec7e31b2f49ee1902",
+    "methods/radcppo_navrl/cfg/experiment/v17_smoothed_projection.yaml": "bac2f525c70e4c5a4b11d94f8f3a9cc85a7fab503ca2791013278db35366f5e5",
+    "methods/radcppo_navrl/cfg/experiment/v18_mean_risk_smooth.yaml": "c9c836b9e38772f39d95daf62472f2fb79872ab44261c16ff8fcb8b5208389da",
+    "methods/radcppo_navrl/cfg/experiment/v18_no_counterfactual_smooth.yaml": "243b8e3c828618170152a186b95fc9bda306752ca93da76ae5b36ccbbe2bf319",
+    "methods/radcppo_navrl/cfg/experiment/v18_scalar_smooth.yaml": "acc9066fde3690d72561280c60e71479246d24d3faa764d95ef0c6efa9367c91",
+    "methods/radcppo_navrl/cfg/experiment/v18_tail_dominance_smooth.yaml": "dd71f07ab3f083def57022376e6230a943ead190edbd071fe7ccd708b11d525d",
+    "methods/radcppo_navrl/cfg/experiment/v19_ppolag_baseline.yaml": "dfda66ae4f89afa18f7a145f1bf96b50dad9c00fda064c70c2ff66eab61d9fec",
+    "methods/radcppo_navrl/cfg/experiment/v19_risk_actor.yaml": "efe32bddc72c4752a15de564e38a747f7d72697d9ea90e70a60dcd9734a6e491",
+    "methods/radcppo_navrl/cfg/experiment/v9_critic_warmup.yaml": "2bbfab919609f7d99758dd03a60daeb5365da1c8b0a70efda2e0a77cbf8719a8",
+    "methods/radcppo_navrl/cfg/experiment/v9_dualstream.yaml": "1927bf27f63fa0bcd75035bd9dc7655189d44f81b751c531159ec4f9b9241321",
+    "methods/radcppo_navrl/cfg/ppo.yaml": "a29e4679af0224a85f851b7bfc0046314f05a554b9f6730adc5b2bed6fcd73e0",
+    "methods/radcppo_navrl/cfg/sim.yaml": "ff848a0171e111ccdfa6def3409a550c2471884eec38fd9e364c87689d172278",
+    "methods/radcppo_navrl/cfg/train.yaml": "a33100a46d9854ed361b882848c2a3cef866b7e21cc7638fb40c27afaa646090",
+    "methods/radcppo_navrl/evaluate.py": "4e1c4ac18a3ee29e9f392a2cf05874d356cefbadf50c39464ed0e757b84d2f2b",
+    "methods/radcppo_navrl/evaluate_checkpoint_suite.py": "d7b93a17ecc61dd1a28ef009bb73c8d246b7ae45bb1d6044cbc2d339a7907984",
+    "methods/radcppo_navrl/evaluate_checkpoint_suite_trajectory_capture_r2.py": "9bf641b3d847a751187ad47548dc2c89cb29d05c651a4faea5a852f35dc35875",
+    "methods/radcppo_navrl/evaluate_trajectory_capture_r2.py": "dd207799926b05ffff77601e292308e4ef7d645e1ed6ac849d1992826bae5f8a",
+    "methods/radcppo_navrl/evaluate_v19_canonical.py": "e36daeccb5468a3405b5c67f17db42fee893f7f070609bf1ef6927c309c22087",
+    "methods/radcppo_navrl/evaluate_v19_checkpoint_suite.py": "2bf4574cb9579a13f17e42ba0fbe1b09b773a1a9d4bc99dfd2cdb8d28384fa8e",
+    "methods/radcppo_navrl/export_canonical_dynamic_scene.py": "856562c31308f7d8840c57faccb57a87a309f3010928702f76cbd34eaec39a2e",
+    "methods/radcppo_navrl/isaac_app.py": "28866e82f97b82ceb4a429c57c7689b8b7b161804527750f3f9adf9796c7e806",
+    "methods/radcppo_navrl/radcppo_adapter.py": "8c37c363276e666b8b829824c375952299ae2dd4a07d8086981620619fbb6faf",
+    "methods/radcppo_navrl/render_v19_d80_isaac_replay.py": "493d794ee0aac3f54c3b66291f8efc45f5e36df97e0a6edeeaac85c02fbae392",
+    "methods/radcppo_navrl/smoke_official.py": "c1769a813310aff52759562eefdb5b51f50b3620605c0672a06eade80c3596a7",
+    "methods/radcppo_navrl/smoke_radcppo.py": "2ff6b7567dc46a938ddac6caf45b0522e33244b0624734a6ba196da1b5bdb426",
+    "methods/radcppo_navrl/train.py": "75e33c199f89e29e6785f789b110a621c1613cb93469d099a4f153f89edae907",
+    "official_navrl/isaac-training/setup.sh": "b809e560810bae862274ec7cc995d395b0d3bce1431f92e532b1df4aabd09cf4",
+    "official_navrl/isaac-training/setup_deployment.sh": "5d0a3a4dbe77d2e45c643312f631660b329359d458e4082ad4a2c7c6f551c9d8",
+    "official_navrl/isaac-training/training/cfg/drone.yaml": "a58038ec7d5a1319e1bbb1250aabe93ec530eba4519103002aa750a13b7b4717",
+    "official_navrl/isaac-training/training/cfg/ppo.yaml": "09e0fd7e43c185db4f8935f44eb43c681a3eff5df941e18f0ef715ed544801f5",
+    "official_navrl/isaac-training/training/cfg/sim.yaml": "7d66c3da17bd16c71ee024cfb6d6b8c9e3fec0d78b3e5ee4fcfebe86c122ccbb",
+    "official_navrl/isaac-training/training/cfg/train.yaml": "f6a916c3401ac195e78631ae6946abfb09b7bfdb3f75b415b6576fa22545b8e7",
+    "official_navrl/isaac-training/training/scripts/env.py": "4be2ed2868a13362cbd7645254ade281c478f64000be163ca11a907e6d2a9b7d",
+    "official_navrl/isaac-training/training/scripts/eval.py": "25da8d9aa9afd435aea3cca33cedd882f5b4d4c0a7ab50ab96b1b892173480dd",
+    "official_navrl/isaac-training/training/scripts/ppo.py": "7c42449eff0578af448d9246aa80fef1df9265817ea5c19532d4782e6da6463a",
+    "official_navrl/isaac-training/training/scripts/train.py": "2173ab5244f59af07d7b3315a05f22db10fc6d69903d53c1b1555d47ca2b4a8d",
+    "official_navrl/isaac-training/training/scripts/utils.py": "6f4bef4be68180076baadf4b3c9cbf025876b32d73f538baa7aa5e7ab2307b39",
+    "requirements_v19_analysis.txt": "313f27db0351d9a8c4545fe4768c8a1093a9c48f8ab04922c8d9b2f4b0d45794",
+    "runtime_patches/camera_init.headless.py": "f7f60b9c35a85de8e83f28c5ba779e7b727dc8a7f582a699568ee8b82f28652a",
+    "runtime_patches/camera_init.pristine.py": "e08fd2f59a5f382d67fd95f78d037372d4dd27b99c53b8431b66549f3c7e3e5d",
+    "runtime_patches/camera_patch_metadata.json": "c8e2c99e237ef9524888d9863ff575483a6c321161c1ba5f5aacee6158ad2f2d",
+    "runtime_patches/catalog_patch_metadata.json": "35ed3ea3b28c1b56fbad3c61137acc885b5652b0e2745cdea4a5d675e9409874",
+    "runtime_patches/envs_init.headless.py": "b5ed96dedcead0da9543200b8aba48ff4c2dd387cb9e0f2f8a4cd56a44ea6819",
+    "runtime_patches/envs_init.pristine.py": "8fc35b0505697ae9edc363dbde4ee3d750eeef6105a34158f605e13d3a2b45bf",
+    "runtime_patches/headless_patch_metadata.json": "cf3bbb8fe612c0babdb605060e3dbb273a7d42119b1334a0f2e5710cb17ef995",
+    "runtime_patches/isaac_env.headless.py": "b8ff15101f87c931f08c805ba04c9ab041c678008caf3a0d20d771c16bdd5578",
+    "runtime_patches/isaac_env.pristine.py": "5140a91eee32fa09fad1c35aee15b14adbd7c312a2629e854ac991104e817b4b",
+    "scripts/analyze_v19_pybullet_crosssim.py": "f4cecb369ba15e7feabd3b3fb4269a14430d98179b4d4f3de02a1cd083f9809c",
+    "scripts/generate_v19_baseline_evidence.py": "ffb3609b0c1362fc8443c6bc2fbbb1bbd8b7384d9f50d9b0c4903d931383a70f",
+    "scripts/generate_v19_evidence.py": "afa0fde0ff22a83f233427352f39b742e2e719d6855d8f83b53bdffed699ef13",
+    "scripts/run_v19_pybullet_crosssim.py": "1307569541ffc74ead5a8f0843a1ae5ca3e1d382fe9330293db07a2d1811469a",
+    "scripts/server/analyze_v19_core_ablations.sh": "76e4f200063a34c44909894588647ff2757b2724677c35bea0667b631e58ecdb",
+    "scripts/server/analyze_v19_exact_ablation_evaluation.sh": "56263ff43e569938826a66cd074932420a6553881ce8b3f733d4c30f9c899ed5",
+    "scripts/server/analyze_v19_exact_ablation_five_seeds.sh": "f0b3c536d8308d4ba8761575b935e98b82f5df64fe1604711ef765bc209e82c7",
+    "scripts/server/assemble_isaac_oci_from_parts_20260809.sh": "f8d317b567a7774a029b2f40b972f387d04431ee1feeb742d37b19b561b708b8",
+    "scripts/server/bootstrap_navrl_isaac.sh": "ce589f6f4c57d017175855c40834a5a9965c3eed9aba273c18a4311a955a21b9",
+    "scripts/server/continue_v19_after_isaac_20260809.sh": "4d36f4a4991ffb03e84a673689c548befa10e163b8dd2efa33e6dc45bcaecbb0",
+    "scripts/server/export_v19_ablation_five_seed_extension.sh": "29e69a09b24ad5fa55ad959e8931114f318b06828d5877d8a83ec83c0ebbeacc",
+    "scripts/server/export_v19_ablation_five_seed_extension_recovered.sh": "38735db8f9fed33d18033c9a2f9296187a61e66b6bca7c4c99137f28623ad08d",
+    "scripts/server/export_v19_enhanced_evidence.sh": "6a4ac556ff3bc854ce365b3bf86d79e91d25925978e661acf57d2e8162bd9714",
+    "scripts/server/export_v19_power_ood_delivery_20260806.sh": "79267f51d72aa34f321c5f01cd78574ce173efe33ebb7c3fcac92e732c534d87",
+    "scripts/server/fix_v19_summary_utf8_filename_20260806.py": "8a7417a6a6a2cbfff18e985e05ed549b2b57ea695f9fab4419c9bdb33b7f7aac",
+    "scripts/server/generate_v19_ood_scenes_20260806.sh": "c2b5af173f87acdd865a72f7d4f5c6f465686972d60245db54bdcfffdad3c0c9",
+    "scripts/server/mark_legacy_watchers_stopped_for_v19_20260806.sh": "e0a38a5ea85975f9dc2c4ccad6c74377a878248b5c99a66ad8bb23d4728b470a",
+    "scripts/server/monitor_v19_power_resources_20260806.sh": "9b0aed88ef43ce3741b7ea95a2ccbc4cc42e415e4e46af096ffcf99eec316bab",
+    "scripts/server/recover_v19_exact_post_audit_hash_fix.sh": "db930f4ea8c83c54e5613920b0b6d81ff87003a04b35b3a8edbff5b23b6df22e",
+    "scripts/server/recover_v19_exact_runtime_ascii_output.sh": "b4995c425250670fddef55b10325a77ba8016ab60119cfa619783b5892030d22",
+    "scripts/server/recover_v19_paper_aligned_main_mild_20260811.sh": "b5161d25313093a07e137e22488b9a0a050d65b88146e79db973d6f250e5d397",
+    "scripts/server/resume_v19_exact_ablation_five_seed_after_audit_import_fix.sh": "debd0758b8841d5936c94676a7602b3a50aa06e186da3109e3a15fcb9a9d154c",
+    "scripts/server/resume_v19_exact_ablation_five_seed_after_split_fix.sh": "94ff8818a4abf0d96550351549b9059d4db397c822bb55decea4b308d77562f9",
+    "scripts/server/run_isaac_proot.sh": "5bd2f1c8793250cd9614915a239dde4fe665b1f57e1465c8a46cb34859504f9d",
+    "scripts/server/run_v19_ablation_power_extension_20260806.sh": "b9445d90e0b30cd6bafa4ac6be3196af07fb05763239cc316d6e8fed74e6cc49",
+    "scripts/server/run_v19_actor_confirmation.sh": "17aba6b4ce31f73c87258379ee548202736299a467f517e9d4b3e70200173a49",
+    "scripts/server/run_v19_actor_runtime.sh": "3f3b031d678deeed7c34fd7030fa277fdc38da195fd882b2ac56cf56194c00ce",
+    "scripts/server/run_v19_core_ablations.sh": "89ec4bba0eb7e20e794b507dc663f31e26d6119b6caea1151878aa6f5e873534",
+    "scripts/server/run_v19_d80_isaac_replay_r4_20260812.sh": "89b0a337cf1f2cda378dffb4e2f2b0e7464ef4f4925302da6fee25e96fc030a1",
+    "scripts/server/run_v19_d80_trajectory_capture_20260812.sh": "bb979061bb0c3fdcf43d5c690d41d448fc8e94f3be2d80aa363d87bb5defe756",
+    "scripts/server/run_v19_evidence_completion_20260809.sh": "19db7308a97526c83fde7a82a4b5268d7b4fc952e8e25f1d5a40f1c62e75919f",
+    "scripts/server/run_v19_evidence_completion_smoke_20260809.sh": "936dd24feddff9f8514009d2c1af8d1c95c7bfe42c94192d6900ee53713b6257",
+    "scripts/server/run_v19_exact_ablation_evaluation.sh": "882f607fb192457c0fb9f13e7a13064c200539af7283c8bef43159ff0c4ad314",
+    "scripts/server/run_v19_exact_ablation_five_seed_extension.sh": "b0253fc198cdeba220c10052cefbd822bbc95f8a878acf2938cedd8a84e865eb",
+    "scripts/server/run_v19_exact_ablation_seed34_evaluation.sh": "5033aa30ae0dde5cfa39b7cef079dc9d9a85cc9f9b1f0de9c063d4e1ada84d81",
+    "scripts/server/run_v19_exact_ablation_seed34_extension.sh": "967d895677d583c742492e7cd3b11338043359c2ca531761b73ab4e945e7934f",
+    "scripts/server/run_v19_exact_ablations.sh": "34e581e80415e089b09eab6e6c9e734a457502aa2f62c61603c8f56ac14e1622",
+    "scripts/server/run_v19_exact_parameter_sensitivity.sh": "5e22cc530421b9ff72b42aea0d40559944ef415275267ebccbb20883ac9528d5",
+    "scripts/server/run_v19_exact_ppolag_seed34.sh": "b9ea49ce88863196b1cb800efa7ed98cead244faabbd4e9c73c7c71724dacb64",
+    "scripts/server/run_v19_exact_runtime_complexity.sh": "a8463781d7b9b09b94e93d95b9106ddc5e92add87c9c6cfaf91ce3253ce36098",
+    "scripts/server/run_v19_exact_seed34.sh": "ea157528397c74e6eba6bb285e1b3a68e703b7f9501fd7d6f201cdc4bd188082",
+    "scripts/server/run_v19_mean_risk_matched_ablations_20260811.sh": "026e0cc22ce529f3f36de361782133b27a078cb2f1ae822c8edad40621c4e22b",
+    "scripts/server/run_v19_official_confirmation.sh": "109c8d008e34d7b200f92487f8cbe6332f69ad638204d6d952e3f8a21c4003a9",
+    "scripts/server/run_v19_ood_generalization_scene_20260806.sh": "a1f7ba737525c0d5c52ac94e2cdd28ae9fb6b8c44de54fed5050d322113b04b2",
+    "scripts/server/run_v19_paper_aligned_deferred_mild_n2_20260810.sh": "8b3bb9d44f50c4f69840a24130e362903427b073ba8d8c8a8ee0e6e45ccd4436",
+    "scripts/server/run_v19_paper_aligned_deferred_moderate_20260810.sh": "b8683e9d7174ecff89fd6d23c7ffe45eea054d146728f97beb786769427ba883",
+    "scripts/server/run_v19_paper_aligned_exact_group_20260810.sh": "1a7447b7bbe203da9c6a99a0e69d7d1372eabd237d357d08e7339a46cd15a81d",
+    "scripts/server/run_v19_paper_aligned_exact_recheck_20260810.sh": "5f0ba44d3becb2f3aaebb123bfeb0d6f4f0355db9e60c5d22214c330c0a28821",
+    "scripts/server/run_v19_paper_aligned_shield_extension_20260811.sh": "85d6e1809da941af919581c0aae4ea48fe7e109e17318b72939893d3d2fa95ed",
+    "scripts/server/run_v19_ppolag_baseline.sh": "ea6599c13a79d5cdf6977f729eeaef7892cb1a32ef1e6390f96de91276f35fcb",
+    "scripts/server/run_v19_ppolag_budget_sensitivity.sh": "5f1c8062785e921771117eac85e6b176cfe83c58ee61174d4c16302c87da0538",
+    "scripts/server/run_v19_ppolag_power_extension_20260806.sh": "a0da1136d828cd931757bd78c67fb6ebad4f0f64f4a39c9f018ccf330e172321",
+    "scripts/server/run_v19_pybullet_crosssim.sh": "6840f69a2fbc0f2f75045cd996919a4d298c2bbe792fd4b2b62080e7e3c6c457",
+    "scripts/server/run_v19_risk_actor_pilot.sh": "191c50a5302eed8e9fe44efbc3bc5ee63f165cdfa779eeddce25cb3b0cdc1da5",
+    "scripts/server/run_v19_seed34_evaluation.sh": "5a9c562baf8debab9e6a147801a6f92a4cdb9a2c5b55d4db4cea325e40ae92a1",
+    "scripts/server/run_v19_simplified_ood_group_20260806.sh": "2805e6f59be07811fc0544d4d061e9d9ec8d385616600f208b23b02498efc233",
+    "scripts/server/run_v19_training_replication.sh": "6f6916229491e2cca3d9c67327f0fedb425c866b0dea457837c88fe8a760451a",
+    "scripts/server/wait_and_unpack_isaac.sh": "9ee16a077909fee0aa5e191b2b33e4c414531ebae34052d32846b448aa87548e",
+    "scripts/server/watch_v19_analysis_then_export_20260806.sh": "b28317c9fb766644e827f5beba5ea9f43308e789b5bf181600c93a227c209cf0",
+    "scripts/server/watch_v19_completed_analyses_20260806.sh": "5f1ddfd5a92f47328bde6cded28a624b8cdf5e37a71ff3e6adb04f2c0f7f61b7",
+    "scripts/server/watch_v19_exact_ablation_analysis.sh": "209147a756bbaab139bc7b85a67f8feabea9277514fc58159619caf9ff9c7cd4",
+    "scripts/server/watch_v19_exact_ablation_evaluation.sh": "efe4cc47fb6ffe309247a0a40efc3a8c845e83cc09c3ea4fad0a11062f155b53",
+    "scripts/server/watch_v19_exact_ablations.sh": "fde8aef650f6fdbc37c5654cb3a3d6741c5681217d1695d602fac4f08b6e5421",
+    "scripts/server/watch_v19_exact_parameter_sensitivity.sh": "5188262846f096c1f28cbc3c1946db432e66f178382c11a4a8af41f09ac5d6f0",
+    "scripts/server/watch_v19_exact_runtime_complexity.sh": "8a8bb5f343c52ab201b01862da8f9c37c8e80ede4a850c400e75d18f3541a5bf",
+    "scripts/server/watch_v19_mean_risk_matched_delivery_20260812.sh": "86594f9273cf62cc35e1dfbe59688c438809bd07178328621f7678161c9f3d59",
+    "scripts/server/watch_v19_paper_aligned_export_20260810.sh": "b0e571801aef2bbc21739599c4aff6d184f77a58dd2d5d2a903840fae409627e",
+    "scripts/server/watch_v19_paper_aligned_finalize_20260810.sh": "4e88760d8d7174e6285e14374544d94e6977541587defab266839e09136decb4",
+    "scripts/server/watch_v19_paper_aligned_shield_extension_20260811.sh": "67ba51c9cfbf44b84e145dbda87a466b92a124eeef6bc9d019df67dfd6af0c8e",
+    "scripts/server/watch_v19_power_extension_20260806.sh": "0664a62364fe0e1198ad351ffa1fd554b84f1a078d6847815f3e05f6bfc9cd96",
+    "scripts/server/watch_v19_power_then_ood_20260806.sh": "a302327996aa388d2d09b160841d97e1414e99320f50f1b04b889b848648e71e",
+    "scripts/server/watch_v19_seed34_eval_gpu.sh": "d612b026e2e0422156aa5231e52462148cf91d2255a78393dad7b0b3d52dfe34",
+    "scripts/summarize_v19_ppolag_sensitivity.py": "980ac3495ac061af1b40596c609bb81a3317a2dba603aec176be44f177daa44d",
+    "src/navrl_q2/__init__.py": "ae2ef6312cbc06bf2057b873ad565170a80f8e40b3bf2f7c2c417bcccc3717a2",
+    "src/navrl_q2/projectors3d.py": "9dabfd04db5613fd4c92a639701b30f0fb823f0e8279575d107bdbc133bcf2c9",
+    "src/radcppo_navrl/__init__.py": "ab8f3c5637fab7a187cca203bbe1ab0d00e0cf436846bbd2f781caba9197e9e4",
+    "src/radcppo_navrl/actor.py": "156567b9c7a7d65d0c76dcde4da3b63ff4562c5f3056711d3c6df553e6d3e9c7",
+    "src/radcppo_navrl/canonical_scene.py": "56631199ae33b3b128e0fcc321e8fa96f19d22cc5e45c9945670b31171069a0d",
+    "src/radcppo_navrl/checkpointing.py": "37f8346c3526cf809e402bbea20623e5d69a508e8c2bf7c76bd0de6636127bba",
+    "src/radcppo_navrl/distributional.py": "e2fbaaf87f576f518b87501acc5a19e16bd4b6a7eeafd0836ad8207809a4f224",
+    "src/radcppo_navrl/dynamic_obstacle_counts.py": "72c891a6fd747c344382cdfc3663fd838a2310e865545edf657fdaa04241149c",
+    "src/radcppo_navrl/evaluation_outcomes.py": "f617b71a09b4567e9feb27a344f0e21301566c86f5ab716beeddf6585b65c317",
+    "src/radcppo_navrl/observation_noise.py": "00e3ad2fee5b29ecef21f126a23a674f94ad8da6d0d0324deee9ab6a493fe1c4",
+    "src/radcppo_navrl/official_vo.py": "d19446b2a891ee6870f63f8ade6d35553ee9aef34a0428d9e43834e566e408df",
+    "src/radcppo_navrl/reachability_teacher.py": "c7cb04dc4273d801315a5b0739f183e790ebf760007f2021ce4f2a2da20f0259",
+    "src/radcppo_navrl/reviewer_initialization.py": "694a72c8a0d78c9f040f2ff6b49c328eb1891ec046b4fbb7d9c71d518a3b57f0",
+    "src/radcppo_navrl/revision_metrics.py": "d5679a510820c7156b64ccb041f2c9987f67f954cf73a9d9ed5de827c58848cd",
+    "src/radcppo_navrl/risk_selector.py": "f17a0b5a9c85bbdf3ff9696919afdb5ded96f98cde59f9d3384f283842e14da3",
+    "src/radcppo_navrl/training_scene.py": "9dc3fc80380959d2a974975cbac620d206e5d45b8aeb1a6674aa21385712454e",
+    "tests/fixtures/collect_episode_records_before_leaf_cache.py": "dec9ca33f14dfb191e5cc56187e1426cdf974a14ddcc71e61bb8ef16f259a18f",
+    "tests/test_analyze_v19_completion_evidence.py": "435a7c37b3a55cf4cf30a69df9832a2ec76fea36f56a871950b0a02b1eb6c585",
+    "tests/test_analyze_v19_five_training_seeds.py": "6fb084046dd608d5e305f907b4b4aa39fd63579d70a67fc26698370c4f6f25cb",
+    "tests/test_analyze_v19_paper_aligned_recheck.py": "aebeb0651e22335cb152bd1e8582c2808e378cfdab827f9850a7a1e233e1f454",
+    "tests/test_analyze_v19_paper_aligned_shield_extension.py": "461de88ecb9f78dcc28c4399a2de6122965675c4ce73b9017cdf0a5e009059a5",
+    "tests/test_build_rc_cf_navrl_v19_mean_risk_ablation_delivery.py": "e167e2dc3a2923afcd03d2f7bb56f170756f4278067abc1c487a99e21a5fb92b",
+    "tests/test_build_rc_cf_navrl_v19_shield_extension_delivery.py": "f865f77d120aa25b0f57fbb634d31dee88385403717a5ee61c98d6961add9651",
+    "tests/test_build_v19_paper_aligned_scene_index.py": "7e6c82c051443f3415f1fa4fdcd734ab2ce6620e744b1b422ebc57cf7b7bb6b0",
+    "tests/test_build_v19_paper_aligned_shield_extension_manifests.py": "eec8a6a3cfa69877bd84a61b4bc68bb852ca2028f2179c1d03524e13aeb33813",
+    "tests/test_build_v19_power_ood_delivery.py": "7d26579cd2da7643a57314a0e3ba00513481ea1012b4e730309e2f7725230f7a",
+    "tests/test_canonical_articulation_reset_unittest.py": "ca63ec9efab0e33cc046b21cbb52387f7cf71d1e9f0734a7bbca198fd62812ed",
+    "tests/test_canonical_dynamic_reset_unittest.py": "95dfd10fc62cc4ad39b06c68b6ded770288e1b359e0d882f5dfcd5cd14d081bb",
+    "tests/test_checkpoint_suite_protocol.py": "14687814834461e112342e54c4a3484b346f9df1d0ac4b267fd7b5d4cf614acd",
+    "tests/test_checkpointing.py": "e01cb2f0bf0eff21ba666faeb92b62dcc8253f23b6dba254e277af15d3074135",
+    "tests/test_dynamic_obstacle_counts.py": "68815f44d33b5a5bb4bbd5b922ceb9920d02b4a654e985f3001618c4c200a8be",
+    "tests/test_fresh_budget_unittest.py": "05a9c4b9bdb727b5f9cfb8c037fde73ab7de29434a5429175667e451a503651c",
+    "tests/test_fresh_checkpoint_unittest.py": "29264b2bfb3aa39f550752d8d44a5f0448c70879bc4491f52c5120a956145616",
+    "tests/test_fresh_plan_unittest.py": "560447d3d9e0be32f9af00463fee04aea22e740d5ea2d2f4600b2309687bbc05",
+    "tests/test_fresh_postrollout_cache_unittest.py": "881f775ff5d291d843c154299d4cd30ba6a519a9b6189819d8eeaaaa2fbc2dd1",
+    "tests/test_fresh_preflight_unittest.py": "26bb5fcf56720526c061007aa1fe494a3711b063df2c7169ef90f9ed3ecdba51",
+    "tests/test_fresh_suite_metadata_unittest.py": "063583f274edbc53dd6f8fad226200dd4335ce0c26e5b20182dbdbb36f771202",
+    "tests/test_fresh_training_scene_contract_unittest.py": "1528ebd9672f02f1b48a3636d38d6889926d9c099110d5ab1538bab53bfc7308",
+    "tests/test_fresh_warmup_unittest.py": "e33ac150bd8869e4e3c80d4fa01cddbce6fd4509ccc9678fad31725eca6c1085",
+    "tests/test_observation_noise.py": "aeb105beea74fa82461d42a5ae01cc36ed5e84005099cea1b7fd87733d78da60",
+    "tests/test_official_vo.py": "88c1d9d123422f3f2251ec38b875c160d0ac4b01afb23b5e6f9a9b20e87babb1",
+    "tests/test_progressive_scenes.py": "46b4502b0221f1767d8815f6d376c95b220fe06535e78556046d3dd8a253e00e",
+    "tests/test_reviewer_initialization.py": "8977f0ec220c29b5fa1845ed6e96a8496b686c76b9959bacdde0b4ff72a1b6ae",
+    "tests/test_revision_metrics.py": "e89ddfddd79722f1855dab934cfda0a19b1b72e0bc07a185e31d1cdaf9c4b818",
+    "tests/test_split_v19_exact_ablation_seed34_episodes.py": "fec4ad1204f9ffe3b1ccfd0c8e77ddf3867694d0567b5bb61de6d0c239a577bb",
+    "tests/test_summarize_v19_power_ood.py": "62122358af97ff0a448301b92c4ae044d618ed8981db047801bf6650c78f092b",
+    "tests/test_training_scene_unittest.py": "48f150fe17006ae93f52bc19c4b620571b57ca34fdd0a7f803954c2b43eff412",
+    "tests/test_v19_ablation_five_seed_export_protocol.py": "80b925675ec759114322e717c8b72b157ab49da7be5bdd7af9e3d38b42094261",
+    "tests/test_v19_auto_export_watcher.py": "1c5eac65647f3ef847d18bf6c26547fa70da02d975ceaa1a81214c52b47571d3",
+    "tests/test_v19_completion_audit.py": "3975b5770c09d1ad9e281c1a102efee41656b74b0cd90f9d20bbc06cb5710120",
+    "tests/test_v19_exact_ablation_protocol.py": "4e2f80d04d9bf6cd623701ff768194bb6355356af613a23eb564aa8f756830d7",
+    "tests/test_v19_exact_ablation_seed34_protocol.py": "8c0743613c292d30f6e96551499897b3a26c235bf2b4d106310715995ce7ba4e",
+    "tests/test_v19_exact_runtime_protocol.py": "8aabfef5fa1f8a260f36a3607b74f4c1651ce5f85137f6140f02a6a341b5781c",
+    "tests/test_v19_exact_sensitivity_protocol.py": "24d49f1ea3bb89c40f9ba4663f0557647b48491eea06c0085ae258b1c1f42239",
+    "tests/test_v19_extension_analysis_pipelines.py": "b873a9b7211be487d9bfe0f93b637e15b87832c6ad52a56ec57152f83f10892c",
+    "tests/test_v19_mean_risk_matched_ablations.py": "056ee8c7f597005ed1dae2e023d617106d49079ad4d5c6a322e14b9952cc06be",
+    "tests/test_v19_mechanism_protocol.py": "7273964c381ad2a839a33d4d6ccca05c694e260fd6836853d245a8cd0a01c929",
+    "tests/test_v19_paper_aligned_export_watcher.py": "d2ba1b67b1c777a56b0e5e625038216a42aecf2c83cf2d0fb8bfc2fd50c79f8f",
+    "tests/test_v19_paper_aligned_finalize_watcher.py": "3928418daab00ab641dc969e7b61469619753a31c86e9e515b73b4bc3512d4ec",
+    "tests/test_v19_paper_aligned_mild_recovery.py": "00f6a42d24ead7d4e2474e3c82ff5232e7e9e2d2a034ea5792c8ac06e74689c9",
+    "tests/test_v19_paper_aligned_shield_extension_watcher.py": "5bcf2c15a47cc86f03a3d372d32cbb0c85056b2c0fd5a40476c30b5357b194fb",
+    "tests/test_v19_power_ood_export_protocol.py": "3369f9d6700b0ce5a29096f025cf955740fd81578c0350406edc78182bfa0b0f",
+    "tests/test_v19_power_ood_path_contract.py": "2dbce0374555196db8a40a3e394fc39ae8897c7a4ae24a4116fb23a835642011",
+    "tests/training_scene_fixture.py": "be199349d70a37db333ba973f5b0e2f87d56564749ed3ad14e707b18e57354c4",
+    "tools/analyze_fresh_budget_traces.py": "bd2ebb26ced59b9fce64ff8390ab4570475a2482af65fda59320ab7d821d8a3e",
+    "tools/analyze_fresh_paired.py": "35bd679cf534157c269f410ed803eb8e439443d7cfbe463fe3f188ea8fd4111c",
+    "tools/analyze_teacher_replay.py": "ff1156caef682bdc4d42798701a833e4a330a30bd5f8d3fc98ca4aa5df253bff",
+    "tools/analyze_v19_completion_evidence.py": "259c7ba85efc9fa890c90d9374a3a6236ede39cca8b2ee37fbf67e319cfc7d91",
+    "tools/analyze_v19_five_training_seeds.py": "689910ff8fa162be1fa17a49053a5e2d242fb24372e5f4aec73dd0e8c119f528",
+    "tools/analyze_v19_mean_risk_matched_ablations.py": "cba2f065b192560184762b0028a0fe9f2e1596445ae6ed492d4e51fc93360dc8",
+    "tools/analyze_v19_mechanisms.py": "443846d13ee16386dcb88ebe41645539ca33647a0b5439ff76d67882b708acb8",
+    "tools/analyze_v19_ood_generalization.py": "f8c0fb8cbca8555b008206009a8d96d8de72c866fc4f860908e241293f4eaae1",
+    "tools/analyze_v19_paper_aligned_recheck.py": "b6796070ad9eb30bbbe3079891ca8b054e633a1966b9bc758c63e7cad5166607",
+    "tools/analyze_v19_paper_aligned_shield_extension.py": "b868cab52d1f1baa22e88dedb9251a2c1c4cfdf6adbb96a2f4f5b14adbf7b04c",
+    "tools/analyze_v19_power_extension.py": "f93d417ec2dcf0db8f566d3c4f6f241a9363e5efd47f9eab54bf5a4edddf7291",
+    "tools/analyze_v19_simplified_ood.py": "dd51b0cb9636ccc41e6ce902698b2333450c5f0901b087b75030056005895e1e",
+    "tools/analyze_v19_simplified_vs_ppolag.py": "0e2a30607dcbbdd394186a802b8846bbc32729dd32597bdc5deb41f5dacb188a",
+    "tools/audit_v19_ablation_power_extension.py": "49c6d8dfb0193002559e5f2a184a0a9840a28a519b55f8b808b681e697202ea7",
+    "tools/audit_v19_completion_suite.py": "671457f477eb5580bcf209ef6f7522bbd80db75f9298dee461c25f55bfad1928",
+    "tools/audit_v19_exact_ablation_evaluation.py": "ce39a755d81394f2328741db3d3a14ca7911025720e63555c86c588c9d4cac53",
+    "tools/audit_v19_exact_ablation_five_seed_analysis.py": "49c6d1a320a2579663548c119ec354ce8d94bdbd622b962cf1522435fcb5b074",
+    "tools/audit_v19_exact_ablation_seed34_evaluation.py": "059b6f7dcc9e944fbbaf49f0e7714d2010fb8d43d9fd381340b9c2bc6da49054",
+    "tools/audit_v19_exact_ablation_seed34_training.py": "64a0ca3a905add5cb0ef83ece70fe381c926382aa32b648f4fb5b66f73bc1eef",
+    "tools/audit_v19_exact_ablations.py": "19f306d6b986023172a04f9375bc8d5e70157488ae814ca7bb986b1d033fbf5f",
+    "tools/audit_v19_exact_sensitivity_evaluation.py": "4260da88c2e7f97e03056e153eac3a1f70e6093dcb1266ac7db405306457e22b",
+    "tools/audit_v19_exact_sensitivity_training.py": "c0794aa82fcf334209bec15fdb3158ce3ca943bdf02f4f0dec57f5f50fe4af1e",
+    "tools/audit_v19_figure_package.py": "cd689e238c0c38db4795799b7dd0f51b71d81275d881933a99e7cc9cf4486e79",
+    "tools/audit_v19_mean_risk_matched_evaluation.py": "6f4586ae6bb5e4772d73fd5d4fb6ca1fcc64f934182d7603ec881f9262d54b55",
+    "tools/audit_v19_mean_risk_matched_training.py": "3119e6afb7aa99e37a345d22c4d6878920449213add4c8848052eeccf49e2e19",
+    "tools/audit_v19_ood_generalization.py": "cd5acb582800e718e3df07fff54369f08a6489a6a02e8e54ac10057ab1bd6909",
+    "tools/audit_v19_seed34_evaluation.py": "429fb1c28d5ad8cdab68ac09c10f8db17bba6e6dd2dc290343326ce0806e066d",
+    "tools/build_rc_cf_navrl_v19_delivery_20260810.py": "8963d49a84e810c7dc194d85ed763db643373b8201b4d043713828efe5d57fb0",
+    "tools/build_rc_cf_navrl_v19_mean_risk_ablation_delivery.py": "5a746baa21a86bd3f61c81561c848451365702b562dd48e501ad2f8142908e42",
+    "tools/build_rc_cf_navrl_v19_shield_extension_delivery.py": "9a86c854a33909f414d7d765f450c0554a0d46e1ae5924399af92a60b55b05da",
+    "tools/build_trajectory_manifest.py": "a5b5d8b67eeee624f2f52114fcfcb27596df82718123aa5d4cd5819a569c105e",
+    "tools/build_v19_completion_manifests.py": "3d506fa328ae34610fdba8f647713fada75fadbcaaf160070e875de846659907",
+    "tools/build_v19_exact_ablation_evaluation_manifest.py": "22a29b9a0c4917169165c50119e124ca39c2b59282cbb0107076e8b6c22951fc",
+    "tools/build_v19_exact_ablation_seed34_manifest.py": "348917fbe879237a0a3f2b3871fbb53069b5b695b929f3c9de5b47a466a3beb8",
+    "tools/build_v19_exact_sensitivity_evaluation_manifest.py": "0e8fb3d3ea6c7d367b56206ced319ea37e949c02b2bf822163262098db7fd6ed",
+    "tools/build_v19_mean_risk_matched_ablation_manifest.py": "fb393b3d9fa51624ef82a47195687394d59923836b686aea07e362b758b313fe",
+    "tools/build_v19_ood_ppolag_manifest.py": "3653b1560ddd38908c4c21c09a6a49925197bdb592e44a35489f80cafb4271d9",
+    "tools/build_v19_paper_aligned_manifests.py": "b93b2bd593651d6b285bac85d88e2e6f16959765652984b0ac3c869a64f5dce0",
+    "tools/build_v19_paper_aligned_scene_index.py": "5a1b06cf26162a7405a357b28fd72d5c3c71bf4f0b04879f59d9c132d357c11b",
+    "tools/build_v19_paper_aligned_shield_extension_manifests.py": "8982d32f0bb71e004472a4a730ff23da7855a0ce5c703567c7393a6e2bfa00d1",
+    "tools/build_v19_progressive_scenes.py": "29d6a2f36c28e0183f6884b1e65537596602973afce881d19cf2a3aff0316054",
+    "tools/build_v19_seed34_evaluation_manifest.py": "1482f4ea25ed80f0f6a19ae7123069df1c73472e407f52deefc18d6f8fd1a44b",
+    "tools/build_v19_simplified_ood_manifests.py": "92c5364f9977d98585576a5311c139084239c840eeb4b19d9df7dac1af78b2c1",
+    "tools/collect_teacher_replay.py": "ff6c2b42f01aae28f0408edff12278ae3462c9e05a2ee9948c9c1b3dfacfdde2",
+    "tools/plot_v19_d80_3d_visualizations.py": "6637a82ec0f69a44c064f88009704c03de26e0c4b15e12ae5000bb2f38f74b7c",
+    "tools/plot_v19_d80_multi_method_trajectories.py": "172b7525d88882c1c639a0e5a027ba23fe40a7e6b4a52e6d8b06427ecb46875a",
+    "tools/plot_v19_exact_d80_scene.py": "f83555958ce9647f3492592febd39fb1308d2dc21b726bc0e4442213aef40ad3",
+    "tools/plot_v19_fixed_case_first_events.py": "7f17c842cd12c99865b02d5cbaf9dc64afec4d694e1ae62ace1863c041c4f66a",
+    "tools/plot_v19_mean_risk_convergence.py": "cf4ca25928e0344ab08d9594ab69e3024694ed36284043e0f3013d2a6aa4834a",
+    "tools/plot_v19_mean_risk_matched_ablations.py": "62b4f4f8c6e1b402e8cccc0758344b3174f4bc709b11d61389e691d34f38b318",
+    "tools/prepare_reviewer_evaluation.py": "7aed5308303e9904da861910b91f8a937961513e09ffb5c2fa499799bae79a7f",
+    "tools/prepare_reviewer_study.py": "ed91917010ce9022fb9503a24acb452a1eb9a3058640d7763afc2d0ba94b5e2a",
+    "tools/replay_checks.py": "14c97297229cc2152610b03fff81f85cb9b63e05fb60d04f2fb6ed8cb1d4618b",
+    "tools/run_reviewer_study.py": "f138287a18c6f322f1f8ec53bbabcf0f5c03c80f8a5747f1f968b85976a82172",
+    "tools/smoke_official_vo_process_pool.py": "8b8262d55b3d6b73ce2ad43c0515d47dd8971370efad6cce67f256a66171d3dc",
+    "tools/smoke_proot_process_pool.py": "27851c6f9ebd18fd063bf27d57df8fb513256c8be01007de7ddb35a473932658",
+    "tools/split_v19_exact_ablation_episodes.py": "4fec23fcc812cfa7edd870115f6d61b19f5b805a39f53b4e57c0a774444ad1c9",
+    "tools/split_v19_exact_ablation_seed34_episodes.py": "48730f011e72bd6804a3642cbe3cc2fea70a1fbf733d2d5046354bb0f0e0d957",
+    "tools/split_v19_exact_sensitivity_episodes.py": "8eb377a002244feb08ea8b6c78e175db61cc1b83b6857711ab83be39ba97f05c",
+    "tools/summarize_v19_ablations.py": "d6b0756551182e7e01aa91e1760b3f80deabc0c44a7fa8f78f6ea89bb13b6450",
+    "tools/summarize_v19_exact_runtime.py": "9cd07bf4f756f0dfbc33d1df87f3c28de527f741141be4fc33e831e6c4566792",
+    "tools/test_fresh_paired.py": "1b39bb90dce2b1c8e325eb9bbac649e65e592dfcd75f5e943893935a78a8382f",
+    "tools/test_replay_checks.py": "ad615a0eb3fa5a115c00dff85842f0408f49c37829862f60bace937c315282e0",
+    "tools/test_teacher_analysis.py": "0aaf04322144edbb5ddfea4e2fc2c83a74d945cdde3489fe86edac0e33691a29",
+    "tools/v19_power_ood_summary_pre_agg_backend_20260806.py": "45e4771814cd76a86bc986825ad26f4078d3a1d548d10d31d38bab48d2a2b789",
+    "tools/汇总v19统计功效与未见场景结果.py": "dbde100e1bf882b3b94c4f66bb23c00b2858417d69b86fc15295e8804c634746",
+    "交付完整性索引.json": "8cbc858e700891bc55f45fbbe5e304528064eb7dc0b1af6eaa939ce77d7530d5",
+    "文件SHA256校验清单.txt": "1c280690537ae5c49790a1bac8d320926e33bb9b8085590959f5a604dbe40ada"
+  },
+  "packaged_official_core_sha256": {
+    "env.py": "4be2ed2868a13362cbd7645254ade281c478f64000be163ca11a907e6d2a9b7d",
+    "ppo.py": "7c42449eff0578af448d9246aa80fef1df9265817ea5c19532d4782e6da6463a",
+    "utils.py": "6f4bef4be68180076baadf4b3c9cbf025876b32d73f538baa7aa5e7ab2307b39",
+    "train.py": "2173ab5244f59af07d7b3315a05f22db10fc6d69903d53c1b1555d47ca2b4a8d",
+    "eval.py": "25da8d9aa9afd435aea3cca33cedd882f5b4d4c0a7ab50ab96b1b892173480dd"
+  },
+  "official_roots": {
+    "pristine": "recorded://official_src/NavRL-3725bcc/isaac-training",
+    "runtime": "recorded://official_runtime/isaac-training"
+  },
+  "runtime_vendor_patches": {
+    "third_party/OmniDrones/omni_drones/envs/isaac_env.py": {
+      "pristine_sha256": "5140a91eee32fa09fad1c35aee15b14adbd7c312a2629e854ac991104e817b4b",
+      "pristine_git_blob_sha1": "054b5a8b1e805b619f619e79f8517d7de9e1f08a",
+      "patched_sha256": "b8ff15101f87c931f08c805ba04c9ab041c678008caf3a0d20d771c16bdd5578",
+      "diff_sha256": "5e391f4bea4eed09305329dc7d231b2fab407656725807f49296fd0b6896bade",
+      "kind": "explicit_headless_viewport_rgb_compatibility",
+      "activation_condition": "bool(headless) and NAVRL_HEADLESS_NO_VIEWPORT == 1",
+      "packaged_pristine_path": "recorded://fresh_project_scenefix1/runtime_patches/isaac_env.pristine.py",
+      "packaged_patched_path": "recorded://fresh_project_scenefix1/runtime_patches/isaac_env.headless.py",
+      "packaged_diff_path": "recorded://fresh_project_scenefix1/runtime_patches/headless_no_viewport.patch",
+      "review_metadata_path": "recorded://fresh_project_scenefix1/runtime_patches/headless_patch_metadata.json",
+      "review_metadata_sha256": "cf3bbb8fe612c0babdb605060e3dbb273a7d42119b1334a0f2e5710cb17ef995",
+      "diff_path": "recorded://fresh_runs_v3_scenefix1/runtime_vendor_headless_no_viewport.patch",
+      "required_execution_environment": {
+        "NAVRL_HEADLESS_NO_VIEWPORT": "1"
+      }
+    },
+    "third_party/OmniDrones/omni_drones/envs/__init__.py": {
+      "pristine_sha256": "8fc35b0505697ae9edc363dbde4ee3d750eeef6105a34158f605e13d3a2b45bf",
+      "pristine_git_blob_sha1": "7fc97c49ed7f2e882259e8ba433063a08c977642",
+      "patched_sha256": "b5ed96dedcead0da9543200b8aba48ff4c2dd387cb9e0f2f8a4cd56a44ea6819",
+      "diff_sha256": "3d9f45994fd7191a9972b138f249e1deabc18123de7ec6440357f7ee8e00c6ba",
+      "kind": "explicit_headless_eager_display_import_compatibility",
+      "activation_condition": "NAVRL_HEADLESS_NO_VIEWPORT == 1 (study also requires headless=True)",
+      "packaged_pristine_path": "recorded://fresh_project_scenefix1/runtime_patches/envs_init.pristine.py",
+      "packaged_patched_path": "recorded://fresh_project_scenefix1/runtime_patches/envs_init.headless.py",
+      "packaged_diff_path": "recorded://fresh_project_scenefix1/runtime_patches/headless_catalog_imports.patch",
+      "review_metadata_path": "recorded://fresh_project_scenefix1/runtime_patches/catalog_patch_metadata.json",
+      "review_metadata_sha256": "35ed3ea3b28c1b56fbad3c61137acc885b5652b0e2745cdea4a5d675e9409874",
+      "diff_path": "recorded://fresh_runs_v3_scenefix1/runtime_vendor_headless_catalog_imports.patch",
+      "required_execution_environment": {
+        "NAVRL_HEADLESS_NO_VIEWPORT": "1"
+      }
+    },
+    "third_party/orbit/source/extensions/omni.isaac.orbit/omni/isaac/orbit/sensors/camera/__init__.py": {
+      "pristine_sha256": "e08fd2f59a5f382d67fd95f78d037372d4dd27b99c53b8431b66549f3c7e3e5d",
+      "pristine_git_blob_sha1": "9fbe82eedf1910e4828bcdc053e96d6d1fcfc8c6",
+      "patched_sha256": "f7f60b9c35a85de8e83f28c5ba779e7b727dc8a7f582a699568ee8b82f28652a",
+      "diff_sha256": "a30eecd5b608d384f98addfa205ee5cde4c5be1eed362add8a3ab527f85d6143",
+      "kind": "explicit_headless_eager_display_import_compatibility",
+      "activation_condition": "NAVRL_HEADLESS_NO_VIEWPORT == 1 (study also requires headless=True)",
+      "packaged_pristine_path": "recorded://fresh_project_scenefix1/runtime_patches/camera_init.pristine.py",
+      "packaged_patched_path": "recorded://fresh_project_scenefix1/runtime_patches/camera_init.headless.py",
+      "packaged_diff_path": "recorded://fresh_project_scenefix1/runtime_patches/headless_camera_imports.patch",
+      "review_metadata_path": "recorded://fresh_project_scenefix1/runtime_patches/camera_patch_metadata.json",
+      "review_metadata_sha256": "c8e2c99e237ef9524888d9863ff575483a6c321161c1ba5f5aacee6158ad2f2d",
+      "diff_path": "recorded://fresh_runs_v3_scenefix1/runtime_vendor_headless_camera_imports.patch",
+      "required_execution_environment": {
+        "NAVRL_HEADLESS_NO_VIEWPORT": "1"
+      }
+    }
+  },
+  "required_execution_environment": {
+    "NAVRL_HEADLESS_NO_VIEWPORT": "1"
+  },
+  "runtime_core_sha256": {
+    "env.py": "50c53d44b2663841e9f7fa1a86599407a87043f089dd8c6125048d999ff3541d",
+    "ppo.py": "7c42449eff0578af448d9246aa80fef1df9265817ea5c19532d4782e6da6463a",
+    "utils.py": "6f4bef4be68180076baadf4b3c9cbf025876b32d73f538baa7aa5e7ab2307b39",
+    "train.py": "2173ab5244f59af07d7b3315a05f22db10fc6d69903d53c1b1555d47ca2b4a8d",
+    "eval.py": "25da8d9aa9afd435aea3cca33cedd882f5b4d4c0a7ab50ab96b1b892173480dd"
+  },
+  "runtime_environment_patch": {
+    "kind": "exact_count_environment_patch_only",
+    "packaged_patch_source": "recorded://fresh_project_scenefix1/external/NavRL_official_3725bcc/isaac-training/training/scripts/env.py",
+    "runtime_env_sha256": "50c53d44b2663841e9f7fa1a86599407a87043f089dd8c6125048d999ff3541d",
+    "pristine_env_sha256": "4be2ed2868a13362cbd7645254ade281c478f64000be163ca11a907e6d2a9b7d",
+    "diff_path": "recorded://fresh_runs_v3_scenefix1/runtime_env_patch.diff",
+    "diff_sha256": "e434a48819210597054c93aa0ea22993cdab01f79e36b02ecf0f3a0a113e458a",
+    "note": "Core env.py exact-count patch plus the separately pinned exact vendor headless files are the only runtime exceptions."
+  },
+  "official_source_audit": {
+    "path": "recorded://public_assets/source_file_manifest.json",
+    "sha256": "db86fbb52f2964897b7621fa2c22eda0215675cb9a96f287873a80eb676cbe02"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "teacher_validation_protocol": "qualified_anchor_replay_v1",
+  "extension_identity": {
+    "path": "recorded://runtime/teacher_validation_extension2/extension.json",
+    "sha256": "95a23951479cd537fb57b9d2e7254c0dc8704a35294aeec80c7eb67448352a70",
+    "protocol": "TEACHER_VALIDATION_EXTENSION_QUALIFIED_ANCHOR_V1",
+    "parent_plan": {
+      "path": "recorded://fresh_runs_v3_scenefix1/study_plan.json",
+      "sha256": "8142cb94b8ccf9918795df73c60646a8610e6522e2fd70b1537e44293288dac9"
+    },
+    "qualified_sources": {
+      "analyze_teacher_replay.py": {
+        "path": "recorded://runtime/teacher_qualified_replay2/analyze_teacher_replay.py",
+        "sha256": "8339c1a0d7f5858d4a7a5901a6c13d9c2f9b7987b30b1d0c5803a82e1e5d7032"
+      },
+      "collect_teacher_replay.py": {
+        "path": "recorded://runtime/teacher_qualified_replay2/collect_teacher_replay.py",
+        "sha256": "40825739ee78a163ffc53730eb2afac82f7553969f2b1c6344e729b648ce4163"
+      },
+      "qualified_state_registry.py": {
+        "path": "recorded://runtime/teacher_qualified_replay2/qualified_state_registry.py",
+        "sha256": "90cf4514caba9e2bc06ba693ba8edb85671a83a3d86c9dec3ef5b807593e8668"
+      },
+      "replay_checks.py": {
+        "path": "recorded://runtime/teacher_qualified_replay2/replay_checks.py",
+        "sha256": "1e0f1a8cf763cd1d8002b138275075f8a9cb2d8ea802991ce8a57b7b54a1f375"
+      },
+      "usd_isolation.py": {
+        "path": "recorded://runtime/teacher_qualified_replay2/usd_isolation.py",
+        "sha256": "7cff10ef8b9cc24e72fabfd86d658dc84918f0aa158ed63bc44819e26ff4c248"
+      }
+    }
+  },
+  "registry_sha256": "9cfe1f4697147b91dcc9b815ca9cdc53c0397b0a18ddd857701607a45771e323",
+  "qualification_rule": "no_done_or_reached_goal_in_reference_prefix",
+  "prospective_only": true
+}

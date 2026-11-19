@@ -1,0 +1,96 @@
+{
+  "manuscript": "Learning Bounded Velocity Corrections for UAV Navigation among Moving Obstacles",
+  "revision": "2026-11-18",
+  "figures": [
+    {
+      "number": "1",
+      "label": "fig:framework",
+      "title": "Framework",
+      "reference": "manuscript/figures/figure-1.pdf",
+      "pdf_sha256": "6b8a96a584e7294d059fd819407925ab2d85ace3aea001a3e0e240d3d06e2cc6"
+    },
+    {
+      "number": "2",
+      "label": "fig:local-comparison-mechanism",
+      "title": "Encounter mechanism",
+      "reference": "manuscript/figures/figure-2.pdf",
+      "pdf_sha256": "20f666748af63aef49eb5a51762ce98ed575bf46f5fa2c4416fadf3f36c0e88d"
+    },
+    {
+      "number": "3",
+      "label": "fig:environment-setup",
+      "title": "Environment setup",
+      "reference": "manuscript/figures/figure-3.pdf",
+      "pdf_sha256": "44d88adb01845e202e8879576ec57690b05eb16968385f2f77dd274516047e55"
+    },
+    {
+      "number": "4",
+      "label": "fig:navigation-effects",
+      "title": "Navigation evidence",
+      "reference": "manuscript/figures/figure-4.pdf",
+      "pdf_sha256": "7ded4273015ce2b90c5a27b06b4fb9a9dfdbf69df26500e332708a4b68b9215f"
+    },
+    {
+      "number": "5",
+      "label": "fig:flight-case",
+      "title": "Recorded flight comparison",
+      "reference": "manuscript/figures/figure-5.pdf",
+      "pdf_sha256": "d07ea17c56ba7f435bcf60c7d1451b1fc60f877ca462e83f8c70d50ee4753ddf"
+    },
+    {
+      "number": "6",
+      "label": "fig:environmental-evidence",
+      "title": "Environmental evidence",
+      "reference": "manuscript/figures/figure-6.pdf",
+      "pdf_sha256": "4a1e46726c5c32776578e40e5ba5d2774902a89a14df4bde1800417dc4df3dd3"
+    },
+    {
+      "number": "7",
+      "label": "fig:robustness-effects",
+      "title": "Layout and observation effects",
+      "reference": "manuscript/figures/figure-7.pdf",
+      "pdf_sha256": "dc7b09286d93451a7bcbac1ddfaf0da5bc523ac141851d1a614a62d5bbb8a13d"
+    },
+    {
+      "number": "8",
+      "label": "fig:teacher-estimates",
+      "title": "Local replay",
+      "reference": "manuscript/figures/figure-8.pdf",
+      "pdf_sha256": "e8a22d1a92a2daabe2276a72d3c90a1d7f2a982fa4635d94c497e2ab8186faeb"
+    },
+    {
+      "number": "9",
+      "label": "fig:learned-mechanisms",
+      "title": "Learned mechanism diagnostics",
+      "reference": "manuscript/figures/figure-9.pdf",
+      "pdf_sha256": "55ae3f2a86668c79f9fa76841d53de24a48bb3ed388b42e7924baa12bde5abbf"
+    }
+  ],
+  "tables": [
+    {
+      "number": "1",
+      "label": "tab:runtime",
+      "reference": "manuscript/tables/table-1.tex"
+    },
+    {
+      "number": "A1",
+      "label": "tab:configuration",
+      "reference": "manuscript/tables/table-A1.tex"
+    },
+    {
+      "number": "A2",
+      "label": "tab:components",
+      "reference": "manuscript/tables/table-A2.tex"
+    },
+    {
+      "number": "A3",
+      "label": "tab:teacher",
+      "reference": "manuscript/tables/table-A3.tex"
+    },
+    {
+      "number": "A4",
+      "label": "tab:deployment",
+      "reference": "manuscript/tables/table-A4.tex"
+    }
+  ]
+}

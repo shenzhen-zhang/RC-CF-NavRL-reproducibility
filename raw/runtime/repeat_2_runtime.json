@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "benchmark_definition": "Minimum deployment graph on one fixed Isaac observation batch. NavRL actor uses the frozen common-start task encoder and Beta head embedded in the v19 checkpoint. v19 actor additionally uses its decoupled safety encoder and learned gate/residual head. VO and PC-ARP rows add only their safety calculation. Physics and low-level controller stepping are excluded.",
+  "official_navrl_commit": "3725bcc2e7c1be4ecf1455d922299ae85042603a",
+  "isaac_sim_version": "2023.1.0-hotfix.1",
+  "python_version": "3.10.13",
+  "torch_version": "2.7.1+cu128",
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "checkpoint": "recorded://navrl_train_q2_20260726/recovery/v19_exact_20260804/results/formal/training/v19_exact_bridge_s0/checkpoint_final.pt",
+  "checkpoint_sha256": "eec3625da9664e942cdf29d8c441b29e05bea21d952c27cb88be4b6e43346cd8",
+  "checkpoint_size_bytes": 3303748,
+  "missing_checkpoint_keys": [],
+  "path_names": [
+    "navrl_actor",
+    "navrl_official_vo",
+    "v19_actor",
+    "v19_official_vo",
+    "v19_pcarp"
+  ],
+  "batch_sizes": [
+    1,
+    64
+  ],
+  "warmup_iterations": 30,
+  "timed_iterations": 100,
+  "navrl_actor_parameters": {
+    "parameter_count": 177126,
+    "trainable_parameter_count": 0,
+    "parameter_storage_mib": 0.6756820678710938
+  },
+  "v19_actor_parameters": {
+    "parameter_count": 353750,
+    "trainable_parameter_count": 176624,
+    "parameter_storage_mib": 1.3494491577148438
+  },
+  "official_vo_parameters": {
+    "projector": "navrl_official_vo_3d_port",
+    "decisions": 0,
+    "intervention_rate": 0.0,
+    "no_feasible_rate": 0.0,
+    "sensor_range_m": 4.0,
+    "static_point_budget": 48,
+    "ray_count": 144,
+    "horizon_s": 2.0,
+    "time_step_s": 0.05,
+    "safety_distance_m": 0.3,
+    "max_speed_mps": 3.4641016151377544,
+    "static_input_adapter": "nearest_ray_endpoints"
+  },
+  "source_sha256": {
+    "methods/radcppo_navrl/benchmark_v19_deployment_runtime.py": "4d2012ba68d75c1869a0872a43b157448a230a0d889fe75895306f63049d016d",
+    "methods/radcppo_navrl/radcppo_adapter.py": "43c27416080cd3af3fe23eaf296efc74710798d148a06dc281f3a09c4205d455",
+    "src/radcppo_navrl/actor.py": "156567b9c7a7d65d0c76dcde4da3b63ff4562c5f3056711d3c6df553e6d3e9c7",
+    "src/radcppo_navrl/official_vo.py": "78c5ad36b5c685e58d5f7f4fd0f8554c5c6cee60a6ae92bb4292c822b9497cdf",
+    "src/radcppo_navrl/reachability_teacher.py": "c7cb04dc4273d801315a5b0739f183e790ebf760007f2021ce4f2a2da20f0259"
+  },
+  "batches": {
+    "1": {
+      "navrl_actor": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 1.5422329568862916,
+        "cuda_median_ms": 1.726207971572876,
+        "cuda_p95_ms": 1.878406423330307,
+        "wall_mean_ms": 1.5824973,
+        "wall_median_ms": 1.772655,
+        "wall_p95_ms": 1.9260355,
+        "wall_p99_ms": 2.0004102100000045,
+        "peak_working_memory_mib": 1.001953125
+      },
+      "navrl_official_vo": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 4.015324175357819,
+        "cuda_median_ms": 3.405344009399414,
+        "cuda_p95_ms": 5.203259229660034,
+        "wall_mean_ms": 4.051333639999999,
+        "wall_median_ms": 3.434367,
+        "wall_p95_ms": 5.250524,
+        "wall_p99_ms": 5.487497170000001,
+        "peak_working_memory_mib": 1.001953125
+      },
+      "v19_actor": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 2.583999364376068,
+        "cuda_median_ms": 2.2396320104599,
+        "cuda_p95_ms": 3.8292879104614257,
+        "wall_mean_ms": 2.6196266500000003,
+        "wall_median_ms": 2.269989,
+        "wall_p95_ms": 3.8767781,
+        "wall_p99_ms": 4.01727305,
+        "peak_working_memory_mib": 1.0048828125
+      },
+      "v19_official_vo": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 5.486838059425354,
+        "cuda_median_ms": 4.459728002548218,
+        "cuda_p95_ms": 7.449627089500427,
+        "wall_mean_ms": 5.523452519999999,
+        "wall_median_ms": 4.499218,
+        "wall_p95_ms": 7.4960372,
+        "wall_p99_ms": 7.63672572,
+        "peak_working_memory_mib": 1.0048828125
+      },
+      "v19_pcarp": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 5.9893385744094845,
+        "cuda_median_ms": 4.833823919296265,
+        "cuda_p95_ms": 8.390165948867798,
+        "wall_mean_ms": 6.02731045,
+        "wall_median_ms": 4.864387499999999,
+        "wall_p95_ms": 8.44260905,
+        "wall_p99_ms": 8.885592220000001,
+        "peak_working_memory_mib": 1.0048828125
+      }
+    },
+    "64": {
+      "navrl_actor": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 1.4565331172943115,
+        "cuda_median_ms": 1.1869440078735352,
+        "cuda_p95_ms": 2.029599964618683,
+        "wall_mean_ms": 1.49164503,
+        "wall_median_ms": 1.215617,
+        "wall_p95_ms": 2.07547455,
+        "wall_p99_ms": 2.1668450200000016,
+        "peak_working_memory_mib": 1.111328125
+      },
+      "navrl_official_vo": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 25.319982089996337,
+        "cuda_median_ms": 23.993935585021973,
+        "cuda_p95_ms": 37.331678009033205,
+        "wall_mean_ms": 25.35679205,
+        "wall_median_ms": 24.0269075,
+        "wall_p95_ms": 37.41628965,
+        "wall_p99_ms": 41.04610959000002,
+        "peak_working_memory_mib": 1.111328125
+      },
+      "v19_actor": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 2.500850884914398,
+        "cuda_median_ms": 2.4618719816207886,
+        "cuda_p95_ms": 2.714187169075012,
+        "wall_mean_ms": 2.53179,
+        "wall_median_ms": 2.491041,
+        "wall_p95_ms": 2.7484741,
+        "wall_p99_ms": 2.9495565999999998,
+        "peak_working_memory_mib": 1.111328125
+      },
+      "v19_official_vo": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 26.446706657409667,
+        "cuda_median_ms": 25.62123203277588,
+        "cuda_p95_ms": 34.77812252044678,
+        "wall_mean_ms": 26.48059538,
+        "wall_median_ms": 25.6533275,
+        "wall_p95_ms": 34.8103452,
+        "wall_p99_ms": 39.089943260000005,
+        "peak_working_memory_mib": 1.111328125
+      },
+      "v19_pcarp": {
+        "warmup_iterations": 30,
+        "timed_iterations": 100,
+        "cuda_mean_ms": 5.254012155532837,
+        "cuda_median_ms": 5.203968048095703,
+        "cuda_p95_ms": 5.546974301338196,
+        "wall_mean_ms": 5.285595959999999,
+        "wall_median_ms": 5.233822,
+        "wall_p95_ms": 5.576903,
+        "wall_p99_ms": 5.884561290000001,
+        "peak_working_memory_mib": 8.7470703125
+      }
+    }
+  },
+  "actor_parameter_overhead": {
+    "absolute": 176624,
+    "relative_percent": 99.71658593317751
+  }
+}

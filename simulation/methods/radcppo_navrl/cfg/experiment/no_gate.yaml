@@ -1,0 +1,7 @@
+# @package _global_
+
+algo:
+  method:
+    actor_adapter:
+      enabled: false
+      gate_coefficient: 0.0

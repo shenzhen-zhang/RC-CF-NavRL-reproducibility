@@ -1,0 +1,10 @@
+/.venv/
+/recomputed/
+__pycache__/
+visuals/*/.build/
+visuals/*/output/
+visuals/tables/
+visuals/environment_setup/figure_trace.json
+build/current-table-inputs.json
+visuals/flight_case/figure_trace.json
+visuals/reconstruction/figure_trace_remaining.json

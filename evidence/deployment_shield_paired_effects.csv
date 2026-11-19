@@ -1,0 +1,13 @@
+﻿condition,comparison,metric,difference_definition,difference,ci95_low,ci95_high,training_seed_count,paired_episode_count,composite_key
+d60,mean_risk_official_vo_vs_actor,success,left minus right,-0.0125,-0.040625,0.015625,5,1920,training_seed + evaluation_seed + env_index
+d60,mean_risk_official_vo_vs_actor,collision,left minus right,-0.011979166666666666,-0.041666666666666664,0.017708333333333333,5,1920,training_seed + evaluation_seed + env_index
+d60,ppolag_official_vo_vs_actor,success,left minus right,0.04895833333333334,0.019791666666666666,0.07916666666666666,5,1920,training_seed + evaluation_seed + env_index
+d60,ppolag_official_vo_vs_actor,collision,left minus right,-0.0546875,-0.08489583333333334,-0.025520833333333333,5,1920,training_seed + evaluation_seed + env_index
+d60,mean_risk_official_vo_vs_ppolag_official_vo,success,left minus right,0.10104166666666667,0.06354166666666666,0.1421875,5,1920,training_seed + evaluation_seed + env_index
+d60,mean_risk_official_vo_vs_ppolag_official_vo,collision,left minus right,-0.10416666666666667,-0.1421875,-0.0671875,5,1920,training_seed + evaluation_seed + env_index
+d120,mean_risk_official_vo_vs_actor,success,left minus right,0.07135416666666666,0.042708333333333334,0.1,5,1920,training_seed + evaluation_seed + env_index
+d120,mean_risk_official_vo_vs_actor,collision,left minus right,-0.10885416666666667,-0.13854166666666667,-0.07916666666666666,5,1920,training_seed + evaluation_seed + env_index
+d120,ppolag_official_vo_vs_actor,success,left minus right,0.02395833333333333,-0.017708333333333333,0.0671875,5,1920,training_seed + evaluation_seed + env_index
+d120,ppolag_official_vo_vs_actor,collision,left minus right,-0.06875,-0.10885416666666667,-0.0296875,5,1920,training_seed + evaluation_seed + env_index
+d120,mean_risk_official_vo_vs_ppolag_official_vo,success,left minus right,0.11354166666666668,0.04791666666666667,0.18229166666666666,5,1920,training_seed + evaluation_seed + env_index
+d120,mean_risk_official_vo_vs_ppolag_official_vo,collision,left minus right,-0.1125,-0.1875,-0.04114583333333333,5,1920,training_seed + evaluation_seed + env_index

@@ -1,0 +1,20 @@
+\begin{table}[!htbp]
+ \caption{Geometric teacher discrimination and candidate-ordering diagnostics on local replay anchor states.}
+ \label{tab:teacher}
+ \centering
+ \tablebodyfont
+ \renewcommand{\arraystretch}{1.16}
+ \setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule
+Diagnostic & Released-policy states & Adapted-policy states \\
+\midrule
+Collision-score AUROC & $0.926$ $[0.858,\,0.962]$ & $0.916$ $[0.852,\,0.958]$ \\
+Clearance-ordering accuracy & $0.894$ $[0.871,\,0.919]$ & $0.891$ $[0.874,\,0.914]$ \\
+\addlinespace[3pt]
+Ordering coverage (\%) & $87.28$ $[83.01,\,90.50]$ & $87.03$ $[83.02,\,89.78]$ \\
+\bottomrule
+\end{tabular*}
+ \par\vspace{3pt}\noindent
+ \parbox{\textwidth}{\tablenotefont Estimates [95\% descriptive cluster-bootstrap confidence intervals] from 692 released-policy and 2784 adapted-policy anchors across four shared evaluation seeds per source checkpoint. Clearance ordering uses anchors with resolvable candidate differences; coverage is their fraction among qualified anchors.}
+\end{table}

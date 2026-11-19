@@ -1,0 +1,91 @@
+[
+  {
+    "evaluation_seed": 4436521,
+    "anchor_step": 128,
+    "planned_envs": 64,
+    "qualified_count": 64,
+    "excluded_envs": [],
+    "qualified_mask_sha256": "adadccf89b984124c5b06578518e98a7cb5bca426a346066a426967dd790d34b",
+    "reference_prefix_event_hashes": {
+      "done": "7cfe2acc1ed7f9f7ed3a2c4d49b28299d527b49a7c50d8bae9df7c19b772ca93",
+      "reached_goal": "7cfe2acc1ed7f9f7ed3a2c4d49b28299d527b49a7c50d8bae9df7c19b772ca93",
+      "terminated": "7cfe2acc1ed7f9f7ed3a2c4d49b28299d527b49a7c50d8bae9df7c19b772ca93",
+      "truncated": "7cfe2acc1ed7f9f7ed3a2c4d49b28299d527b49a7c50d8bae9df7c19b772ca93",
+      "collision": "7cfe2acc1ed7f9f7ed3a2c4d49b28299d527b49a7c50d8bae9df7c19b772ca93"
+    },
+    "reference_first_event_sha256": "248949f9b2c62d9cd39080885940cc4b8c5253bf28d599313b3bb876b7b3913c",
+    "empty_estimate": false,
+    "qualification_fixed_before_candidates": true
+  },
+  {
+    "evaluation_seed": 4436521,
+    "anchor_step": 384,
+    "planned_envs": 64,
+    "qualified_count": 53,
+    "excluded_envs": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      57,
+      58,
+      59,
+      60
+    ],
+    "qualified_mask_sha256": "f7ae7ee0b395f0111efe9081202651955dcae9b3b0b83e7b84a3a25073e3985f",
+    "reference_prefix_event_hashes": {
+      "done": "e6f1ee9d587bfc7c8cc323717811c31f9cb18f53adc977afc971e31d2e61420d",
+      "reached_goal": "03c154293c803e12ff74887563f6ef54920dbc444dd89e663b0fcd3e56af0037",
+      "terminated": "e6f1ee9d587bfc7c8cc323717811c31f9cb18f53adc977afc971e31d2e61420d",
+      "truncated": "03c154293c803e12ff74887563f6ef54920dbc444dd89e663b0fcd3e56af0037",
+      "collision": "e6f1ee9d587bfc7c8cc323717811c31f9cb18f53adc977afc971e31d2e61420d"
+    },
+    "reference_first_event_sha256": "3774f2e9d9cae6427f635679e30b6c038c3d8a81569f79604689e4c9c7c34840",
+    "empty_estimate": false,
+    "qualification_fixed_before_candidates": true
+  },
+  {
+    "evaluation_seed": 4436521,
+    "anchor_step": 768,
+    "planned_envs": 64,
+    "qualified_count": 42,
+    "excluded_envs": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      28,
+      29,
+      30,
+      31,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "qualified_mask_sha256": "3f819f109f97a9825f7c1a56ba6e9b5afa268184b76e321c198ab03b33ef2eec",
+    "reference_prefix_event_hashes": {
+      "done": "15531b905403d3d60c37c0e0d735eba9ca493c8361d83f1ec176b27f2dccb597",
+      "reached_goal": "c8a6ce7fbd1e558e0cec4d45f356098059d8ce0fea4a8e83e9e34959d2eae3cf",
+      "terminated": "15531b905403d3d60c37c0e0d735eba9ca493c8361d83f1ec176b27f2dccb597",
+      "truncated": "c8a6ce7fbd1e558e0cec4d45f356098059d8ce0fea4a8e83e9e34959d2eae3cf",
+      "collision": "15531b905403d3d60c37c0e0d735eba9ca493c8361d83f1ec176b27f2dccb597"
+    },
+    "reference_first_event_sha256": "caf7daf5ac93faaad4f3da2eed36af522f5d46a6fdc41db13b1b454df28feb8d",
+    "empty_estimate": false,
+    "qualification_fixed_before_candidates": true
+  }
+]

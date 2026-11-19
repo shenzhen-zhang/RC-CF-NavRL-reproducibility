@@ -1,0 +1,412 @@
+{
+  "status": "pass",
+  "protocol": "frozen_d80_fixed_seed_isaac_replay_v1",
+  "renderer": "Isaac Sim 2023.1.0-hotfix.1 RTX RGB annotator",
+  "evaluation_seed": 1183109,
+  "env_index": 0,
+  "env_num_envs": 64,
+  "static_obstacles": 350,
+  "dynamic_obstacles": 80,
+  "max_episode_length": 2200,
+  "canonical_scene": {
+    "path": "recorded://navrl_train_q2_20260726/configs/v19_paper_aligned_exact_scenes_20260810/configured_80_actual_80_seed7.json",
+    "sha256": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3"
+  },
+  "target_marker": "/World/V19Visualization/Target",
+  "hidden_non_capture_drones": [
+    "/World/envs/env_1/Hummingbird_0",
+    "/World/envs/env_2/Hummingbird_0",
+    "/World/envs/env_3/Hummingbird_0",
+    "/World/envs/env_4/Hummingbird_0",
+    "/World/envs/env_5/Hummingbird_0",
+    "/World/envs/env_6/Hummingbird_0",
+    "/World/envs/env_7/Hummingbird_0",
+    "/World/envs/env_8/Hummingbird_0",
+    "/World/envs/env_9/Hummingbird_0",
+    "/World/envs/env_10/Hummingbird_0",
+    "/World/envs/env_11/Hummingbird_0",
+    "/World/envs/env_12/Hummingbird_0",
+    "/World/envs/env_13/Hummingbird_0",
+    "/World/envs/env_14/Hummingbird_0",
+    "/World/envs/env_15/Hummingbird_0",
+    "/World/envs/env_16/Hummingbird_0",
+    "/World/envs/env_17/Hummingbird_0",
+    "/World/envs/env_18/Hummingbird_0",
+    "/World/envs/env_19/Hummingbird_0",
+    "/World/envs/env_20/Hummingbird_0",
+    "/World/envs/env_21/Hummingbird_0",
+    "/World/envs/env_22/Hummingbird_0",
+    "/World/envs/env_23/Hummingbird_0",
+    "/World/envs/env_24/Hummingbird_0",
+    "/World/envs/env_25/Hummingbird_0",
+    "/World/envs/env_26/Hummingbird_0",
+    "/World/envs/env_27/Hummingbird_0",
+    "/World/envs/env_28/Hummingbird_0",
+    "/World/envs/env_29/Hummingbird_0",
+    "/World/envs/env_30/Hummingbird_0",
+    "/World/envs/env_31/Hummingbird_0",
+    "/World/envs/env_32/Hummingbird_0",
+    "/World/envs/env_33/Hummingbird_0",
+    "/World/envs/env_34/Hummingbird_0",
+    "/World/envs/env_35/Hummingbird_0",
+    "/World/envs/env_36/Hummingbird_0",
+    "/World/envs/env_37/Hummingbird_0",
+    "/World/envs/env_38/Hummingbird_0",
+    "/World/envs/env_39/Hummingbird_0",
+    "/World/envs/env_40/Hummingbird_0",
+    "/World/envs/env_41/Hummingbird_0",
+    "/World/envs/env_42/Hummingbird_0",
+    "/World/envs/env_43/Hummingbird_0",
+    "/World/envs/env_44/Hummingbird_0",
+    "/World/envs/env_45/Hummingbird_0",
+    "/World/envs/env_46/Hummingbird_0",
+    "/World/envs/env_47/Hummingbird_0",
+    "/World/envs/env_48/Hummingbird_0",
+    "/World/envs/env_49/Hummingbird_0",
+    "/World/envs/env_50/Hummingbird_0",
+    "/World/envs/env_51/Hummingbird_0",
+    "/World/envs/env_52/Hummingbird_0",
+    "/World/envs/env_53/Hummingbird_0",
+    "/World/envs/env_54/Hummingbird_0",
+    "/World/envs/env_55/Hummingbird_0",
+    "/World/envs/env_56/Hummingbird_0",
+    "/World/envs/env_57/Hummingbird_0",
+    "/World/envs/env_58/Hummingbird_0",
+    "/World/envs/env_59/Hummingbird_0",
+    "/World/envs/env_60/Hummingbird_0",
+    "/World/envs/env_61/Hummingbird_0",
+    "/World/envs/env_62/Hummingbird_0",
+    "/World/envs/env_63/Hummingbird_0"
+  ],
+  "source_trajectories": {
+    "NavRL": {
+      "npz_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/NavRL_seed1183109.npz",
+      "npz_sha256": "6ac8058fb01e23ba04aae342fb47f6d30eda81ea7747dbc5403d270369594740",
+      "metadata_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/NavRL_seed1183109.json",
+      "metadata_sha256": "695e75e4711082d0a875cc49e71bdb2672140b4e98dd13070761abd3b92d61d8"
+    },
+    "NavRL_Safety_Shield": {
+      "npz_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/NavRL_Safety_Shield_seed1183109.npz",
+      "npz_sha256": "26d5100c999d8247c12cccd9682efa9fc3ddfeafd783e092f4dbfe3a05615f5d",
+      "metadata_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/NavRL_Safety_Shield_seed1183109.json",
+      "metadata_sha256": "e9847aa8b5143dc122f7d5fb0db0359e228966fade08fa01c7aef16e2858fcc7"
+    },
+    "PPO_Lagrangian": {
+      "npz_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/PPO_Lagrangian_seed1183109.npz",
+      "npz_sha256": "223e77be6c6bff6ed0d0c30eda8afca7d78c1808beb4fbe703c6fcac0338c5c9",
+      "metadata_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/PPO_Lagrangian_seed1183109.json",
+      "metadata_sha256": "952c0ca3dbae5f6cdd0e0b299e8d8e60a6aafe808bb2e018653fd2e1918d64ec"
+    },
+    "RC_CF_NavRL": {
+      "npz_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/RC_CF_NavRL_seed1183109.npz",
+      "npz_sha256": "c208db7be529b70013050aa5f007b0eeeb46c32d6e0dd235b09686311812fec6",
+      "metadata_path": "recorded://navrl_train_q2_20260726/results/v19_d80_trajectory_capture_r2_20260812/trajectories/RC_CF_NavRL_seed1183109.json",
+      "metadata_sha256": "d39e7eb5b51ad41f5fe07ce44419aa87ae1b64c12e7d7698d0714a684b4e45af"
+    }
+  },
+  "rc_cf_process_indices": {
+    "start": 0,
+    "risk_interaction": 1443,
+    "detour": 1544,
+    "goal": 1939
+  },
+  "frames": [
+    {
+      "group": "environment",
+      "label": "d80_overview",
+      "method": "RC_CF_NavRL",
+      "frame_index": 0,
+      "camera_mode": "overview",
+      "file": "00_environment_d80_overview.png",
+      "sha256": "5b33f6f0fe6fe1de5a9bcfa60b0f61a0659dcd3557405b99ee2c114ff5662037",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 36.88136943324135,
+      "drone_position": [
+        -16.0,
+        24.0,
+        2.0
+      ],
+      "camera_position": [
+        45.0,
+        45.0,
+        52.0
+      ],
+      "camera_look_at": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "rc_cf_process",
+      "label": "start",
+      "method": "RC_CF_NavRL",
+      "frame_index": 0,
+      "camera_mode": "local",
+      "file": "01_rc_cf_process_start.png",
+      "sha256": "76f88a4898718e7e8b0f7b5006fc02f6595f061eb5800a23e7a69f2bd963b1b8",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 35.44411854467106,
+      "drone_position": [
+        -16.0,
+        24.0,
+        2.0
+      ],
+      "camera_position": [
+        -4.5,
+        34.5,
+        11.0
+      ],
+      "camera_look_at": [
+        -16.0,
+        22.799999237060547,
+        2.200000047683716
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "rc_cf_process",
+      "label": "risk_interaction",
+      "method": "RC_CF_NavRL",
+      "frame_index": 1443,
+      "camera_mode": "local",
+      "file": "02_rc_cf_process_risk_interaction.png",
+      "sha256": "2ed17586e6834657463ea57e6453011fdb3285e0f40464cde821a7a8baddbf52",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 44.62809436407611,
+      "drone_position": [
+        -14.703081130981445,
+        -13.76722526550293,
+        2.4701290130615234
+      ],
+      "camera_position": [
+        -3.2030811309814453,
+        -3.2672252655029297,
+        11.470129013061523
+      ],
+      "camera_look_at": [
+        -14.703081130981445,
+        -14.967225074768066,
+        2.6701290607452393
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "rc_cf_process",
+      "label": "detour",
+      "method": "RC_CF_NavRL",
+      "frame_index": 1544,
+      "camera_mode": "local",
+      "file": "03_rc_cf_process_detour.png",
+      "sha256": "e8b5ccef1ab032d297db8fe7c862329e80e3bb44669fd02dcfec527ee382f289",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 46.5842337907708,
+      "drone_position": [
+        -14.260622024536133,
+        -14.7091703414917,
+        2.695504665374756
+      ],
+      "camera_position": [
+        -2.760622024536133,
+        -4.209170341491699,
+        11.695505142211914
+      ],
+      "camera_look_at": [
+        -14.260622024536133,
+        -15.909170150756836,
+        2.8955047130584717
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "rc_cf_process",
+      "label": "goal",
+      "method": "RC_CF_NavRL",
+      "frame_index": 1939,
+      "camera_mode": "local",
+      "file": "04_rc_cf_process_goal.png",
+      "sha256": "c7febdf7796dd4d8cfbeeef8120b0ab9b001c42e51bab5fddd6473dbe137567e",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 37.967140007861545,
+      "drone_position": [
+        -16.126379013061523,
+        -23.52891731262207,
+        2.0064868927001953
+      ],
+      "camera_position": [
+        -4.626379013061523,
+        -13.02891731262207,
+        11.006486892700195
+      ],
+      "camera_look_at": [
+        -16.126379013061523,
+        -24.728918075561523,
+        2.206486940383911
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "method_terminal",
+      "label": "NavRL",
+      "method": "NavRL",
+      "frame_index": 705,
+      "camera_mode": "local",
+      "file": "05_method_terminal_NavRL.png",
+      "sha256": "f43e27c0509911ce5be6c696b34b2ee4a2c77e558a39e3b4e190140e76c8fd3c",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 43.951074816086084,
+      "drone_position": [
+        -13.97423267364502,
+        9.492633819580078,
+        2.265979528427124
+      ],
+      "camera_position": [
+        -2.4742326736450195,
+        19.992633819580078,
+        11.265979766845703
+      ],
+      "camera_look_at": [
+        -13.97423267364502,
+        8.292634010314941,
+        2.46597957611084
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 0.0,
+        "first_goal_step": -1,
+        "first_unsafe_step": 705
+      }
+    },
+    {
+      "group": "method_terminal",
+      "label": "NavRL_Safety_Shield",
+      "method": "NavRL_Safety_Shield",
+      "frame_index": 708,
+      "camera_mode": "local",
+      "file": "06_method_terminal_NavRL_Safety_Shield.png",
+      "sha256": "26b622c0df7961a40df2053ea7dc6410801624a3314643bcc6f82ae1cffd7693",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 44.070672510427286,
+      "drone_position": [
+        -14.030635833740234,
+        9.474278450012207,
+        2.307634115219116
+      ],
+      "camera_position": [
+        -2.5306358337402344,
+        19.97427749633789,
+        11.307634353637695
+      ],
+      "camera_look_at": [
+        -14.030635833740234,
+        8.27427864074707,
+        2.507634162902832
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 0.0,
+        "first_goal_step": -1,
+        "first_unsafe_step": 708
+      }
+    },
+    {
+      "group": "method_terminal",
+      "label": "PPO_Lagrangian",
+      "method": "PPO_Lagrangian",
+      "frame_index": 1985,
+      "camera_mode": "local",
+      "file": "07_method_terminal_PPO_Lagrangian.png",
+      "sha256": "e3dea4c3bdd4698c87de2d4dec5fe6b126919afbf048aa52eb8812bfddd43788",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 37.64244701838266,
+      "drone_position": [
+        -16.176437377929688,
+        -23.551109313964844,
+        1.9968899488449097
+      ],
+      "camera_position": [
+        -4.6764373779296875,
+        -13.051109313964844,
+        10.9968900680542
+      ],
+      "camera_look_at": [
+        -16.176437377929688,
+        -24.751110076904297,
+        2.196889877319336
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1984,
+        "first_unsafe_step": -1
+      }
+    },
+    {
+      "group": "method_terminal",
+      "label": "RC_CF_NavRL",
+      "method": "RC_CF_NavRL",
+      "frame_index": 1939,
+      "camera_mode": "local",
+      "file": "08_method_terminal_RC_CF_NavRL.png",
+      "sha256": "ab5ab6f5853491955fd446f5ece380f4d33464d838d4fb680b03cf386bfccf63",
+      "width": 1280,
+      "height": 720,
+      "pixel_std": 38.66797260840335,
+      "drone_position": [
+        -16.126379013061523,
+        -23.52891731262207,
+        2.0064868927001953
+      ],
+      "camera_position": [
+        -4.626379013061523,
+        -13.02891731262207,
+        11.006486892700195
+      ],
+      "camera_look_at": [
+        -16.126379013061523,
+        -24.728918075561523,
+        2.206486940383911
+      ],
+      "trajectory_overlay_drawn": true,
+      "outcome": {
+        "success": 1.0,
+        "first_goal_step": 1938,
+        "first_unsafe_step": -1
+      }
+    }
+  ]
+}

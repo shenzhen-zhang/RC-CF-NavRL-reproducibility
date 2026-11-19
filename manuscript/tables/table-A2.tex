@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+ \caption{Paired full-flight navigation differences between the full RC-CF-NavRL model and component-removal variants.}
+ \label{tab:components}
+ \centering
+ \tablebodyfont
+ \renewcommand{\arraystretch}{1.16}
+ \setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule
+Reference variant & Success difference (pp) & Collision difference (pp) \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Original cohort: 5 training seeds; 5760 matched pairs}} \\
+Without gate & $-1.01$ $[-2.40,\,0.26]$ & $+1.11$ $[-0.10,\,2.45]$ \\
+Without critic loss $\mathcal L_{\mathrm{cf}}$ & $-0.73$ $[-2.34,\,0.76]$ & $+0.75$ $[-0.61,\,2.34]$ \\
+\addlinespace[5pt]
+\multicolumn{3}{@{}l}{\textit{Released-checkpoint cohort: 10 training seeds; 10,880 matched pairs}} \\
+Without gate & $-0.88$ $[-1.89,\,0.08]$ & $+0.98$ $[-0.09,\,2.04]$ \\
+Without critic loss $\mathcal L_{\mathrm{cf}}$ & $-0.49$ $[-1.64,\,0.59]$ & $+0.67$ $[-0.42,\,1.87]$ \\
+\bottomrule
+\end{tabular*}
+ \par\vspace{3pt}\noindent
+ \parbox{\textwidth}{\tablenotefont Full method minus the indicated variant, in percentage points (pp), with cohort-specific paired-bootstrap 95\% confidence intervals.}
+\end{table}

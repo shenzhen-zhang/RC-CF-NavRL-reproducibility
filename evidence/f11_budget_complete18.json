@@ -1,0 +1,377 @@
+{
+  "scope": "ORIGINAL18_COMPLETE_PRIMARY_AVAILABLE_BOUNDED_MISSING_SENSITIVITY",
+  "original18_matrix_complete": false,
+  "original342_gate_changed": false,
+  "protocol_sha256": "455750c45e57744ea10f0b8f8cf1af7397b5575825b8d0a8d53f6d0574c5ea1e",
+  "source_snapshot_sha256": "59a94a8d3ad2c08d50a7febb8cb4b7220bfb17507bbbff21756a5f646add8d34",
+  "actual_binding_sha256": "880eaa4d9b1cf0ee9c47d60434ea5be432199b6be735829eb2f5b1ca267f4b79",
+  "missingness_assumed_random": false,
+  "root_cause_fixed_claimed": false,
+  "method": "F11_full",
+  "condition": "canonical_D80",
+  "estimands": [
+    "finite_first_event",
+    "first_event_unsafe_absorbing",
+    "env_done_terminated_absorbing_zero_tail",
+    "env_done_terminated_absorbing_tail_upper"
+  ],
+  "results": [
+    {
+      "metric": "finite_first_event",
+      "mean": 0.051689021018634186,
+      "budget": 0.05,
+      "mean_minus_budget": 0.0016890210186341834,
+      "bootstrap_ucb_one_sided": 0.05285431659963185,
+      "bootstrap_ci_two_sided": [
+        0.05034946077969588,
+        0.05306231530350587
+      ],
+      "confidence": 0.95,
+      "bootstrap_replicates": 20000,
+      "bootstrap_scheme": "crossed_training_seed_and_shared_eval_seed_fixed_environment_cases",
+      "seed_t_ucb_conditional": 0.05176122987326381,
+      "seed_t_assumption": "independent approximately normal training-seed means, conditional on fixed evaluation panel",
+      "bounded_hoeffding_ucb_conditional": 0.43871177703912917,
+      "bounded_hoeffding_independent_clusters": 10,
+      "bounded_crossed_union_ucb": 0.801266026472012,
+      "bounded_assumption": "independent train seeds and/or independent eval randomization clusters; fixed cases within each block",
+      "bootstrap_verdict": "OBSERVED_MEAN_EXCEEDS_BUDGET",
+      "all_reported_sensitivities_support_budget": false,
+      "training_seed_count": 10,
+      "evaluation_seed_count": 18,
+      "environment_case_count": 64,
+      "unique_episode_count": 11520,
+      "per_training_seed": [
+        {
+          "training_seed": 0,
+          "mean": 0.05176332673987643,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 1,
+          "mean": 0.05172233096650081,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 2,
+          "mean": 0.05175108224170693,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 3,
+          "mean": 0.05154867094274055,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 4,
+          "mean": 0.051711745069989205,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 5,
+          "mean": 0.05151048304049564,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 6,
+          "mean": 0.051927138806596315,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 7,
+          "mean": 0.05170009124048059,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 8,
+          "mean": 0.05154789560876318,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 9,
+          "mean": 0.05170744552919224,
+          "eval_seeds": 18,
+          "episodes": 1152
+        }
+      ],
+      "interpretation": "Approximate bootstrap and sensitivity bounds are reported separately; critic predictions are never used."
+    },
+    {
+      "metric": "first_event_unsafe_absorbing",
+      "mean": 0.06263647782720558,
+      "budget": 0.05,
+      "mean_minus_budget": 0.012636477827205575,
+      "bootstrap_ucb_one_sided": 0.06630090647155942,
+      "bootstrap_ci_two_sided": [
+        0.058524323357954613,
+        0.0670520602376772
+      ],
+      "confidence": 0.95,
+      "bootstrap_replicates": 20000,
+      "bootstrap_scheme": "crossed_training_seed_and_shared_eval_seed_fixed_environment_cases",
+      "seed_t_ucb_conditional": 0.06271545625534995,
+      "seed_t_assumption": "independent approximately normal training-seed means, conditional on fixed evaluation panel",
+      "bounded_hoeffding_ucb_conditional": 0.44965923384770057,
+      "bounded_hoeffding_independent_clusters": 10,
+      "bounded_crossed_union_ucb": 0.8122134832805834,
+      "bounded_assumption": "independent train seeds and/or independent eval randomization clusters; fixed cases within each block",
+      "bootstrap_verdict": "OBSERVED_MEAN_EXCEEDS_BUDGET",
+      "all_reported_sensitivities_support_budget": false,
+      "training_seed_count": 10,
+      "evaluation_seed_count": 18,
+      "environment_case_count": 64,
+      "unique_episode_count": 11520,
+      "per_training_seed": [
+        {
+          "training_seed": 0,
+          "mean": 0.06260100400562552,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 1,
+          "mean": 0.06277028538235405,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 2,
+          "mean": 0.0625833069701634,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 3,
+          "mean": 0.06263437932235738,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 4,
+          "mean": 0.06256893959196258,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 5,
+          "mean": 0.06255162560442724,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 6,
+          "mean": 0.06293512772632742,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 7,
+          "mean": 0.06264871404722433,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 8,
+          "mean": 0.06264444722958903,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 9,
+          "mean": 0.062426948392024846,
+          "eval_seeds": 18,
+          "episodes": 1152
+        }
+      ],
+      "interpretation": "Approximate bootstrap and sensitivity bounds are reported separately; critic predictions are never used."
+    },
+    {
+      "metric": "env_done_terminated_absorbing_zero_tail",
+      "mean": 0.0626364778272056,
+      "budget": 0.05,
+      "mean_minus_budget": 0.012636477827205603,
+      "bootstrap_ucb_one_sided": 0.06630090647155946,
+      "bootstrap_ci_two_sided": [
+        0.058524323357954655,
+        0.06705206023767722
+      ],
+      "confidence": 0.95,
+      "bootstrap_replicates": 20000,
+      "bootstrap_scheme": "crossed_training_seed_and_shared_eval_seed_fixed_environment_cases",
+      "seed_t_ucb_conditional": 0.06271545625535,
+      "seed_t_assumption": "independent approximately normal training-seed means, conditional on fixed evaluation panel",
+      "bounded_hoeffding_ucb_conditional": 0.44965923384770057,
+      "bounded_hoeffding_independent_clusters": 10,
+      "bounded_crossed_union_ucb": 0.8122134832805834,
+      "bounded_assumption": "independent train seeds and/or independent eval randomization clusters; fixed cases within each block",
+      "bootstrap_verdict": "OBSERVED_MEAN_EXCEEDS_BUDGET",
+      "all_reported_sensitivities_support_budget": false,
+      "training_seed_count": 10,
+      "evaluation_seed_count": 18,
+      "environment_case_count": 64,
+      "unique_episode_count": 11520,
+      "per_training_seed": [
+        {
+          "training_seed": 0,
+          "mean": 0.06260100400562553,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 1,
+          "mean": 0.06277028538235407,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 2,
+          "mean": 0.06258330697016341,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 3,
+          "mean": 0.06263437932235741,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 4,
+          "mean": 0.06256893959196258,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 5,
+          "mean": 0.06255162560442727,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 6,
+          "mean": 0.06293512772632745,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 7,
+          "mean": 0.06264871404722439,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 8,
+          "mean": 0.06264444722958905,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 9,
+          "mean": 0.06242694839202488,
+          "eval_seeds": 18,
+          "episodes": 1152
+        }
+      ],
+      "interpretation": "Approximate bootstrap and sensitivity bounds are reported separately; critic predictions are never used."
+    },
+    {
+      "metric": "env_done_terminated_absorbing_tail_upper",
+      "mean": 0.06263647793044756,
+      "budget": 0.05,
+      "mean_minus_budget": 0.01263647793044756,
+      "bootstrap_ucb_one_sided": 0.0663009065653876,
+      "bootstrap_ci_two_sided": [
+        0.05852432345924036,
+        0.06705206035430725
+      ],
+      "confidence": 0.95,
+      "bootstrap_replicates": 20000,
+      "bootstrap_scheme": "crossed_training_seed_and_shared_eval_seed_fixed_environment_cases",
+      "seed_t_ucb_conditional": 0.06271545635802418,
+      "seed_t_assumption": "independent approximately normal training-seed means, conditional on fixed evaluation panel",
+      "bounded_hoeffding_ucb_conditional": 0.44965923395094254,
+      "bounded_hoeffding_independent_clusters": 10,
+      "bounded_crossed_union_ucb": 0.8122134833838254,
+      "bounded_assumption": "independent train seeds and/or independent eval randomization clusters; fixed cases within each block",
+      "bootstrap_verdict": "OBSERVED_MEAN_EXCEEDS_BUDGET",
+      "all_reported_sensitivities_support_budget": false,
+      "training_seed_count": 10,
+      "evaluation_seed_count": 18,
+      "environment_case_count": 64,
+      "unique_episode_count": 11520,
+      "per_training_seed": [
+        {
+          "training_seed": 0,
+          "mean": 0.06260100410576783,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 1,
+          "mean": 0.06277028548379693,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 2,
+          "mean": 0.0625833070746409,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 3,
+          "mean": 0.06263437942661812,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 4,
+          "mean": 0.06256893969687356,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 5,
+          "mean": 0.06255162570717071,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 6,
+          "mean": 0.06293512782755353,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 7,
+          "mean": 0.06264871415170187,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 8,
+          "mean": 0.06264444733341626,
+          "eval_seeds": 18,
+          "episodes": 1152
+        },
+        {
+          "training_seed": 9,
+          "mean": 0.06242694849693586,
+          "eval_seeds": 18,
+          "episodes": 1152
+        }
+      ],
+      "interpretation": "Approximate bootstrap and sensitivity bounds are reported separately; critic predictions are never used."
+    }
+  ],
+  "mean_safety_cost_substituted": false
+}

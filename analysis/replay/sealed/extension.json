@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "protocol": "TEACHER_VALIDATION_EXTENSION_QUALIFIED_ANCHOR_V1",
+  "scope": "teacher_validation_only",
+  "allowed_changes": [
+    "legacy_callback_clock_comparisons_only",
+    "prospective_qualified_anchor_controls"
+  ],
+  "core_training_evaluation_unchanged": true,
+  "parent_plan": {
+    "path": "/root/rc_cf_revision_20261020/fresh_runs_v3_scenefix1/study_plan.json",
+    "sha256": "8142cb94b8ccf9918795df73c60646a8610e6522e2fd70b1537e44293288dac9"
+  },
+  "clockfix_lineage": {
+    "path": "/root/rc_cf_revision_20261020/runtime/teacher_analysis_clockfix1/LINEAGE.json",
+    "sha256": "37677edf09a1e147bdbc5321b9c8ad412beba5b76d86193579a7cd3563d12088"
+  },
+  "qualified_sources": {
+    "analyze_teacher_replay.py": {
+      "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/analyze_teacher_replay.py",
+      "sha256": "8339c1a0d7f5858d4a7a5901a6c13d9c2f9b7987b30b1d0c5803a82e1e5d7032"
+    },
+    "collect_teacher_replay.py": {
+      "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/collect_teacher_replay.py",
+      "sha256": "40825739ee78a163ffc53730eb2afac82f7553969f2b1c6344e729b648ce4163"
+    },
+    "qualified_state_registry.py": {
+      "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/qualified_state_registry.py",
+      "sha256": "90cf4514caba9e2bc06ba693ba8edb85671a83a3d86c9dec3ef5b807593e8668"
+    },
+    "replay_checks.py": {
+      "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/replay_checks.py",
+      "sha256": "1e0f1a8cf763cd1d8002b138275075f8a9cb2d8ea802991ce8a57b7b54a1f375"
+    },
+    "usd_isolation.py": {
+      "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/usd_isolation.py",
+      "sha256": "7cff10ef8b9cc24e72fabfd86d658dc84918f0aa158ed63bc44819e26ff4c248"
+    }
+  },
+  "qualified_lineage": {
+    "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/LINEAGE.json",
+    "sha256": "ef72bcc06eb11bcf61aba7339b521d2c461058f89c5b10e3f3abe7aba49b9d5d"
+  },
+  "analyzer": {
+    "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/analyze_teacher_replay.py",
+    "sha256": "8339c1a0d7f5858d4a7a5901a6c13d9c2f9b7987b30b1d0c5803a82e1e5d7032"
+  },
+  "analysis_wrapper": {
+    "path": "/root/rc_cf_revision_20261020/runtime/teacher_qualified_replay2/analyze_teacher_replay.py",
+    "sha256": "8339c1a0d7f5858d4a7a5901a6c13d9c2f9b7987b30b1d0c5803a82e1e5d7032"
+  },
+  "resource_evidence_scope": "Original training/evaluation resource measurements retain their immutable parent-plan identity; this extension is not a teacher pilot pass.",
+  "prospective_only": true,
+  "old_raw_reclassified": false,
+  "compatibility_note": "Qualified2 uses the same frozen parent Hydra configuration via its decorator; only four redundant CLI tokens are removed by new isolated consumers. No new physical result is claimed."
+}

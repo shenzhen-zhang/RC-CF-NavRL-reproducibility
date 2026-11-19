@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "episode_count": 4608,
+  "mode_counts": {
+    "mean_risk_s0_actor": 384,
+    "mean_risk_s1_actor": 384,
+    "mean_risk_s2_actor": 384,
+    "mean_risk_s3_actor": 384,
+    "mean_risk_s4_actor": 384,
+    "official_navrl_actor_r0": 384,
+    "official_navrl_vo_r0": 384,
+    "ppolag_s0_actor": 384,
+    "ppolag_s1_actor": 384,
+    "ppolag_s2_actor": 384,
+    "ppolag_s3_actor": 384,
+    "ppolag_s4_actor": 384
+  },
+  "evaluation_seed_count": 6,
+  "env_num_envs": 64,
+  "max_episode_length": 2200,
+  "dynamic_obstacle_count": 60,
+  "configured_dynamic_obstacle_count": 60,
+  "dynamic_velocity_range_mps": [
+    0.5,
+    1.5
+  ],
+  "canonical_scene_sha256": "b985437b3ae41dba6a9b14eaa2a6829dbf5678d88903a9142be2489781e9ab9a",
+  "evaluation_observation_noise": {
+    "enabled": false,
+    "lidar_std_m": 0.0,
+    "dynamic_position_std_m": 0.0,
+    "dynamic_velocity_std_mps": 0.0,
+    "sensor_range_m": 4.0,
+    "preserve_lidar_no_return": true,
+    "lidar_hit_threshold_m": 1e-06,
+    "seed_offset": 19871011
+  },
+  "single_isaac_process": true,
+  "outcome_values_modified": false,
+  "negative_results_retained": true,
+  "episodes_sha256": "e1f4f928f8ff132296e60a6da71fa0ceb6b94a42f7a0ba162186ee7a64f882a1",
+  "metadata_sha256": "49d9bebee0f041a1f54999bc438d4186801ec0720c0cd4b04cd474bb319ec433",
+  "manifest_sha256": "87454233e721884688dc7d2588cc8693c0be2b7cda9c345ca68e1c0616eaa7f1"
+}

@@ -1,0 +1,4 @@
+# @package _global_
+
+# Complete RA-DC-PPO configuration. Method defaults are defined in ppo.yaml.
+{}

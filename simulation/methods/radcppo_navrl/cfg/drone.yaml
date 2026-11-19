@@ -1,0 +1,8 @@
+drone:
+  model_name: "hummingbird"
+
+sensor:
+  lidar_range: 4.0
+  lidar_vfov: [-10, 20]
+  lidar_vbeams: 4
+  lidar_hres: 10.0

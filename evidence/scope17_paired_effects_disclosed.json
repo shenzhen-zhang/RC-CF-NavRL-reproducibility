@@ -1,0 +1,2299 @@
+{
+  "scope_id": "POST_FAILURE_INFRASTRUCTURE_LIMITED_SUPPLEMENTARY_COMMON17",
+  "scope_disclosure": "POST-FAILURE SUPPLEMENTARY COMMON17 PANEL: This analysis uses all91 checkpoints, all10 training seeds, the first17 originally planned evaluation seeds and all64 fixed environment cases:323 whole original jobs, 1547 checkpoint-seed cases and99008 actual episodes. The original study planned18 evaluation seeds (342 jobs,1638 cases,104832 episodes) and is NOT complete. After two failed attempts, eval_seed3070849_block00 remains exhausted with no third attempt; its five cases are absent from the original full panel. A preceding functional exception cannot be excluded from attempt1 cleanup, and attempt2 ends with a shell SIGSEGV without a Fatal Python header. Infrastructure causation/MCAR is not established. Failed partial traces are excluded. Every checkpoint shares the same first17 evaluation seeds chosen from the original schedule without consulting effects. Original estimators, all44 contrast rows, four distinct budget estimands,20000 bootstrap draws and Holm families remain unchanged. Results characterize this post-failure supplementary17-seed domain and cannot establish completion or unconditional inference for the planned18-seed study. No missing outcome is imputed as an observation. The earlier block13 case-specific diagnostic second attempt and unresolved precursor remain disclosed; neither exhausted block00 nor block13 is permitted a third attempt. Full18 unaffected-primary comparisons and missing-case bounds, if later computed under a separately reviewed plan, must remain separate.",
+  "original_planned18_panel_complete": false,
+  "derived17_panel_complete": true,
+  "analysis_plan_sha256": "fe2f8cb879dea88469bcf0aa246794c5497931003a7a331aa136a63d2824b964",
+  "protocol_sha256": "48f1ebe4d1e72ede762154b88b9b73294d43db1da16cf72955f590433f58f77d",
+  "original_analyzer_result": {
+    "source_sha256": "35bd679cf534157c269f410ed803eb8e439443d7cfbe463fe3f188ea8fd4111c",
+    "input_files": {
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block00/episodes.csv": {
+        "sha256": "e506fecd02c741d2f93f990d867c326078586df64e7cf79173d98cf810cf0c07",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block01/episodes.csv": {
+        "sha256": "9f0550af85733452345e1d67e30fe3e93efa4da38db173074e5450b4e228c906",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block02/episodes.csv": {
+        "sha256": "f5836467ffd1967da4fef13f91004c60dbb3252193439716151870f59969980d",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block03/episodes.csv": {
+        "sha256": "41ddd1fec72b0408a86d74b68683ce788baa29efe80f7bb37bdad0896576a36f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block04/episodes.csv": {
+        "sha256": "f23da323bbef498b10cffae91b952a3f098252741f5b5babf220e45eca805ed6",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block05/episodes.csv": {
+        "sha256": "33c89c1025ad6cb389c564c254b55a80d11155712b3f3a10d6d9817b9f148bf5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block06/episodes.csv": {
+        "sha256": "01a6280a271e67315b7de6e8d6a7140b900887c0bdf44db1b8a4b0054737b051",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block07/episodes.csv": {
+        "sha256": "dbe53b24a096797702ba16f8a5a261328ef7c5b5f07b276045711cf69544bc2d",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block08/episodes.csv": {
+        "sha256": "7bc4099ff30126a081af22b44566b7d67ca64cc6dac6da23859e702e38a993c2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block09/episodes.csv": {
+        "sha256": "4585fb172805d03d4cb1e5003499baf104172e81076a198483bce5c3be2bebf7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block10/episodes.csv": {
+        "sha256": "fce8b6a5d9eb577b3f64aca1448d8ea87f94049f7b6d47bc41ec23a21d863b97",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block11/episodes.csv": {
+        "sha256": "25161933f4fba045f0810cc515e5fa8ab6a830e2527e92b1808c21355477efd7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block12/episodes.csv": {
+        "sha256": "8fa50c6cb4e5317fd65d06c1770edc2fa4ce77d5acc8b742234633675f527d86",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block13/episodes.csv": {
+        "sha256": "8419d5da9e7419cc29c420d0db002b808f5cfb3a51f4308b212c55f565eb654a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block14/episodes.csv": {
+        "sha256": "987c09ea3af1a292f5a29f7a248b20e6da21830f2b4a555a70b4ec437869c5b9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block15/episodes.csv": {
+        "sha256": "8df979b53fdc86a5a0817a66a22f3d0dd8f92f191abae0af67189e82d640fa47",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block16/episodes.csv": {
+        "sha256": "493944461fff11e632d8fb2e76d0dc4549170df546eab17f83491a290ba8ead2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block17/episodes.csv": {
+        "sha256": "bbdb20f12eb3625e135ed8b76e7a5faf4d3d24cb96bd914cb48fbd67ea01a6cf",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1183109_block18/episodes.csv": {
+        "sha256": "c77996d23fb4b74970cc708ae744cb942b65dbca0575aff8deaf82686caa33ce",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block00/episodes.csv": {
+        "sha256": "37c05a2a2aa9596a41dc9d488b94db58cbf491357ca135a9f7abc506ee5d65db",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block01/episodes.csv": {
+        "sha256": "d471d69304e38c811caa4296d49ee1ccf834310d7a01e3d6000400cb622a689d",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block02/episodes.csv": {
+        "sha256": "365858955b8e8aa90a4024824bf2b2a96bca555615168e889a2a3469d63c4759",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block03/episodes.csv": {
+        "sha256": "3613ae5e4f51651306c5e22302fe0820531aebef6e90fb3e95cd8008791c22bc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block04/episodes.csv": {
+        "sha256": "898fdb2bde52ecbd0b8b9085626a913edea3005edc3200068bfce640bc395058",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block05/episodes.csv": {
+        "sha256": "6f318bda90a5cb07caebb5ce624bbcd28bca309b454be59a8a577fe0a60aa525",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block06/episodes.csv": {
+        "sha256": "6288b94c5833f8d0554775ac6e6f2a8bc7811151ed3b8e8d214826a080426855",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block07/episodes.csv": {
+        "sha256": "c1ca40b715f2737eef542f67ddeed17f4f1b1eb2e3cbca4c44c7d28edafc01fd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block08/episodes.csv": {
+        "sha256": "6fae73444318921d8a75829a88e30b3a34eae1a10f756549abd9efc35d8bc04c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block09/episodes.csv": {
+        "sha256": "e6d984b508e494c70b9ca2181f73c3d8f55813fc2187aed5232fa5fd95a3f0c6",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block10/episodes.csv": {
+        "sha256": "02c8c6b9d90e8b4fb4303f41baec4cdfb06313aa6deb78ceed00e673fb4dc6bb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block11/episodes.csv": {
+        "sha256": "a49d218633b291c561c19af02c834e7e8a6b597193128a450559cab95183dcb1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block12/episodes.csv": {
+        "sha256": "f9bf53364ead4c7d9bc917f3c560cf0f740b8852ff3fdd6d8f1786d1ff881534",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block13/episodes.csv": {
+        "sha256": "8f610a4f23a97425775d3effc8bab93316d24738915c34d4ed2733516c488df1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block14/episodes.csv": {
+        "sha256": "c4fecac46114883a586b7fbb7fb3dcc2bca7fcb5c00155e9fc10fc92a3e918c4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block15/episodes.csv": {
+        "sha256": "54c698d855d79f38b048c630011713f58f869f9511334ef82c1e13b2aab7750b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block16/episodes.csv": {
+        "sha256": "45a340b8bfef0fb614b58cc6371b649fc9bac67964398b081baf515d9c8d927c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block17/episodes.csv": {
+        "sha256": "fbef226e3cdc1492e00585b5629fb86eaf73bec19210550c953a68d1d8f12c35",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1294127_block18/episodes.csv": {
+        "sha256": "f63244986dd892245dcdba553cb01985b70e6416d499f4aa6e633b20493cb305",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block00/episodes.csv": {
+        "sha256": "f57891b1f5ced74444a511a9bb4788d565a3268f0430d348e59d07435d318c45",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block01/episodes.csv": {
+        "sha256": "52a4b92f57df1e1923b0f73abbb32778250f383656d1078faa32c220e7d7c177",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block02/episodes.csv": {
+        "sha256": "b4fa959fec01b43d536733d84d60063674c05572408811f5f06f36ce99507a9c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block03/episodes.csv": {
+        "sha256": "98a75e8ea05b7715d11dae3961241eb3b99d95adf4e10252dd380b681b4b9482",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block04/episodes.csv": {
+        "sha256": "95efa2c8ffaea2a3015e89507290c9b5d242e39eb9635167c416bb36c617c8fc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block05/episodes.csv": {
+        "sha256": "4615e51e809b92dacffaa21a30596e85e5d71d3ab8003e22e637456dea86b078",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block06/episodes.csv": {
+        "sha256": "31dc989ba5d3e639f89528eb516a4bfd96e15d01952d5ead665a631469dda5de",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block07/episodes.csv": {
+        "sha256": "be303f6fb9dd49b894b9b1de198c62994d12d795afe3a395adaf1fd8bf293fdd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block08/episodes.csv": {
+        "sha256": "7c113d429e7a214fd2821878ec9b551e4e1e8c3b2964ef7d2917981a59655120",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block09/episodes.csv": {
+        "sha256": "3e45f237900726721b064a515609a28ca30ed48d5257e4f3a2ca099be197793a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block10/episodes.csv": {
+        "sha256": "b6930ac62ef629a8c3704f63875f870bb8e80131f81fdd91c67fda3d13fa89a8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block11/episodes.csv": {
+        "sha256": "16f8878785dd8bcee3f2ec73e8960fa40a8adfc4bd9638ba1ec3a7cd42f83cfc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block12/episodes.csv": {
+        "sha256": "c647a4d8b09f6c2d4a6937577d3fd2308a6a1ba995f51bb0f50eae1b1ddbba60",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block13/episodes.csv": {
+        "sha256": "f6b29702d3e32b3b5ad4b2f21cda85ce5f0e642115ab299700502a44a9804795",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block14/episodes.csv": {
+        "sha256": "4e059eb11a3d87ff1624ca7edfa13991b0bd9a80900e8b9a4e40024700460bac",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block15/episodes.csv": {
+        "sha256": "6c1119b237223d3597626b009321e7fe2bdb195b55f2b9b5878a7bd7d3ce0044",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block16/episodes.csv": {
+        "sha256": "849aeb7135f9fe9d42b1ee87925e9092391b97e5c74d844df9f3e1b2c3a9c332",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block17/episodes.csv": {
+        "sha256": "78eb7f23a1d84cdb4c5237635668665d5100fe0fe293e59c83ce960c99aa39d1",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1405151_block18/episodes.csv": {
+        "sha256": "9336d3e6fe56b3ba81781573f41ae9fc54887714b8142c96daab613f8f5bf174",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block00/episodes.csv": {
+        "sha256": "a7af6356f491be9ded4fc38a4fa4b6f6ef5ab9ce969f9d68ac972844af5ddc16",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block01/episodes.csv": {
+        "sha256": "4c94d35f0b8b9232fe8dc694c11fff7f35e9c948c0d7ca1bb8b67eb25f1db36f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block02/episodes.csv": {
+        "sha256": "3dd60f2fa101b913d4e63abb011602d9b14ebba3a92c2ba279b22b9fa8090aeb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block03/episodes.csv": {
+        "sha256": "080c1936bd5d0e3a8c3d70640be445d1ed5c76d51c366e0707822ec88541f2f3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block04/episodes.csv": {
+        "sha256": "9ada503dcd0643ea94f830cf2c7b22bf08a5161563caa76b7ffb1880709c4dd2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block05/episodes.csv": {
+        "sha256": "a135a8f2e16bf32d400c1ac70bed5133b148d1560e9c744cf67dca9f64a442d3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block06/episodes.csv": {
+        "sha256": "afa9b5c7f518824175051439deb6b334abc1d8b9f4b09cfb6cf1f865dcb0b250",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block07/episodes.csv": {
+        "sha256": "586ed6a2a7cddd00758478e98fccbd6087e16290411753c95cdcfc5718ef577c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block08/episodes.csv": {
+        "sha256": "7a5efeab9e62a3f8a0e8d8f4d840dae9c1331c376e0e0bf5ff974ea46e5b6899",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block09/episodes.csv": {
+        "sha256": "d752df8527b4d3c02c90b80597da8f57f775ee437f8e20271180452ac719cf24",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block10/episodes.csv": {
+        "sha256": "55d9981804594f73815778fb33462411a0614826d9bd3dc2d8b56d553a0a29bb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block11/episodes.csv": {
+        "sha256": "06c6b9f4b9111238d8273b2c5ddc5c5545a1557e92eee96a78e8a1dbdc57ab6c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block12/episodes.csv": {
+        "sha256": "2fdf23d6c56a82433125a9109d6ac259d881c9aa603136595a3670f924bc5d19",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block13/episodes.csv": {
+        "sha256": "e55c72b36bf72b2adb90b5b8719edb3fc9c8796213597f346c1ce57d884ad5ba",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block14/episodes.csv": {
+        "sha256": "dd31057fb32450674bc29816fd1b35933f59f6797cd7e71498b4b28db976a8f2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block15/episodes.csv": {
+        "sha256": "873171b128f1feab2991c4230972eb0289142263d4c19136303c403639738609",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block16/episodes.csv": {
+        "sha256": "5ce2d4b1420a23a131007b9e2efa4190bdbb8f4c7febc7c51ff3a985aaf861a8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block17/episodes.csv": {
+        "sha256": "795137bc5d23bbf10599709d97b20618a9ac6fe2d511feee25b6f0f80f1c91f8",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1516183_block18/episodes.csv": {
+        "sha256": "6d7c1720712e3d6b4cd71f0dd54160958eb7997281cc7d6aacc27f5c26a89bc5",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block00/episodes.csv": {
+        "sha256": "bcc90b9cef45426a83b7f60318d69abb21be99fcc3a4568cfa82cf419660eae8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block01/episodes.csv": {
+        "sha256": "435379bcb5faa135aae7480d7f64e53077d8be1a3f9454527fde4642fb500d42",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block02/episodes.csv": {
+        "sha256": "b036a782fbe43c70e98d98c61f7f7d23e6292a021516a8b2e9bf199beb1a5017",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block03/episodes.csv": {
+        "sha256": "896861d94e6d876de85c19cc90e22dc1930db2b32a74b3771e761fad9523edbd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block04/episodes.csv": {
+        "sha256": "3aa64532f155daafd65719ab51999967c11b15d949f07321373e3530a0638c8f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block05/episodes.csv": {
+        "sha256": "20b6f8dcd2e6b8b4fad81761e8c83258fd83cd4ed5ead68cf462df957377f169",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block06/episodes.csv": {
+        "sha256": "af3f4fdbb067064712290af7dc3daa74a0c0d289e464e00f246ad673592aba54",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block07/episodes.csv": {
+        "sha256": "eeef838f028f66c7d9de7d58f4c8abbda3f5e0e43817c74a92fae46c830a3dbe",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block08/episodes.csv": {
+        "sha256": "e7293d6caa80cbf805dff0463abd5f24b49806c9ca30ff3acc04ecdf330d85f9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block09/episodes.csv": {
+        "sha256": "e384b501eec1ef2316b5152a6cf0bc06d39c5f355b193163df4d0676c71593e7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block10/episodes.csv": {
+        "sha256": "ffd43f4d5e6bd225d0c30826d5e3e4e274e59bb4ebe6afe59f5c47f155c96231",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block11/episodes.csv": {
+        "sha256": "4bd99d2349f618d1330df28cca55d298e2fa7e723dbcd849915fe6d3f45eedff",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block12/episodes.csv": {
+        "sha256": "6c45142a835c3512df6a76ad950927b0621278967a2cc0ae897907a3ab8fdea1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block13/episodes.csv": {
+        "sha256": "9f4674cac6caf2f561d0998a23aabd8525554aa8aac33745fe180856f5550520",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block14/episodes.csv": {
+        "sha256": "e3e7aaeb2f0096e60bce85bd1174059e969ab8c49a4a450ea97d778638534118",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block15/episodes.csv": {
+        "sha256": "d2f6418b48a7fcff494a6b010e81b46878f109fa261a333a88d561046dc3ee02",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block16/episodes.csv": {
+        "sha256": "d6713971234050f98eaec30def0d1d5a7cb4449e43b4638beaa925d46c78086e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block17/episodes.csv": {
+        "sha256": "0464a1fe20e93a09134b28db1a517fe5d7c01c29d1dbadac8a67e4f138d2e108",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1627211_block18/episodes.csv": {
+        "sha256": "14439d7fbc615605dc6d9d320479c7b576defa4a4156c014c1770dc58367946f",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block00/episodes.csv": {
+        "sha256": "59dd8400ca54a747ee5efe94925f92f5e9c3f709d6f3f1e25549cec2fdec7769",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block01/episodes.csv": {
+        "sha256": "8ed0e6353c5f83d4332e6933667845e755971ec3eedbab0ee30956a4a27ddd71",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block02/episodes.csv": {
+        "sha256": "995d6871eb2bd8016aef8a4891efe9a60875c0077c534f11f71002ce92b9da42",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block03/episodes.csv": {
+        "sha256": "5749dc586aaa17450620392906bf9b56207b7f442f854486de0a333316900ab2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block04/episodes.csv": {
+        "sha256": "4705da59a4496ec05af4b0550a830a0776aaf77f369be72a84566e30ae0105e6",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block05/episodes.csv": {
+        "sha256": "56abaf88c216e957c48844acaf896f9d52742c1bd35930f02532fb0d48766635",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block06/episodes.csv": {
+        "sha256": "82afe5cd084906760ea6a4def35b8a0cfb23b3da03fbe0c18f9c7bf0dd65a5ac",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block07/episodes.csv": {
+        "sha256": "0cef3a581b0ba19f7f3aca2511ab7dac62f031c16ce506e27b20e6d73cf27a8e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block08/episodes.csv": {
+        "sha256": "d4136ab12bf4faf57be2c35453c11948ec88dd9130f889bb47dbf76339889509",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block09/episodes.csv": {
+        "sha256": "646be9191208411cdfa7adbf85a76547994651d840a086296491f12c4264756f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block10/episodes.csv": {
+        "sha256": "5d1599316964047f18bdee963ea228a740e6cca6aec3061e5c609432573f7c1a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block11/episodes.csv": {
+        "sha256": "212e18c71525f778903660d6072b69a6b1b96271ffa96972142380800b9d09cc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block12/episodes.csv": {
+        "sha256": "f78e035d4ce203ec1300691384f4b0b9e24160eb28d4b48de52f8eda44de1546",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block13/episodes.csv": {
+        "sha256": "df5e5b2ee62cb2003c9b7323b9a6df134636bed9de1e59fcc0317e02517c31b0",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block14/episodes.csv": {
+        "sha256": "4eea670a748de4fc853f357d9b9f121a91f6f165b013e4f5610a3a8f7c655d26",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block15/episodes.csv": {
+        "sha256": "4dd468c7476b7bec9731cc9e0ad6099f89090ac8a41a012cc35b2a063c14ec98",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block16/episodes.csv": {
+        "sha256": "d7f59c0e9e3a50336bb667ad416daf606dde0872567d1a242b8ecc6dfd9b53a9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block17/episodes.csv": {
+        "sha256": "b55dcd1d6c638322e7b113752ca5a5cf5f870f42dc50d5f490d45af875762a2d",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1738247_block18/episodes.csv": {
+        "sha256": "7afc286cdda4d6928c01ee5441b8903f9d54d1f9ec81a108566dda53571489e2",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block00/episodes.csv": {
+        "sha256": "1a015aec1e98f560ed337fc3ee4321e31bf925f177e23890c1f831d2856d6406",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block01/episodes.csv": {
+        "sha256": "741a4de7daaa8342bbbb5cb0b2d032d4db6c3a779ef1fd955463cdd70d50492f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block02/episodes.csv": {
+        "sha256": "352885e7fb00f558719827f90c88b87cf0544e572ab5371513889d249c8daf90",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block03/episodes.csv": {
+        "sha256": "2695e22de2686e8174520dcef53a63e1a50605669e32d63f29ec7ba99b0f9315",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block04/episodes.csv": {
+        "sha256": "b1840c4909dad388aa8d67dae6e76b81ae704207f58e52e4cae7256c9ca630fd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block05/episodes.csv": {
+        "sha256": "ecedf685449247cd16fdd10f9194b5881bb9803ff5210a2d92a7eceb77e3e6dc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block06/episodes.csv": {
+        "sha256": "f377d01ca7f40602c45c18c09d4c319c36e858ee767924158137a3d83eb8b1a5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block07/episodes.csv": {
+        "sha256": "4a1dd27c3cbeb5aa19077e92e54e0cd87a109b01922cba9e65e57da6bd3461f0",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block08/episodes.csv": {
+        "sha256": "9a78e167a6a6081876c2944a4173bd4eae54578f30140fd46dd73cd6d7b62f3f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block09/episodes.csv": {
+        "sha256": "fe366f92cd5a8e354c5073f70ca79fe1a7fac39ff0539fa77b43828797c950f8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block10/episodes.csv": {
+        "sha256": "b6a9062f092dbe25a0e4f99a757c51f7ac918b4205365058a106b7a6d81f5a4a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block11/episodes.csv": {
+        "sha256": "313f49382f8ba3d1e0edef47ef08ed0d5b0f41784a9a54442e276b5b9eb6f90a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block12/episodes.csv": {
+        "sha256": "9b7756b193f72c422e2448affd1bb1972fa29e19c8c6830205a1d66fe95aa38c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block13/episodes.csv": {
+        "sha256": "b09f99e21ee3d02433452c69811bcf27d659f284fc4f232f430f25c078c2e0e4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block14/episodes.csv": {
+        "sha256": "778ba2f9e124a0497b2332c1376c3d4cf19624497368afd9205e8b09a796efb2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block15/episodes.csv": {
+        "sha256": "bd942a9023156c5aa97e57a17bfc7ebd027a5a73b29172beaaa67256a9b8faa8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block16/episodes.csv": {
+        "sha256": "a47b17e51e182deae4f809c2061eb53f92f2cd97d66c64db4760944e29525885",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block17/episodes.csv": {
+        "sha256": "a0d1d2a510d13161d11b796f41457998a4c4f77117d6707498a8f14639f3989f",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1849289_block18/episodes.csv": {
+        "sha256": "efec19f2da09401f7e3468ce5bc85225131fda8f5546d63e82f4590d5ad59f1c",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block00/episodes.csv": {
+        "sha256": "67c123fd63de97fcdbf877f26ad95c2fdf4b876604b39f29f6d91458d816ab87",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block01/episodes.csv": {
+        "sha256": "7730f734e89ee490a2a4614b4ab646abea75d13036a686364addde2c89e12756",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block02/episodes.csv": {
+        "sha256": "c60397b12ab65738fa1fe4d7feef0baf60d77344a4616e15b6a6b78b522c2b7f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block03/episodes.csv": {
+        "sha256": "ca4f7bad776befb45e437ab407f4d948b125a897426b56e39aee93d3bfbf0854",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block04/episodes.csv": {
+        "sha256": "bb0831df1f6962e61e1e5797eeda67263d20260c8105af2523de1c9b2fc812cc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block05/episodes.csv": {
+        "sha256": "351704145896a17884f92b110d0bbf03b95f3ed0b5c6a0e31afe94f0d61cabbb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block06/episodes.csv": {
+        "sha256": "41d4be21c4a58b2149159702c5a506b9e0b01dfb41626c42d2db692ea8f47910",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block07/episodes.csv": {
+        "sha256": "ecb4e910b4b3bb245c5d9157bd59b77417718dc3ae30591cc0fc6b5a529767b1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block08/episodes.csv": {
+        "sha256": "b2ada25632a82593521db0e1e5a9403af903cceb14f19d65800ab081f4f79266",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block09/episodes.csv": {
+        "sha256": "369385f7a796a842873a0f444a19c94b59809fea9a03db8b915fbfc132eb35de",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block10/episodes.csv": {
+        "sha256": "d4478d6d018e70d3f00231474c6181526745bbf4547824d9d5e07c4c757eae7c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block11/episodes.csv": {
+        "sha256": "eb3de1a43a783637bb4d8637c68047cb9d0ca4eb3e6847473b1fdec096b32c44",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block12/episodes.csv": {
+        "sha256": "8b6f1ceeb312ba0a603e9c249f1a3b773b26b42c78fb5d647c5d709052a6b5ef",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block13/episodes.csv": {
+        "sha256": "9741c9e1800d67ed4d28dc02d2e3b9fa6a442616d9e4aefa0bfd4aced801cae9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block14/episodes.csv": {
+        "sha256": "7fab661267e646b238d1cc115956ad819309779185825024598f521b5eacb376",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block15/episodes.csv": {
+        "sha256": "297ca571e69ee3b243eb63cbec60ffd616e9d9ce687fd825dbcf9c9c6b7d019f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block16/episodes.csv": {
+        "sha256": "4397d0863f9a0adc1e7241523638b9b261eb67df60215fe856115cc761dc9a9b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block17/episodes.csv": {
+        "sha256": "1e324f7a288e42539d1aadcfdbb2d81e939fabe86d7e80be62e7aff134e51c74",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed1960313_block18/episodes.csv": {
+        "sha256": "338cdb47aa2831a3004a00484144b509547af7ce677ec1481d91dcf0a04ea6ee",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block00/episodes.csv": {
+        "sha256": "2a45e5d8960f487df3382317120bf0451c629e02dcf37ff0ded688a458349d85",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block01/episodes.csv": {
+        "sha256": "ec5b396642ef249ed5ac39b21ce75f422a5cea6fbb7f891d66834b2baca838d7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block02/episodes.csv": {
+        "sha256": "5fa72010103d020e1afe753c9142b80411a324159d9d4801e307ae6d9185163b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block03/episodes.csv": {
+        "sha256": "ce9fbbf0690a2f241e1a114a61883af669b4aecf95ac1a42e66f1f5588e610dc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block04/episodes.csv": {
+        "sha256": "e5c4119d228354090fc233d7dd7a53ae86c3c83706715a3334a1d998e0fa2019",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block05/episodes.csv": {
+        "sha256": "03077f52c1a2f6195f57166abf771aeadef3dd9b4d15bd686c6adc34b0148dea",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block06/episodes.csv": {
+        "sha256": "37389f5ff3a94f067ebaf27223d36a6ecdb0dfb658880e1852888d5fb6e06cad",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block07/episodes.csv": {
+        "sha256": "46fd39478f350eaf0e0a4049a2f97a98e64033aea22225ee0d679425349cf9df",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block08/episodes.csv": {
+        "sha256": "4255cc5508c5afc8eff400a382e82d973ba8cc7eeba60a50c1abf229c3613ecc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block09/episodes.csv": {
+        "sha256": "c602f9e91c68e51d90efea07acd43228729cb636fea5db663846b9f651e8e505",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block10/episodes.csv": {
+        "sha256": "95b12c04769686820baab151463f82079f39f2bd2ab38bf04e71633a80539d7f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block11/episodes.csv": {
+        "sha256": "2289a2d5d5b34a2eb6990d47fe0355a2b2002e8edc83b71740daba75da6c8c61",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block12/episodes.csv": {
+        "sha256": "7e8367e74375b6db5372c56103db122b62445b694befa17cc2116d7db16375a0",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block13/episodes.csv": {
+        "sha256": "accd381c96e8f2124670591808d67e742f9d2c2803d0f07fe75d3943263ca3ee",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block14/episodes.csv": {
+        "sha256": "f25bfb002ccff420b9547025134689c0bcc1b2a5c08c2c22a555e162aa03eeb3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block15/episodes.csv": {
+        "sha256": "0191ef63c657f9c40fd5da6674cd2ddadb30fb669fb8d585f6721b2bc0e46a9e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block16/episodes.csv": {
+        "sha256": "ad03f77183ee0d2db70eb671961fd5b3b08f6eac4ed24509ddfa067a4b106047",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block17/episodes.csv": {
+        "sha256": "1f0321b6c2a17ee6d62d57c7dd8e386441582fc28b5ffc1edc43b483c163dcf8",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2071349_block18/episodes.csv": {
+        "sha256": "9fe400589a99b2d70fed624ece36381df3b37dccafcc131db065dbe9fa9cb6ea",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block00/episodes.csv": {
+        "sha256": "fff90f19d9cb20201e9210d0203ca25cc9d1eed8dc35212eee1605bb6a04d98a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block01/episodes.csv": {
+        "sha256": "68c2ac48ecd0d9e867679b64ed6968f3e8f9d6778262edf64635667998f583b9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block02/episodes.csv": {
+        "sha256": "04f0fd18238fd88e38897af8a0d2ce22fc12e94dcb0112136ef46efaa964c30c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block03/episodes.csv": {
+        "sha256": "56ae3e039df4130a3942a26462cdac5fc0d6a065c2c1097d285ffc8b26d07b92",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block04/episodes.csv": {
+        "sha256": "d5cb5f9bce3988f9032fee62a0aea6dd94420a6b96e39fd70dfb5aac484d8eb9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block05/episodes.csv": {
+        "sha256": "6df0faacc2da57d2acb7ff396826543b50b761fd84e8cf72f619a552354ce026",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block06/episodes.csv": {
+        "sha256": "205d3687046028c0e14b16bf33f645484a98b042b68073838781be6ad6e4d9c3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block07/episodes.csv": {
+        "sha256": "459a106f3691fa2a33778662607702e83ae093b65c69e0e59bcae2084b996ecc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block08/episodes.csv": {
+        "sha256": "f8180956521155581eecd38bbc2c18851a726420d76f52ac4315187d98fb8429",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block09/episodes.csv": {
+        "sha256": "660572bb04a772af75c48925923feb8bb9bbc940dddf9ea64a9e02a4bb144894",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block10/episodes.csv": {
+        "sha256": "ead633301fd263475e8950cf03bb9b6861a84a62c3105538fd3858a7312b08ce",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block11/episodes.csv": {
+        "sha256": "c4e16320a1e567c8b9c30fb3289fac34c8d92169f57afd0da002d2074293320e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block12/episodes.csv": {
+        "sha256": "9342519f7425fd4648dacebbc3981ae486f2c58db1b52b9f5bc4209280279afb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block13/episodes.csv": {
+        "sha256": "0aae7b12b2195b763528caae1540463f0c2d0eca217c9192cab7e151a07ecfc7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block14/episodes.csv": {
+        "sha256": "d83ea0a37a41c001190d6ce40dc429af392b5cf53941b466fbbd29582a2c1458",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block15/episodes.csv": {
+        "sha256": "b31883d7f15e923f11025bfc53bbfb8dd2078e153f23c7e4d2e0e5ae27764c61",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block16/episodes.csv": {
+        "sha256": "7535cd308b05dd918243221aa5d6443a11740ef259a46caae744086bb41e432f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block17/episodes.csv": {
+        "sha256": "ee581f824f626037dfc2c8f71e81644e49ea6cc0abdd1929c56bbbbea6d7ad8f",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2182387_block18/episodes.csv": {
+        "sha256": "14116c5352f592d31e5ab09b5896db7aac3d117e1d43745f8b77f70793ea30f4",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block00/episodes.csv": {
+        "sha256": "87ea9cef6c59630af67222c4d46fb0d04197663ab99f41d5d48c882e36fc6e48",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block01/episodes.csv": {
+        "sha256": "d95d184588c21bc1ccaf2ae11db1bb202f1514b617b285d841f40c4a4f13f58c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block02/episodes.csv": {
+        "sha256": "67441cd7be36933418931e4b186c55035e2235d65d2dbfae8608458a087c3370",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block03/episodes.csv": {
+        "sha256": "17995ee79771adcb37f9029fba3829a50d7d864e7b1d526a09d39cba70e07a65",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block04/episodes.csv": {
+        "sha256": "678458274b5acfd90c4a868d6ef9e3f897d5bde56377f78f04f8012d10c4a355",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block05/episodes.csv": {
+        "sha256": "152f2af7d362954a5dc1a230d29c11b9b5b245fba556d72b4b227280a74d5dc5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block06/episodes.csv": {
+        "sha256": "fd6d5baa26b45da469d10fac79b7d03258254ebdd87f97b356a7562fb701c827",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block07/episodes.csv": {
+        "sha256": "1b9cdeb63a62ca32f029adf08182c34e67ec2ef2eb3a603167ad0b33ca8764e9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block08/episodes.csv": {
+        "sha256": "cf174eafe076f636cda4e6c930de7db2d74ee1c6c5d9fd19a1a607f9fae98315",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block09/episodes.csv": {
+        "sha256": "cfa92b76cb2de8ceaa4c0cf784d10e60387de49ac8879156b9b79faafe438314",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block10/episodes.csv": {
+        "sha256": "1502cfce603954a5133104c64eba5bc88d7d360e58a2d437f855bcc86bfa272c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block11/episodes.csv": {
+        "sha256": "044fc2d89e204eff66a7de41b2f36e7aa3571d778ff51f9896c820fa2e988df5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block12/episodes.csv": {
+        "sha256": "47b747864608b13d70185aec20af6b3320e39d626e3c066af8c10e8705dc8e6b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block13/episodes.csv": {
+        "sha256": "8e4d1b75fe08888bdebacd8ed6d01d3c7fe72c970017c90bff2dc1dc3771cfde",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block14/episodes.csv": {
+        "sha256": "be3f48000de8d1a4e85bac8371fb40902a31cd6ee51285efd8c891addf79e1f8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block15/episodes.csv": {
+        "sha256": "b80f2e569732b3eab93d581464b1b1de900c0f85fd274d7b0c0119baeafc3a11",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block16/episodes.csv": {
+        "sha256": "0019880476933ea4ae2b1c3c018e0fde524e8de8997e0b203ce1ae69aeab7a3a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block17/episodes.csv": {
+        "sha256": "bddbaccd638c69f8e393dfff687f4c8869f033be0191d5ef04a1e1a0cbefa298",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2293429_block18/episodes.csv": {
+        "sha256": "a2b9ee65cdec8acad6e6d813880142195121b2a11561b8d9f84ff89b638fa2bd",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block00/episodes.csv": {
+        "sha256": "f7de2e79946437b507aff35b5c659153be473ad5f5efcb1334bf2c6e3c9b71c2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block01/episodes.csv": {
+        "sha256": "05558c39aaf39190b56f2bd0e886d08e7473b0e0a6bc7023351b5b8d8e948a14",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block02/episodes.csv": {
+        "sha256": "7efaf32d2f4a9135a8fd6a36accf904c54dfb0541f8bc7da4241c7734d9d7fad",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block03/episodes.csv": {
+        "sha256": "51e233cea2fdd8f4445dd4af1e56ab90608adf36667ed2dc8d8ae2b2b60bff14",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block04/episodes.csv": {
+        "sha256": "24719e0a2c9442e88df8d99f66b9299e57df017149386b25fe84e562c45a6973",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block05/episodes.csv": {
+        "sha256": "1011827b0015b0edfc885d2603ab2f9268ca32c989e6294bafffddbf9940edbd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block06/episodes.csv": {
+        "sha256": "fd7582a7138ccb82f4a6eab9db79d9b5c2be40c4cd1e1d7088f637a9fa8461e2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block07/episodes.csv": {
+        "sha256": "be63cafdaee578e699da79ec49bbcba0c3336bce908a3acd25601c7f9a3bf095",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block08/episodes.csv": {
+        "sha256": "b8eb604714ff0527d79d1f7391e522e41c568c0946382608541e45501fd5db0b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block09/episodes.csv": {
+        "sha256": "36ab166c9c796f069ceeeef57993b2e11a15ca7dcd80f81926c8163d33eb73a8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block10/episodes.csv": {
+        "sha256": "42b0b254de824de310d0397308ac0a010d5b13f5a84ba6a404cab7048a8e3d0f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block11/episodes.csv": {
+        "sha256": "3787a7417c018e6299b3c25a4df0fef69f032584ea6462aa472fccd66c37deab",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block12/episodes.csv": {
+        "sha256": "818b8ecb0406833cf0051e855daf82b07e68a36ce03b476f359da155877f9ccc",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block13/episodes.csv": {
+        "sha256": "57f07e220ad05779d507623f81d666540c122fd0a1da8db29bd7f94935d0a235",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block14/episodes.csv": {
+        "sha256": "45e5e08ce4769730fd3bbcf2f1c2660261174f620934620a9ce4e3b5a083eed8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block15/episodes.csv": {
+        "sha256": "b8435ca4463715b82f846c30b7f534149e9ec210efd663351eb94307591f0b26",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block16/episodes.csv": {
+        "sha256": "b3f0303c067fac93fb5541e4fc967ef66a45f8c23a9864b237b62e06a0a7edd3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block17/episodes.csv": {
+        "sha256": "851f15573b82a19a3e2a7e5448e0a204f693157ba073d153e81e64b64fbc75f4",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2404471_block18/episodes.csv": {
+        "sha256": "66c063b36dbcb031dba354072e8b1cc7c91217c486b3b50f7700573ee409bda4",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block00/episodes.csv": {
+        "sha256": "97b0532185f8b42a35ed2a0eef045d8680b98ca24797d0cb97d4d59a6b0888c1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block01/episodes.csv": {
+        "sha256": "18fda3fea981d92aa0ccb11366aec0a019b313407c100975474d15f198308c0f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block02/episodes.csv": {
+        "sha256": "2433709a2ef337b297a15f3f47a9acc4a7789e6f787a407b04e7fac333ebee88",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block03/episodes.csv": {
+        "sha256": "43c8795a56e95904087712712b11b384c0643800ef7636ba25f5acb52bc3c559",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block04/episodes.csv": {
+        "sha256": "283279f83f3f5c3a6fe087139dce1684f2e77ead05ee30ddc0c3f0229cc76556",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block05/episodes.csv": {
+        "sha256": "b941df3e55ba33a74df045fb31a65263aaeb6c85b61a6ae068b3e0357b17991a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block06/episodes.csv": {
+        "sha256": "2183b1aadbc8c71ce16c680ca5a0f9905ce94bca9eab571baddc864ad5749888",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block07/episodes.csv": {
+        "sha256": "1ec3b341936dff6a39e3ba36d3c1362d35221bbead15be8a9b01f810e3df7405",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block08/episodes.csv": {
+        "sha256": "900708dc813674ceec5d543e0ca1a8378846207609b3911ad855a4820abf1430",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block09/episodes.csv": {
+        "sha256": "b209a00802374b95dba840716f0e2394b365a77b357df6f1f5589ea5d2a36f8a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block10/episodes.csv": {
+        "sha256": "7fcac95c9268312af0976a227f264329c4cedf1fc482c618bb6d294f8882ebc0",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block11/episodes.csv": {
+        "sha256": "ccfe177458a72beeb87987ddd2e50f9d9d68540ddaddd42879ce27d6db471c60",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block12/episodes.csv": {
+        "sha256": "a9dfe251ee2451d4c73dd5d57fbd2f8f7fec5a2e495c1a908f78f03b151b534b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block13/episodes.csv": {
+        "sha256": "bfaf6331b76778311b52093549234cc8b584d347555fb208a70ec6526b577a93",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block14/episodes.csv": {
+        "sha256": "459576238046d431f3b5aaa32a24b8b44e24ec370c96c02bc08586c95da8d76b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block15/episodes.csv": {
+        "sha256": "9dd2d0f042847ade4ed5d66fd7a3ee6d6b907a30b575c198dfc4b8bff9685f96",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block16/episodes.csv": {
+        "sha256": "cdd2d625e0ea8f3d7fe4678b43387bbb15c959ece11ea441f5f2ccb82fde4e23",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block17/episodes.csv": {
+        "sha256": "d979abf97bd1b9177bd0cc796eea8300c2729fa1c48ac4c23c2e8ffd62a630e1",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2515519_block18/episodes.csv": {
+        "sha256": "e18301763cc0c3bae791767eb292363311530b1c6b17d58a196fb1661aa1dec7",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block00/episodes.csv": {
+        "sha256": "e9f374b5168808a663f2297ee3b135bbc4d2dd4709300cca84c38e19154633c7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block01/episodes.csv": {
+        "sha256": "08cc9ac3ff508cd5ffa40df5edd65050c6c4e0f21a1f4a712a93c2fc7e2ccbea",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block02/episodes.csv": {
+        "sha256": "be394ae7e4cc779a6acd82ca17698047f89f749f487060eeeaeb9c1b510406f4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block03/episodes.csv": {
+        "sha256": "8602d328ed7ec63ed0e712142c3d5f02142da0fd97b030ae3e0a5f439eaee3f1",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block04/episodes.csv": {
+        "sha256": "ae450b2fa0d299e8d544deb8119c08416ab5add99e210226eada145cdb903c73",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block05/episodes.csv": {
+        "sha256": "ea67edc6fbc6916187fb426ced009a9d18b66aa4b0f8a431adcafdc3b1671f1b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block06/episodes.csv": {
+        "sha256": "8a77ef8fe0fbe8f23980cfeb8c9fc5cffe68d6a4335aef1c89f5d8342a5fc728",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block07/episodes.csv": {
+        "sha256": "a3ef181fc5a15bff0ca90d6fe57dfd5b08a1112348eff32b0cbe7ddb763a065e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block08/episodes.csv": {
+        "sha256": "d380bf5f5262e92406c9fbe1bade95a39d516bf1bb3136fef0fb8ec5d6d60213",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block09/episodes.csv": {
+        "sha256": "05be73cd368efea1b72b2ac90f3e24c85bdfd6b31077db90311c84eca80edccb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block10/episodes.csv": {
+        "sha256": "ee04155d75d20563b25bb64026326870d3fc837df025cddea10712a6c64c18a4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block11/episodes.csv": {
+        "sha256": "2fc673de00dac51c5135a2cdc4bba15d8a63d05f7cefaa5c14cb5c200445b9b3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block12/episodes.csv": {
+        "sha256": "059ec88b4c4715f2ef62bebae897a1c7d18a9daba1dacba7ea6fd82b1b33a9bf",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block13/episodes.csv": {
+        "sha256": "2cc7a71aa8236732bf5fdbfa4c75801e15343d33b1f5259cae041dbc0054520e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block14/episodes.csv": {
+        "sha256": "0486a0b1929e16b77a782b918e8dcb8f8c840e0ab4405db3146202b32b21d1b4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block15/episodes.csv": {
+        "sha256": "e0ea8be6e507bd2e794f0bf336bec5eae0a8cf4fd22217df13ffbffcb0ad56bf",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block16/episodes.csv": {
+        "sha256": "1da1fdd3a34380d7f3fb53cb3fbd8b37b11cab7d96415bd0e5f4e5fc14d45937",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block17/episodes.csv": {
+        "sha256": "98f7af1be5157af10c731b49c8b8cab9d93790b090ae861ccad8afbc6875e399",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2626573_block18/episodes.csv": {
+        "sha256": "7851e2eb8662ed1e6a1286365285fc2276244bb161737e571666f95eb372c590",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block00/episodes.csv": {
+        "sha256": "f5622fd4babf4dcf786a7a994a0db29349bb11bcf8056addb4ae52e670822d2c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block01/episodes.csv": {
+        "sha256": "ffedcf761e7aa5aa11b62868fc100bfac579bfbcea5933a1189935b56112dd16",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block02/episodes.csv": {
+        "sha256": "dd6e11a60e152852c3539be58dbe45c7c87667d630973cbf5040fbf7671ba0c7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block03/episodes.csv": {
+        "sha256": "deaec64fa3f889958f1d2a3725cb6768a212b83bd166a901d48ecf0f7727c69e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block04/episodes.csv": {
+        "sha256": "4ca51945a5053f5bce0778095c328dd51ee8a3c2162dc4b9faa96a4434979b66",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block05/episodes.csv": {
+        "sha256": "b0dac3b5cff5b2ffb2f758c1c45685404368d1af02a9e59a020f0944f71da898",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block06/episodes.csv": {
+        "sha256": "0f6fb9fea5129e8e55f89fa3ac1ec2a7d2c1dcd3b3343b49998610b115bc012f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block07/episodes.csv": {
+        "sha256": "d6766ea4a9f63b6be5a801c866e7fdcbb53d170863aff4e0a3f6e15b5f897859",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block08/episodes.csv": {
+        "sha256": "c29d22388fb858caa8150efedc7169879207d09be799fa76f74cfc3995dc1de2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block09/episodes.csv": {
+        "sha256": "97a2a84976add2b8b3570c198c98f77c83c837f5c694fce1d1a8b4f633f4bb19",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block10/episodes.csv": {
+        "sha256": "2cabe163c8d3f3528a66a32fe60a67ee15bcf117a89a0dc23259559792c7a7b2",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block11/episodes.csv": {
+        "sha256": "dd612288f510c5f683f9213477be654fe3603791d3147609f7e3f70064dcda7a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block12/episodes.csv": {
+        "sha256": "5184f032d4e1cb6059f48761d83661db316e5c53f766df6ebc76016938af7901",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block13/episodes.csv": {
+        "sha256": "fc6af2ebd98c15cbab83de90cbc544cc368e9d63b332d810c69465570e8378cb",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block14/episodes.csv": {
+        "sha256": "2832f5c63a57adfd5832023bb5857d064b3551d3c9e54ccf61b22ad5aefaca91",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block15/episodes.csv": {
+        "sha256": "e517ce7aa7ecf58ca600987ad1c89e4f0e21902439a769c3369ef369d0066044",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block16/episodes.csv": {
+        "sha256": "fb02bc4e0bf1e854f8a8bc6890022627b5bdff8de4e7b52c850c95756d9f764f",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block17/episodes.csv": {
+        "sha256": "1ca1ae805abdc928e92083f8854d55ccb5e4fc8776dab49492edac4846c3b22c",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2737631_block18/episodes.csv": {
+        "sha256": "40488218cdc789134ea615d2d5f447c86fbebb1d795467868171f6a853b50e1b",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block00/episodes.csv": {
+        "sha256": "85f0beea5bb7b860b005689f67efa5a73fb4e63552c75aa955960325fedbeeb7",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block01/episodes.csv": {
+        "sha256": "7acc1f321e1eb575d1e43fb942e44858d16657c1a3feb90af5c21c592f7a726a",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block02/episodes.csv": {
+        "sha256": "e05c94e3c8b96d4f6405bdd3bab5158b31212c63c1e4b89599ad30f8ecdbfaaa",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block03/episodes.csv": {
+        "sha256": "b2243027259366c073eac6f48f5560e922d36b65caec8345ba476f9cb42544e3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block04/episodes.csv": {
+        "sha256": "02f0b29d6041b350edae426c8950f5d9a1c9d96fac86c2684f08c42720f525db",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block05/episodes.csv": {
+        "sha256": "cbc2a31cdb8017de716981cc6c62b844371748ac3e6a21688d9a3ce28420b17c",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block06/episodes.csv": {
+        "sha256": "8bc97f9675a74028119594ec837c61939c414d362a56f7704b9ba4e10eacc555",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block07/episodes.csv": {
+        "sha256": "b610c3fc84d33fe37aa0b48e01cc32b5a48988a9da4a49ac8fb73f579bfc1dd5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block08/episodes.csv": {
+        "sha256": "e978fccb9b68c22df057f31376bdfbdfcd4e5ac2c9d5a5597bffad99af257a4e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block09/episodes.csv": {
+        "sha256": "55c10a80818cd0bf31b7923d9b05b1e6d4d5141b45b1d0d2465ff3e23c0de368",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block10/episodes.csv": {
+        "sha256": "4d615b5d68c7123ef68de126bcd07e073717fdd6cb1a63d3cd4d138c50b058dd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block11/episodes.csv": {
+        "sha256": "36a0a88438e8af6930410c7c82f03a6f9263af93e0e95aef2d4c4dcd781a83d6",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block12/episodes.csv": {
+        "sha256": "f3a348c63cc0ab0d66fb3e6327038028a14c2d525567e479819652e502de3550",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block13/episodes.csv": {
+        "sha256": "8f391df8f89169efdd9575abbacb0d4b1c3f33d74b56c1d5cb3a22fc0d772808",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block14/episodes.csv": {
+        "sha256": "5942991aa4d71aeb06babace617b00c8f61ddb682feaf62878ee7321d49aba4e",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block15/episodes.csv": {
+        "sha256": "ae1b406d2fe203d618d5d13af809525605244f741875e4e593a33a07294316d4",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block16/episodes.csv": {
+        "sha256": "bc765c6aa675662f2012123be2437617a2dc54f6ad4a42fdf29f41e01e8a912d",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block17/episodes.csv": {
+        "sha256": "aac093fa2c56d26fa57009fe5f2e7c53f7d0c9c006113ad54766e85ad2cbbc8a",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2848697_block18/episodes.csv": {
+        "sha256": "05d2da0bd60eadd1d5d56e4282188c73d63dc349eb69fa2bb3d1e8671c98c820",
+        "rows": 128
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block00/episodes.csv": {
+        "sha256": "766954f95cfb2f79a002ede1c59fdf7d127842b0b709a23d97981d05ac765605",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block01/episodes.csv": {
+        "sha256": "01ab0bff40b1e7e25e1e7fd4d7443724c46a3c06e0ee43eb2e34892b0425a8e5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block02/episodes.csv": {
+        "sha256": "e608f775bb10eff18191750bd79557c55eed3be21eb1aae6aab0da57fc32eee9",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block03/episodes.csv": {
+        "sha256": "af42d26580b54c19cdc81754f2e59eab09e7a39ff004da6666f6ae54263d3db5",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block04/episodes.csv": {
+        "sha256": "db0f2350590beb34941ffc6daf25cd2d3fa7d4bbacf608f98626a68cd301a130",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block05/episodes.csv": {
+        "sha256": "89dfdff33916f9f55afd362656a07e469fbf71674f5d18a3bce647f074a07b27",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block06/episodes.csv": {
+        "sha256": "ad66e93f27c88415a922e86d7566692f0f808ddc616651ce9d32e6f6392a3b14",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block07/episodes.csv": {
+        "sha256": "1d3d24de173909b4c4068cc65f04331a4b68ae275bfff16659e3a876eeb1eed3",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block08/episodes.csv": {
+        "sha256": "24dc343800e6ae0e15eb3a3968c56c0ada0c941a139e31a23b6b64bd0b22b1be",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block09/episodes.csv": {
+        "sha256": "f1c811b07d6d2c3bb92f2c404819a536837fa5ca6c28f7c1e3d957eac56ec3e0",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block10/episodes.csv": {
+        "sha256": "1f8b4f1a810ef7ed8da64a2bfa03777f44071d6554767bc70d8dffa258cce0c8",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block11/episodes.csv": {
+        "sha256": "619671710a9e8d854260e9ab5bf5c5f08dbbb2f4a44d80b4e783c23f3061eadd",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block12/episodes.csv": {
+        "sha256": "b9a2b51985a71708a6ac51219f4138beddeaad580c375ab8eb8b2d41ef3b6d86",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block13/episodes.csv": {
+        "sha256": "5db5c0a63810d7a4ec67bc5df76ee26cb8eb2e9ac4c13ff281cbc2bed8564b28",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block14/episodes.csv": {
+        "sha256": "09caae797be9cbf4213c6dea1b86d5b8f115ef928dab1ab1efc762fbf7c036cf",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block15/episodes.csv": {
+        "sha256": "0250271277adbba3c025214da32f21cddc38ec031ac6ae837d4c219470510f2b",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block16/episodes.csv": {
+        "sha256": "9621893f01bd1bb58c7ae0b004dc6409ac48ec2dc81d3380527a86ab2bedb109",
+        "rows": 320
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block17/episodes.csv": {
+        "sha256": "63a60a8a44c97b3225cbc06290aac458be286393565ba5815863ff4618b84ab0",
+        "rows": 256
+      },
+      "recorded://supplementary_analysis_scope17_20261026/staged_selected/outputs/eval_seed2959769_block18/episodes.csv": {
+        "sha256": "0ee4c69888c67eacc21f82f576edcd1df14e10d0377be0f43d4b4f7618c9c070",
+        "rows": 128
+      }
+    },
+    "plan_sha256": "fe2f8cb879dea88469bcf0aa246794c5497931003a7a331aa136a63d2824b964",
+    "absolute": {
+      "F11_full": {
+        "mean": {
+          "success": 0.4135110294117647,
+          "collision": 0.5760110294117647,
+          "path_efficiency": 0.3793415936477044,
+          "mean_safety_cost": 0.17421725278323077
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "F01_no_gate": {
+        "mean": {
+          "success": 0.42233455882352944,
+          "collision": 0.5661764705882353,
+          "path_efficiency": 0.3874756647986086,
+          "mean_safety_cost": 0.17420756433549447
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "F10_no_Lcf": {
+        "mean": {
+          "success": 0.4183823529411765,
+          "collision": 0.5693014705882353,
+          "path_efficiency": 0.38383588389329176,
+          "mean_safety_cost": 0.17442959765355814
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "F00_no_gate_no_Lcf": {
+        "mean": {
+          "success": 0.4146139705882353,
+          "collision": 0.5742647058823529,
+          "path_efficiency": 0.3805551443468122,
+          "mean_safety_cost": 0.17438733295592315
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "P_free_nominal": {
+        "mean": {
+          "success": 0.38621323529411766,
+          "collision": 0.5899816176470588,
+          "path_efficiency": 0.35303190896177994,
+          "mean_safety_cost": 0.17298709442804786
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "Q_scalar": {
+        "mean": {
+          "success": 0.4125919117647059,
+          "collision": 0.5770220588235294,
+          "path_efficiency": 0.37840475984027283,
+          "mean_safety_cost": 0.1742741383920314
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "W0_no_warmup": {
+        "mean": {
+          "success": 0.4141544117647059,
+          "collision": 0.5758272058823529,
+          "path_efficiency": 0.3801308440482792,
+          "mean_safety_cost": 0.17431004098068703
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "T0_no_teacher": {
+        "mean": {
+          "success": 0.41424632352941176,
+          "collision": 0.5733455882352941,
+          "path_efficiency": 0.3800494686207351,
+          "mean_safety_cost": 0.1744551024379154
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "E_ppolag_reference": {
+        "mean": {
+          "success": 0.3889705882352941,
+          "collision": 0.5900735294117647,
+          "path_efficiency": 0.35533482558367885,
+          "mean_safety_cost": 0.17313577904372804
+        },
+        "independent_training_checkpoints": 10,
+        "unique_evaluation_episodes": 10880
+      },
+      "released_NavRL_single_checkpoint": {
+        "mean": {
+          "success": 0.40625,
+          "collision": 0.5790441176470589,
+          "path_efficiency": 0.37279760191107497,
+          "mean_safety_cost": 0.1744329548742184
+        },
+        "independent_training_checkpoints": 0,
+        "unique_evaluation_episodes": 1088
+      }
+    },
+    "contrasts": [
+      {
+        "contrast": "full_minus_released_NavRL",
+        "metric": "success",
+        "difference": 0.007261029411764706,
+        "ci95_low": -0.0059742647058823525,
+        "ci95_high": 0.0203125,
+        "bootstrap_centered_null_p_approx": 0.27993600319984,
+        "holm_family": "primary_system_4_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.033203125,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.0013035101202314167,
+          0.013218548703297995
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 1088,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_released_NavRL",
+        "metric": "collision",
+        "difference": -0.0030330882352941177,
+        "ci95_low": -0.017371323529411765,
+        "ci95_high": 0.012683823529411765,
+        "bootstrap_centered_null_p_approx": 0.6936653167341633,
+        "holm_family": "primary_system_4_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.25,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.008586680085700765,
+          0.0025205036151125294
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 1088,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_released_NavRL",
+        "metric": "path_efficiency",
+        "difference": 0.00654399173662943,
+        "ci95_low": -0.0054233356262557205,
+        "ci95_high": 0.018437561583568282,
+        "bootstrap_centered_null_p_approx": 0.27863606819659015,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.02734375,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.0012101484922768316,
+          0.011877834980982029
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 1088,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_released_NavRL",
+        "metric": "mean_safety_cost",
+        "difference": -0.00021570209098760695,
+        "ci95_low": -0.0010659446374783703,
+        "ci95_high": 0.0007107175635054055,
+        "bootstrap_centered_null_p_approx": 0.6274686265686715,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.052734375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0004313656701528636,
+          -3.85118223503731e-08
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 1088,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_PPO_L",
+        "metric": "success",
+        "difference": 0.024540441176470588,
+        "ci95_low": -0.03667279411764706,
+        "ci95_high": 0.08511029411764706,
+        "bootstrap_centered_null_p_approx": 0.42907854607269635,
+        "holm_family": "primary_system_4_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.2578125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.02206312752728917,
+          0.07114400988023033
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_PPO_L",
+        "metric": "collision",
+        "difference": -0.0140625,
+        "ci95_low": -0.07803538602941176,
+        "ci95_high": 0.049448529411764704,
+        "bootstrap_centered_null_p_approx": 0.6726663666816659,
+        "holm_family": "primary_system_4_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.55078125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.06460484236061738,
+          0.03647984236061737
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_PPO_L",
+        "metric": "path_efficiency",
+        "difference": 0.02400676806402557,
+        "ci95_low": -0.031193732118699698,
+        "ci95_high": 0.0791056520338444,
+        "bootstrap_centered_null_p_approx": 0.39423028848557573,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.228515625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.017221925994056548,
+          0.06523546212210768
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "full_minus_PPO_L",
+        "metric": "mean_safety_cost",
+        "difference": 0.0010814737395027324,
+        "ci95_low": -0.0048575834081737625,
+        "ci95_high": 0.007092812698499658,
+        "bootstrap_centered_null_p_approx": 0.7254637268136593,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.736328125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.005847719876297794,
+          0.008010667355303258
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_on",
+        "metric": "success",
+        "difference": -0.008823529411764706,
+        "ci95_low": -0.018933823529411763,
+        "ci95_high": 0.0008272058823529412,
+        "bootstrap_centered_null_p_approx": 0.08084595770211489,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.34548272586370676,
+        "conditional_seed_sign_flip_p_sensitivity": 0.01171875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.01585871484547979,
+          -0.0017883439780496243
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_on",
+        "metric": "collision",
+        "difference": 0.009834558823529412,
+        "ci95_low": -0.0009191176470588235,
+        "ci95_high": 0.020404411764705883,
+        "bootstrap_centered_null_p_approx": 0.06909654517274136,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.34548272586370676,
+        "conditional_seed_sign_flip_p_sensitivity": 0.01953125,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.002732439685656015,
+          0.016936677961402805
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_on",
+        "metric": "path_efficiency",
+        "difference": -0.008134071150904193,
+        "ci95_low": -0.017409639268127435,
+        "ci95_high": 0.000702385086675777,
+        "bootstrap_centered_null_p_approx": 0.07709614519274036,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.0078125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.014521701418709,
+          -0.001746440883099388
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_on",
+        "metric": "mean_safety_cost",
+        "difference": 9.688447736313238e-06,
+        "ci95_low": -0.0006072405855571989,
+        "ci95_high": 0.000590697241911103,
+        "bootstrap_centered_null_p_approx": 0.9732513374331283,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.958984375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0004196792999623462,
+          0.0004390561954349726
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_on",
+        "metric": "success",
+        "difference": -0.004871323529411765,
+        "ci95_low": -0.01636029411764706,
+        "ci95_high": 0.0058823529411764705,
+        "bootstrap_centered_null_p_approx": 0.3893805309734513,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.5018749062546872,
+        "conditional_seed_sign_flip_p_sensitivity": 0.205078125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.01286441477655553,
+          0.003121767717732
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_on",
+        "metric": "collision",
+        "difference": 0.006709558823529411,
+        "ci95_low": -0.004227941176470588,
+        "ci95_high": 0.018658088235294117,
+        "bootstrap_centered_null_p_approx": 0.2509374531273436,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.5018749062546872,
+        "conditional_seed_sign_flip_p_sensitivity": 0.0859375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0006776589818476876,
+          0.014096776628906509
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_on",
+        "metric": "path_efficiency",
+        "difference": -0.004494290245587335,
+        "ci95_low": -0.014949943159898633,
+        "ci95_high": 0.005274655043339246,
+        "bootstrap_centered_null_p_approx": 0.37848107594620267,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.1875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.011758886182108332,
+          0.002770305690933661
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_on",
+        "metric": "mean_safety_cost",
+        "difference": -0.00021234487032736925,
+        "ci95_low": -0.0009531779966474621,
+        "ci95_high": 0.0005378317227758296,
+        "bootstrap_centered_null_p_approx": 0.5611219439028049,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.384765625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0007513520539908379,
+          0.0003266623133360993
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_by_Lcf_interaction",
+        "metric": "success",
+        "difference": -0.012591911764705883,
+        "ci95_low": -0.025919117647058825,
+        "ci95_high": 0.001838235294117647,
+        "bootstrap_centered_null_p_approx": 0.07399630018499075,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.34548272586370676,
+        "conditional_seed_sign_flip_p_sensitivity": 0.041015625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.023707093010597695,
+          -0.001476730518814074
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_by_Lcf_interaction",
+        "metric": "collision",
+        "difference": 0.014797794117647058,
+        "ci95_low": -0.0006433823529411765,
+        "ci95_high": 0.028676470588235293,
+        "bootstrap_centered_null_p_approx": 0.04849757512124394,
+        "holm_family": "component_factorial_6_tests",
+        "holm_adjusted_p_approx": 0.2909854507274636,
+        "conditional_seed_sign_flip_p_sensitivity": 0.015625,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.005132362285028348,
+          0.024463225950265767
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_by_Lcf_interaction",
+        "metric": "path_efficiency",
+        "difference": -0.01141481069738374,
+        "ci95_low": -0.023605413715327705,
+        "ci95_high": 0.0017423596367349512,
+        "bootstrap_centered_null_p_approx": 0.0751962401879906,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.041015625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.021522625532019883,
+          -0.0013069958627476026
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_by_Lcf_interaction",
+        "metric": "mean_safety_cost",
+        "difference": -3.257624989868525e-05,
+        "ci95_low": -0.0009918426012796666,
+        "ci95_high": 0.0009714026438921467,
+        "bootstrap_centered_null_p_approx": 0.9483025848707565,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.923828125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0007648943228003312,
+          0.0006997418230029604
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_off",
+        "metric": "success",
+        "difference": 0.0037683823529411765,
+        "ci95_low": -0.006525735294117647,
+        "ci95_high": 0.013970588235294118,
+        "bootstrap_centered_null_p_approx": 0.46782660866956655,
+        "holm_family": "conditional_off_4_exploratory_tests",
+        "holm_adjusted_p_approx": 0.6981650917454127,
+        "conditional_seed_sign_flip_p_sensitivity": 0.3515625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.004625693286710872,
+          0.012162457992593224
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_off",
+        "metric": "collision",
+        "difference": -0.004963235294117647,
+        "ci95_low": -0.015351562499999997,
+        "ci95_high": 0.0055147058823529415,
+        "bootstrap_centered_null_p_approx": 0.3490825458727064,
+        "holm_family": "conditional_off_4_exploratory_tests",
+        "holm_adjusted_p_approx": 0.6981650917454127,
+        "conditional_seed_sign_flip_p_sensitivity": 0.19140625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.012744081322005212,
+          0.0028176107337699163
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_off",
+        "metric": "path_efficiency",
+        "difference": 0.0032807395464795478,
+        "ci95_low": -0.006123775034759412,
+        "ci95_high": 0.012685133746742966,
+        "bootstrap_centered_null_p_approx": 0.48442577871106446,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.3671875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.00448315797900386,
+          0.011044637071962954
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "gate_effect_Lcf_off",
+        "metric": "mean_safety_cost",
+        "difference": 4.226469763499849e-05,
+        "ci95_low": -0.0005957368504288538,
+        "ci95_high": 0.0006773396367070207,
+        "bootstrap_centered_null_p_approx": 0.8934553272336383,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.822265625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0003661726809786295,
+          0.0004507020762486264
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_off",
+        "metric": "success",
+        "difference": 0.007720588235294118,
+        "ci95_low": -0.003216911764705882,
+        "ci95_high": 0.018198529411764707,
+        "bootstrap_centered_null_p_approx": 0.15269236538173092,
+        "holm_family": "conditional_off_4_exploratory_tests",
+        "holm_adjusted_p_approx": 0.6015699215039249,
+        "conditional_seed_sign_flip_p_sensitivity": 0.02734375,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.001797434480353648,
+          0.013643741990234586
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_off",
+        "metric": "collision",
+        "difference": -0.008088235294117648,
+        "ci95_low": -0.019393382352941177,
+        "ci95_high": 0.0029411764705882353,
+        "bootstrap_centered_null_p_approx": 0.1503924803759812,
+        "holm_family": "conditional_off_4_exploratory_tests",
+        "holm_adjusted_p_approx": 0.6015699215039249,
+        "conditional_seed_sign_flip_p_sensitivity": 0.01171875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.012776537862896339,
+          -0.0033999327253389578
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_off",
+        "metric": "path_efficiency",
+        "difference": 0.006920520451796405,
+        "ci95_low": -0.003089462746044292,
+        "ci95_high": 0.016533303482677106,
+        "bootstrap_centered_null_p_approx": 0.15869206539673017,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.025390625,
+        "conditional_seed_t_ci95_sensitivity": [
+          0.0014960679073754753,
+          0.012344972996217334
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "Lcf_effect_gate_off",
+        "metric": "mean_safety_cost",
+        "difference": -0.000179768620428684,
+        "ci95_low": -0.0008883246174638557,
+        "ci95_high": 0.0005293231590835863,
+        "bootstrap_centered_null_p_approx": 0.599870006499675,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.5,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0007564168237175265,
+          0.0003968795828601584
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "freezing_effect",
+        "metric": "success",
+        "difference": 0.02729779411764706,
+        "ci95_low": -0.03180147058823529,
+        "ci95_high": 0.08354779411764705,
+        "bootstrap_centered_null_p_approx": 0.35078246087695614,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.146484375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.010295419946545592,
+          0.06489100818183971
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "freezing_effect",
+        "metric": "collision",
+        "difference": -0.013970588235294118,
+        "ci95_low": -0.07178538602941176,
+        "ci95_high": 0.0453125,
+        "bootstrap_centered_null_p_approx": 0.6426678666066696,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.490234375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.05320529216817285,
+          0.025264115697584605
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "freezing_effect",
+        "metric": "path_efficiency",
+        "difference": 0.026309684685924473,
+        "ci95_low": -0.027968766988967268,
+        "ci95_high": 0.07814165737438834,
+        "bootstrap_centered_null_p_approx": 0.3297835108244588,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.130859375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0081352954878792,
+          0.060754664859728136
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "freezing_effect",
+        "metric": "mean_safety_cost",
+        "difference": 0.0012301583551829133,
+        "ci95_low": -0.005460624348741155,
+        "ci95_high": 0.007125192920879365,
+        "bootstrap_centered_null_p_approx": 0.7092145392730363,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.7109375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0061621972739738275,
+          0.008622513984339653
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "quantile_effect",
+        "metric": "success",
+        "difference": 0.0009191176470588235,
+        "ci95_low": -0.00818014705882353,
+        "ci95_high": 0.010018382352941177,
+        "bootstrap_centered_null_p_approx": 0.8468576571171441,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.6171875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0027743286955476685,
+          0.004612563989665314
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "quantile_effect",
+        "metric": "collision",
+        "difference": -0.001011029411764706,
+        "ci95_low": -0.009928768382352939,
+        "ci95_high": 0.00818014705882353,
+        "bootstrap_centered_null_p_approx": 0.8294585270736463,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.61328125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.004973628035427258,
+          0.002951569211897846
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "quantile_effect",
+        "metric": "path_efficiency",
+        "difference": 0.0009368338074315996,
+        "ci95_low": -0.00730539640343255,
+        "ci95_high": 0.009101396696915958,
+        "bootstrap_centered_null_p_approx": 0.8198090095495225,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.525390625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.002367304302336872,
+          0.004240971917200071
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "quantile_effect",
+        "metric": "mean_safety_cost",
+        "difference": -5.6885608800632115e-05,
+        "ci95_low": -0.0005614762746913852,
+        "ci95_high": 0.0004485205815495539,
+        "bootstrap_centered_null_p_approx": 0.8135093245337733,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.8515625,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.00042045455726559555,
+          0.00030668333966433125
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "warmup_effect",
+        "metric": "success",
+        "difference": -0.0006433823529411765,
+        "ci95_low": -0.014800091911764703,
+        "ci95_high": 0.012224264705882353,
+        "bootstrap_centered_null_p_approx": 0.9288035598220089,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.857421875,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.007434337451005079,
+          0.006147572745122724
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "warmup_effect",
+        "metric": "collision",
+        "difference": 0.0001838235294117647,
+        "ci95_low": -0.01213235294117647,
+        "ci95_high": 0.013235294117647059,
+        "bootstrap_centered_null_p_approx": 0.9828008599570022,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.984375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.006052201847119152,
+          0.00641984890594268
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "warmup_effect",
+        "metric": "path_efficiency",
+        "difference": -0.0007892504005747683,
+        "ci95_low": -0.013787602422183708,
+        "ci95_high": 0.010863786460009989,
+        "bootstrap_centered_null_p_approx": 0.8971551422428878,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.771484375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.006791712622744495,
+          0.005213211821594956
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "warmup_effect",
+        "metric": "mean_safety_cost",
+        "difference": -9.278819745625643e-05,
+        "ci95_low": -0.0008693693861320807,
+        "ci95_high": 0.0006255886403788967,
+        "bootstrap_centered_null_p_approx": 0.7983100844957752,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.78125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0006568396721876723,
+          0.0004712632772751593
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "teacher_supervision_bundle_effect",
+        "metric": "success",
+        "difference": -0.0007352941176470588,
+        "ci95_low": -0.010018382352941177,
+        "ci95_high": 0.008455882352941176,
+        "bootstrap_centered_null_p_approx": 0.8834058297085146,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.84375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.007719772381992008,
+          0.006249184146697889
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "teacher_supervision_bundle_effect",
+        "metric": "collision",
+        "difference": 0.0026654411764705883,
+        "ci95_low": -0.006801470588235294,
+        "ci95_high": 0.012040441176470589,
+        "bootstrap_centered_null_p_approx": 0.5737713114344283,
+        "holm_family": "matched_factors_8_exploratory_tests",
+        "holm_adjusted_p_approx": 1.0,
+        "conditional_seed_sign_flip_p_sensitivity": 0.4375,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.004337237937279899,
+          0.009668120290221075
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "teacher_supervision_bundle_effect",
+        "metric": "path_efficiency",
+        "difference": -0.0007078749730306513,
+        "ci95_low": -0.009158501108724843,
+        "ci95_high": 0.00774251795442336,
+        "bootstrap_centered_null_p_approx": 0.8678066096695165,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.8125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.007083488262082687,
+          0.005667738316021383
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      },
+      {
+        "contrast": "teacher_supervision_bundle_effect",
+        "metric": "mean_safety_cost",
+        "difference": -0.00023784965468461023,
+        "ci95_low": -0.0007931513868799597,
+        "ci95_high": 0.0002975778210041907,
+        "bootstrap_centered_null_p_approx": 0.3673316334183291,
+        "holm_family": "secondary_descriptive",
+        "holm_adjusted_p_approx": null,
+        "conditional_seed_sign_flip_p_sensitivity": 0.205078125,
+        "conditional_seed_t_ci95_sensitivity": [
+          -0.0006363172421542929,
+          0.00016061793278507243
+        ],
+        "training_seeds": 10,
+        "evaluation_seeds": 17,
+        "fixed_environment_cases": 64,
+        "shared_frozen_baseline_unique_episodes": 0,
+        "referenced_paired_differences": 10880
+      }
+    ],
+    "inference": "Crossed training and shared evaluation seeds; fixed case blocks; all methods sampled jointly.",
+    "limitations": [
+      "Approximate centered bootstrap p-values and descriptive 95% CIs are distinguished from Holm correction.",
+      "Seed t/sign-flip sensitivities condition on the finite evaluation cases and assume appropriate seed exchangeability/symmetry.",
+      "Shared baseline has one checkpoint; no baseline pretraining variance is represented.",
+      "Equal initial goal distances do not establish identical physical reset states; collection provenance must verify full matched resets separately.",
+      "mean_safety_cost is an arithmetic diagnostic, not the CMDP discounted budget.",
+      "No equivalence, no component benefit, or no safety claim follows merely from a confidence interval spanning zero."
+    ]
+  }
+}

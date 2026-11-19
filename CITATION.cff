@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software if you use the code or data."
+type: software
+title: "RC-CF-NavRL: Reproducibility package for Learning Bounded Velocity Corrections for UAV Navigation among Moving Obstacles"
+authors:
+  - family-names: Zhang
+    given-names: Shenzhen
+  - family-names: Wang
+    given-names: Shan
+version: 1.0.0
+repository-code: "https://github.com/shenzhen-zhang/RC-CF-NavRL-reproducibility"

@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+ \caption{Batch-size-one policy latency with and without online correction on a desktop NVIDIA RTX 5090.}
+ \label{tab:runtime}
+ \centering
+ \tablebodyfont
+ \renewcommand{\arraystretch}{1.16}
+ \setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule
+Inference path & Latency, mean (SD), ms & Relative latency \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Single actor pass}} \\
+\quad Nominal NavRL & $1.304\;( 0.242 )$ & $0.53\times$ \\
+\quad RC-CF-NavRL & $2.444\;( 0.156 )$ & $1.00\times$ \\
+\addlinespace[3pt]
+\multicolumn{3}{@{}l}{\textit{Actor pass plus online search or filtering}} \\
+\quad RC-CF-NavRL + online PC-ARP & $5.446\;( 0.547 )$ & $2.23\times$ \\
+\quad RC-CF-NavRL + VO & $4.957\;( 0.574 )$ & $2.03\times$ \\
+\bottomrule
+\end{tabular*}
+ \par\vspace{3pt}\noindent
+ \parbox{\textwidth}{\tablenotefont Values are mean (sample SD) of three repeat means and include the actor pass for each correction path. Relative latency uses direct RC-CF-NavRL as the reference. Timing excludes sensing, communication, and low-level control (Section~\ref{sec:timing-protocol}).}
+\end{table}

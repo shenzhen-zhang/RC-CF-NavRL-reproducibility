@@ -1,0 +1,2086 @@
+{
+  "raw/released_checkpoint/navigation/eval_seed1183109_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e506fecd02c741d2f93f990d867c326078586df64e7cf79173d98cf810cf0c07"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9f0550af85733452345e1d67e30fe3e93efa4da38db173074e5450b4e228c906"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f5836467ffd1967da4fef13f91004c60dbb3252193439716151870f59969980d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "41ddd1fec72b0408a86d74b68683ce788baa29efe80f7bb37bdad0896576a36f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f23da323bbef498b10cffae91b952a3f098252741f5b5babf220e45eca805ed6"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "33c89c1025ad6cb389c564c254b55a80d11155712b3f3a10d6d9817b9f148bf5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "01a6280a271e67315b7de6e8d6a7140b900887c0bdf44db1b8a4b0054737b051"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "dbe53b24a096797702ba16f8a5a261328ef7c5b5f07b276045711cf69544bc2d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7bc4099ff30126a081af22b44566b7d67ca64cc6dac6da23859e702e38a993c2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4585fb172805d03d4cb1e5003499baf104172e81076a198483bce5c3be2bebf7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fce8b6a5d9eb577b3f64aca1448d8ea87f94049f7b6d47bc41ec23a21d863b97"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "25161933f4fba045f0810cc515e5fa8ab6a830e2527e92b1808c21355477efd7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8fa50c6cb4e5317fd65d06c1770edc2fa4ce77d5acc8b742234633675f527d86"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8419d5da9e7419cc29c420d0db002b808f5cfb3a51f4308b212c55f565eb654a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "987c09ea3af1a292f5a29f7a248b20e6da21830f2b4a555a70b4ec437869c5b9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8df979b53fdc86a5a0817a66a22f3d0dd8f92f191abae0af67189e82d640fa47"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "493944461fff11e632d8fb2e76d0dc4549170df546eab17f83491a290ba8ead2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bbdb20f12eb3625e135ed8b76e7a5faf4d3d24cb96bd914cb48fbd67ea01a6cf"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1183109_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c77996d23fb4b74970cc708ae744cb942b65dbca0575aff8deaf82686caa33ce"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "37c05a2a2aa9596a41dc9d488b94db58cbf491357ca135a9f7abc506ee5d65db"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d471d69304e38c811caa4296d49ee1ccf834310d7a01e3d6000400cb622a689d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "365858955b8e8aa90a4024824bf2b2a96bca555615168e889a2a3469d63c4759"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3613ae5e4f51651306c5e22302fe0820531aebef6e90fb3e95cd8008791c22bc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "898fdb2bde52ecbd0b8b9085626a913edea3005edc3200068bfce640bc395058"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6f318bda90a5cb07caebb5ce624bbcd28bca309b454be59a8a577fe0a60aa525"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6288b94c5833f8d0554775ac6e6f2a8bc7811151ed3b8e8d214826a080426855"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c1ca40b715f2737eef542f67ddeed17f4f1b1eb2e3cbca4c44c7d28edafc01fd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6fae73444318921d8a75829a88e30b3a34eae1a10f756549abd9efc35d8bc04c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e6d984b508e494c70b9ca2181f73c3d8f55813fc2187aed5232fa5fd95a3f0c6"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "02c8c6b9d90e8b4fb4303f41baec4cdfb06313aa6deb78ceed00e673fb4dc6bb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a49d218633b291c561c19af02c834e7e8a6b597193128a450559cab95183dcb1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f9bf53364ead4c7d9bc917f3c560cf0f740b8852ff3fdd6d8f1786d1ff881534"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8f610a4f23a97425775d3effc8bab93316d24738915c34d4ed2733516c488df1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c4fecac46114883a586b7fbb7fb3dcc2bca7fcb5c00155e9fc10fc92a3e918c4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "54c698d855d79f38b048c630011713f58f869f9511334ef82c1e13b2aab7750b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "45a340b8bfef0fb614b58cc6371b649fc9bac67964398b081baf515d9c8d927c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fbef226e3cdc1492e00585b5629fb86eaf73bec19210550c953a68d1d8f12c35"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1294127_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f63244986dd892245dcdba553cb01985b70e6416d499f4aa6e633b20493cb305"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f57891b1f5ced74444a511a9bb4788d565a3268f0430d348e59d07435d318c45"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "52a4b92f57df1e1923b0f73abbb32778250f383656d1078faa32c220e7d7c177"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b4fa959fec01b43d536733d84d60063674c05572408811f5f06f36ce99507a9c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "98a75e8ea05b7715d11dae3961241eb3b99d95adf4e10252dd380b681b4b9482"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "95efa2c8ffaea2a3015e89507290c9b5d242e39eb9635167c416bb36c617c8fc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4615e51e809b92dacffaa21a30596e85e5d71d3ab8003e22e637456dea86b078"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "31dc989ba5d3e639f89528eb516a4bfd96e15d01952d5ead665a631469dda5de"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "be303f6fb9dd49b894b9b1de198c62994d12d795afe3a395adaf1fd8bf293fdd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7c113d429e7a214fd2821878ec9b551e4e1e8c3b2964ef7d2917981a59655120"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3e45f237900726721b064a515609a28ca30ed48d5257e4f3a2ca099be197793a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b6930ac62ef629a8c3704f63875f870bb8e80131f81fdd91c67fda3d13fa89a8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "16f8878785dd8bcee3f2ec73e8960fa40a8adfc4bd9638ba1ec3a7cd42f83cfc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c647a4d8b09f6c2d4a6937577d3fd2308a6a1ba995f51bb0f50eae1b1ddbba60"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f6b29702d3e32b3b5ad4b2f21cda85ce5f0e642115ab299700502a44a9804795"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4e059eb11a3d87ff1624ca7edfa13991b0bd9a80900e8b9a4e40024700460bac"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6c1119b237223d3597626b009321e7fe2bdb195b55f2b9b5878a7bd7d3ce0044"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "849aeb7135f9fe9d42b1ee87925e9092391b97e5c74d844df9f3e1b2c3a9c332"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "78eb7f23a1d84cdb4c5237635668665d5100fe0fe293e59c83ce960c99aa39d1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1405151_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9336d3e6fe56b3ba81781573f41ae9fc54887714b8142c96daab613f8f5bf174"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a7af6356f491be9ded4fc38a4fa4b6f6ef5ab9ce969f9d68ac972844af5ddc16"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4c94d35f0b8b9232fe8dc694c11fff7f35e9c948c0d7ca1bb8b67eb25f1db36f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3dd60f2fa101b913d4e63abb011602d9b14ebba3a92c2ba279b22b9fa8090aeb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "080c1936bd5d0e3a8c3d70640be445d1ed5c76d51c366e0707822ec88541f2f3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9ada503dcd0643ea94f830cf2c7b22bf08a5161563caa76b7ffb1880709c4dd2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a135a8f2e16bf32d400c1ac70bed5133b148d1560e9c744cf67dca9f64a442d3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "afa9b5c7f518824175051439deb6b334abc1d8b9f4b09cfb6cf1f865dcb0b250"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "586ed6a2a7cddd00758478e98fccbd6087e16290411753c95cdcfc5718ef577c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7a5efeab9e62a3f8a0e8d8f4d840dae9c1331c376e0e0bf5ff974ea46e5b6899"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d752df8527b4d3c02c90b80597da8f57f775ee437f8e20271180452ac719cf24"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "55d9981804594f73815778fb33462411a0614826d9bd3dc2d8b56d553a0a29bb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "06c6b9f4b9111238d8273b2c5ddc5c5545a1557e92eee96a78e8a1dbdc57ab6c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2fdf23d6c56a82433125a9109d6ac259d881c9aa603136595a3670f924bc5d19"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e55c72b36bf72b2adb90b5b8719edb3fc9c8796213597f346c1ce57d884ad5ba"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "dd31057fb32450674bc29816fd1b35933f59f6797cd7e71498b4b28db976a8f2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "873171b128f1feab2991c4230972eb0289142263d4c19136303c403639738609"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5ce2d4b1420a23a131007b9e2efa4190bdbb8f4c7febc7c51ff3a985aaf861a8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "795137bc5d23bbf10599709d97b20618a9ac6fe2d511feee25b6f0f80f1c91f8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1516183_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6d7c1720712e3d6b4cd71f0dd54160958eb7997281cc7d6aacc27f5c26a89bc5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bcc90b9cef45426a83b7f60318d69abb21be99fcc3a4568cfa82cf419660eae8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "435379bcb5faa135aae7480d7f64e53077d8be1a3f9454527fde4642fb500d42"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b036a782fbe43c70e98d98c61f7f7d23e6292a021516a8b2e9bf199beb1a5017"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "896861d94e6d876de85c19cc90e22dc1930db2b32a74b3771e761fad9523edbd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3aa64532f155daafd65719ab51999967c11b15d949f07321373e3530a0638c8f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "20b6f8dcd2e6b8b4fad81761e8c83258fd83cd4ed5ead68cf462df957377f169"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "af3f4fdbb067064712290af7dc3daa74a0c0d289e464e00f246ad673592aba54"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "eeef838f028f66c7d9de7d58f4c8abbda3f5e0e43817c74a92fae46c830a3dbe"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e7293d6caa80cbf805dff0463abd5f24b49806c9ca30ff3acc04ecdf330d85f9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e384b501eec1ef2316b5152a6cf0bc06d39c5f355b193163df4d0676c71593e7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ffd43f4d5e6bd225d0c30826d5e3e4e274e59bb4ebe6afe59f5c47f155c96231"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4bd99d2349f618d1330df28cca55d298e2fa7e723dbcd849915fe6d3f45eedff"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6c45142a835c3512df6a76ad950927b0621278967a2cc0ae897907a3ab8fdea1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9f4674cac6caf2f561d0998a23aabd8525554aa8aac33745fe180856f5550520"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e3e7aaeb2f0096e60bce85bd1174059e969ab8c49a4a450ea97d778638534118"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d2f6418b48a7fcff494a6b010e81b46878f109fa261a333a88d561046dc3ee02"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d6713971234050f98eaec30def0d1d5a7cb4449e43b4638beaa925d46c78086e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0464a1fe20e93a09134b28db1a517fe5d7c01c29d1dbadac8a67e4f138d2e108"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1627211_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "14439d7fbc615605dc6d9d320479c7b576defa4a4156c014c1770dc58367946f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "59dd8400ca54a747ee5efe94925f92f5e9c3f709d6f3f1e25549cec2fdec7769"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8ed0e6353c5f83d4332e6933667845e755971ec3eedbab0ee30956a4a27ddd71"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "995d6871eb2bd8016aef8a4891efe9a60875c0077c534f11f71002ce92b9da42"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5749dc586aaa17450620392906bf9b56207b7f442f854486de0a333316900ab2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4705da59a4496ec05af4b0550a830a0776aaf77f369be72a84566e30ae0105e6"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "56abaf88c216e957c48844acaf896f9d52742c1bd35930f02532fb0d48766635"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "82afe5cd084906760ea6a4def35b8a0cfb23b3da03fbe0c18f9c7bf0dd65a5ac"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0cef3a581b0ba19f7f3aca2511ab7dac62f031c16ce506e27b20e6d73cf27a8e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d4136ab12bf4faf57be2c35453c11948ec88dd9130f889bb47dbf76339889509"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "646be9191208411cdfa7adbf85a76547994651d840a086296491f12c4264756f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5d1599316964047f18bdee963ea228a740e6cca6aec3061e5c609432573f7c1a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "212e18c71525f778903660d6072b69a6b1b96271ffa96972142380800b9d09cc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f78e035d4ce203ec1300691384f4b0b9e24160eb28d4b48de52f8eda44de1546"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "df5e5b2ee62cb2003c9b7323b9a6df134636bed9de1e59fcc0317e02517c31b0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4eea670a748de4fc853f357d9b9f121a91f6f165b013e4f5610a3a8f7c655d26"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4dd468c7476b7bec9731cc9e0ad6099f89090ac8a41a012cc35b2a063c14ec98"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d7f59c0e9e3a50336bb667ad416daf606dde0872567d1a242b8ecc6dfd9b53a9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b55dcd1d6c638322e7b113752ca5a5cf5f870f42dc50d5f490d45af875762a2d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1738247_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7afc286cdda4d6928c01ee5441b8903f9d54d1f9ec81a108566dda53571489e2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1a015aec1e98f560ed337fc3ee4321e31bf925f177e23890c1f831d2856d6406"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "741a4de7daaa8342bbbb5cb0b2d032d4db6c3a779ef1fd955463cdd70d50492f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "352885e7fb00f558719827f90c88b87cf0544e572ab5371513889d249c8daf90"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2695e22de2686e8174520dcef53a63e1a50605669e32d63f29ec7ba99b0f9315"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b1840c4909dad388aa8d67dae6e76b81ae704207f58e52e4cae7256c9ca630fd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ecedf685449247cd16fdd10f9194b5881bb9803ff5210a2d92a7eceb77e3e6dc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f377d01ca7f40602c45c18c09d4c319c36e858ee767924158137a3d83eb8b1a5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4a1dd27c3cbeb5aa19077e92e54e0cd87a109b01922cba9e65e57da6bd3461f0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9a78e167a6a6081876c2944a4173bd4eae54578f30140fd46dd73cd6d7b62f3f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fe366f92cd5a8e354c5073f70ca79fe1a7fac39ff0539fa77b43828797c950f8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b6a9062f092dbe25a0e4f99a757c51f7ac918b4205365058a106b7a6d81f5a4a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "313f49382f8ba3d1e0edef47ef08ed0d5b0f41784a9a54442e276b5b9eb6f90a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9b7756b193f72c422e2448affd1bb1972fa29e19c8c6830205a1d66fe95aa38c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b09f99e21ee3d02433452c69811bcf27d659f284fc4f232f430f25c078c2e0e4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "778ba2f9e124a0497b2332c1376c3d4cf19624497368afd9205e8b09a796efb2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bd942a9023156c5aa97e57a17bfc7ebd027a5a73b29172beaaa67256a9b8faa8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a47b17e51e182deae4f809c2061eb53f92f2cd97d66c64db4760944e29525885"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a0d1d2a510d13161d11b796f41457998a4c4f77117d6707498a8f14639f3989f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1849289_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "efec19f2da09401f7e3468ce5bc85225131fda8f5546d63e82f4590d5ad59f1c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "67c123fd63de97fcdbf877f26ad95c2fdf4b876604b39f29f6d91458d816ab87"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7730f734e89ee490a2a4614b4ab646abea75d13036a686364addde2c89e12756"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c60397b12ab65738fa1fe4d7feef0baf60d77344a4616e15b6a6b78b522c2b7f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ca4f7bad776befb45e437ab407f4d948b125a897426b56e39aee93d3bfbf0854"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bb0831df1f6962e61e1e5797eeda67263d20260c8105af2523de1c9b2fc812cc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "351704145896a17884f92b110d0bbf03b95f3ed0b5c6a0e31afe94f0d61cabbb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "41d4be21c4a58b2149159702c5a506b9e0b01dfb41626c42d2db692ea8f47910"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ecb4e910b4b3bb245c5d9157bd59b77417718dc3ae30591cc0fc6b5a529767b1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b2ada25632a82593521db0e1e5a9403af903cceb14f19d65800ab081f4f79266"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "369385f7a796a842873a0f444a19c94b59809fea9a03db8b915fbfc132eb35de"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d4478d6d018e70d3f00231474c6181526745bbf4547824d9d5e07c4c757eae7c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "eb3de1a43a783637bb4d8637c68047cb9d0ca4eb3e6847473b1fdec096b32c44"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8b6f1ceeb312ba0a603e9c249f1a3b773b26b42c78fb5d647c5d709052a6b5ef"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9741c9e1800d67ed4d28dc02d2e3b9fa6a442616d9e4aefa0bfd4aced801cae9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7fab661267e646b238d1cc115956ad819309779185825024598f521b5eacb376"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "297ca571e69ee3b243eb63cbec60ffd616e9d9ce687fd825dbcf9c9c6b7d019f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4397d0863f9a0adc1e7241523638b9b261eb67df60215fe856115cc761dc9a9b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1e324f7a288e42539d1aadcfdbb2d81e939fabe86d7e80be62e7aff134e51c74"
+  },
+  "raw/released_checkpoint/navigation/eval_seed1960313_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "338cdb47aa2831a3004a00484144b509547af7ce677ec1481d91dcf0a04ea6ee"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2a45e5d8960f487df3382317120bf0451c629e02dcf37ff0ded688a458349d85"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ec5b396642ef249ed5ac39b21ce75f422a5cea6fbb7f891d66834b2baca838d7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5fa72010103d020e1afe753c9142b80411a324159d9d4801e307ae6d9185163b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ce9fbbf0690a2f241e1a114a61883af669b4aecf95ac1a42e66f1f5588e610dc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e5c4119d228354090fc233d7dd7a53ae86c3c83706715a3334a1d998e0fa2019"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "03077f52c1a2f6195f57166abf771aeadef3dd9b4d15bd686c6adc34b0148dea"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "37389f5ff3a94f067ebaf27223d36a6ecdb0dfb658880e1852888d5fb6e06cad"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "46fd39478f350eaf0e0a4049a2f97a98e64033aea22225ee0d679425349cf9df"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4255cc5508c5afc8eff400a382e82d973ba8cc7eeba60a50c1abf229c3613ecc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c602f9e91c68e51d90efea07acd43228729cb636fea5db663846b9f651e8e505"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "95b12c04769686820baab151463f82079f39f2bd2ab38bf04e71633a80539d7f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2289a2d5d5b34a2eb6990d47fe0355a2b2002e8edc83b71740daba75da6c8c61"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7e8367e74375b6db5372c56103db122b62445b694befa17cc2116d7db16375a0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "accd381c96e8f2124670591808d67e742f9d2c2803d0f07fe75d3943263ca3ee"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f25bfb002ccff420b9547025134689c0bcc1b2a5c08c2c22a555e162aa03eeb3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0191ef63c657f9c40fd5da6674cd2ddadb30fb669fb8d585f6721b2bc0e46a9e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ad03f77183ee0d2db70eb671961fd5b3b08f6eac4ed24509ddfa067a4b106047"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1f0321b6c2a17ee6d62d57c7dd8e386441582fc28b5ffc1edc43b483c163dcf8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2071349_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9fe400589a99b2d70fed624ece36381df3b37dccafcc131db065dbe9fa9cb6ea"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fff90f19d9cb20201e9210d0203ca25cc9d1eed8dc35212eee1605bb6a04d98a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "68c2ac48ecd0d9e867679b64ed6968f3e8f9d6778262edf64635667998f583b9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "04f0fd18238fd88e38897af8a0d2ce22fc12e94dcb0112136ef46efaa964c30c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "56ae3e039df4130a3942a26462cdac5fc0d6a065c2c1097d285ffc8b26d07b92"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d5cb5f9bce3988f9032fee62a0aea6dd94420a6b96e39fd70dfb5aac484d8eb9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6df0faacc2da57d2acb7ff396826543b50b761fd84e8cf72f619a552354ce026"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "205d3687046028c0e14b16bf33f645484a98b042b68073838781be6ad6e4d9c3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "459a106f3691fa2a33778662607702e83ae093b65c69e0e59bcae2084b996ecc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f8180956521155581eecd38bbc2c18851a726420d76f52ac4315187d98fb8429"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "660572bb04a772af75c48925923feb8bb9bbc940dddf9ea64a9e02a4bb144894"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ead633301fd263475e8950cf03bb9b6861a84a62c3105538fd3858a7312b08ce"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c4e16320a1e567c8b9c30fb3289fac34c8d92169f57afd0da002d2074293320e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9342519f7425fd4648dacebbc3981ae486f2c58db1b52b9f5bc4209280279afb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0aae7b12b2195b763528caae1540463f0c2d0eca217c9192cab7e151a07ecfc7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d83ea0a37a41c001190d6ce40dc429af392b5cf53941b466fbbd29582a2c1458"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b31883d7f15e923f11025bfc53bbfb8dd2078e153f23c7e4d2e0e5ae27764c61"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7535cd308b05dd918243221aa5d6443a11740ef259a46caae744086bb41e432f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ee581f824f626037dfc2c8f71e81644e49ea6cc0abdd1929c56bbbbea6d7ad8f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2182387_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "14116c5352f592d31e5ab09b5896db7aac3d117e1d43745f8b77f70793ea30f4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "87ea9cef6c59630af67222c4d46fb0d04197663ab99f41d5d48c882e36fc6e48"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d95d184588c21bc1ccaf2ae11db1bb202f1514b617b285d841f40c4a4f13f58c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "67441cd7be36933418931e4b186c55035e2235d65d2dbfae8608458a087c3370"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "17995ee79771adcb37f9029fba3829a50d7d864e7b1d526a09d39cba70e07a65"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "678458274b5acfd90c4a868d6ef9e3f897d5bde56377f78f04f8012d10c4a355"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "152f2af7d362954a5dc1a230d29c11b9b5b245fba556d72b4b227280a74d5dc5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fd6d5baa26b45da469d10fac79b7d03258254ebdd87f97b356a7562fb701c827"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1b9cdeb63a62ca32f029adf08182c34e67ec2ef2eb3a603167ad0b33ca8764e9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "cf174eafe076f636cda4e6c930de7db2d74ee1c6c5d9fd19a1a607f9fae98315"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "cfa92b76cb2de8ceaa4c0cf784d10e60387de49ac8879156b9b79faafe438314"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1502cfce603954a5133104c64eba5bc88d7d360e58a2d437f855bcc86bfa272c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "044fc2d89e204eff66a7de41b2f36e7aa3571d778ff51f9896c820fa2e988df5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "47b747864608b13d70185aec20af6b3320e39d626e3c066af8c10e8705dc8e6b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8e4d1b75fe08888bdebacd8ed6d01d3c7fe72c970017c90bff2dc1dc3771cfde"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "be3f48000de8d1a4e85bac8371fb40902a31cd6ee51285efd8c891addf79e1f8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b80f2e569732b3eab93d581464b1b1de900c0f85fd274d7b0c0119baeafc3a11"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0019880476933ea4ae2b1c3c018e0fde524e8de8997e0b203ce1ae69aeab7a3a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bddbaccd638c69f8e393dfff687f4c8869f033be0191d5ef04a1e1a0cbefa298"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2293429_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a2b9ee65cdec8acad6e6d813880142195121b2a11561b8d9f84ff89b638fa2bd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f7de2e79946437b507aff35b5c659153be473ad5f5efcb1334bf2c6e3c9b71c2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "05558c39aaf39190b56f2bd0e886d08e7473b0e0a6bc7023351b5b8d8e948a14"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7efaf32d2f4a9135a8fd6a36accf904c54dfb0541f8bc7da4241c7734d9d7fad"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "51e233cea2fdd8f4445dd4af1e56ab90608adf36667ed2dc8d8ae2b2b60bff14"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "24719e0a2c9442e88df8d99f66b9299e57df017149386b25fe84e562c45a6973"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1011827b0015b0edfc885d2603ab2f9268ca32c989e6294bafffddbf9940edbd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fd7582a7138ccb82f4a6eab9db79d9b5c2be40c4cd1e1d7088f637a9fa8461e2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "be63cafdaee578e699da79ec49bbcba0c3336bce908a3acd25601c7f9a3bf095"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b8eb604714ff0527d79d1f7391e522e41c568c0946382608541e45501fd5db0b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "36ab166c9c796f069ceeeef57993b2e11a15ca7dcd80f81926c8163d33eb73a8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "42b0b254de824de310d0397308ac0a010d5b13f5a84ba6a404cab7048a8e3d0f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3787a7417c018e6299b3c25a4df0fef69f032584ea6462aa472fccd66c37deab"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "818b8ecb0406833cf0051e855daf82b07e68a36ce03b476f359da155877f9ccc"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "57f07e220ad05779d507623f81d666540c122fd0a1da8db29bd7f94935d0a235"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "45e5e08ce4769730fd3bbcf2f1c2660261174f620934620a9ce4e3b5a083eed8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b8435ca4463715b82f846c30b7f534149e9ec210efd663351eb94307591f0b26"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b3f0303c067fac93fb5541e4fc967ef66a45f8c23a9864b237b62e06a0a7edd3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "851f15573b82a19a3e2a7e5448e0a204f693157ba073d153e81e64b64fbc75f4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2404471_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "66c063b36dbcb031dba354072e8b1cc7c91217c486b3b50f7700573ee409bda4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "97b0532185f8b42a35ed2a0eef045d8680b98ca24797d0cb97d4d59a6b0888c1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "18fda3fea981d92aa0ccb11366aec0a019b313407c100975474d15f198308c0f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2433709a2ef337b297a15f3f47a9acc4a7789e6f787a407b04e7fac333ebee88"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "43c8795a56e95904087712712b11b384c0643800ef7636ba25f5acb52bc3c559"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "283279f83f3f5c3a6fe087139dce1684f2e77ead05ee30ddc0c3f0229cc76556"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b941df3e55ba33a74df045fb31a65263aaeb6c85b61a6ae068b3e0357b17991a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2183b1aadbc8c71ce16c680ca5a0f9905ce94bca9eab571baddc864ad5749888"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1ec3b341936dff6a39e3ba36d3c1362d35221bbead15be8a9b01f810e3df7405"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "900708dc813674ceec5d543e0ca1a8378846207609b3911ad855a4820abf1430"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b209a00802374b95dba840716f0e2394b365a77b357df6f1f5589ea5d2a36f8a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7fcac95c9268312af0976a227f264329c4cedf1fc482c618bb6d294f8882ebc0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ccfe177458a72beeb87987ddd2e50f9d9d68540ddaddd42879ce27d6db471c60"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a9dfe251ee2451d4c73dd5d57fbd2f8f7fec5a2e495c1a908f78f03b151b534b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bfaf6331b76778311b52093549234cc8b584d347555fb208a70ec6526b577a93"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "459576238046d431f3b5aaa32a24b8b44e24ec370c96c02bc08586c95da8d76b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9dd2d0f042847ade4ed5d66fd7a3ee6d6b907a30b575c198dfc4b8bff9685f96"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "cdd2d625e0ea8f3d7fe4678b43387bbb15c959ece11ea441f5f2ccb82fde4e23"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d979abf97bd1b9177bd0cc796eea8300c2729fa1c48ac4c23c2e8ffd62a630e1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2515519_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e18301763cc0c3bae791767eb292363311530b1c6b17d58a196fb1661aa1dec7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e9f374b5168808a663f2297ee3b135bbc4d2dd4709300cca84c38e19154633c7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "08cc9ac3ff508cd5ffa40df5edd65050c6c4e0f21a1f4a712a93c2fc7e2ccbea"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "be394ae7e4cc779a6acd82ca17698047f89f749f487060eeeaeb9c1b510406f4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8602d328ed7ec63ed0e712142c3d5f02142da0fd97b030ae3e0a5f439eaee3f1"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ae450b2fa0d299e8d544deb8119c08416ab5add99e210226eada145cdb903c73"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ea67edc6fbc6916187fb426ced009a9d18b66aa4b0f8a431adcafdc3b1671f1b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8a77ef8fe0fbe8f23980cfeb8c9fc5cffe68d6a4335aef1c89f5d8342a5fc728"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "a3ef181fc5a15bff0ca90d6fe57dfd5b08a1112348eff32b0cbe7ddb763a065e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d380bf5f5262e92406c9fbe1bade95a39d516bf1bb3136fef0fb8ec5d6d60213"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "05be73cd368efea1b72b2ac90f3e24c85bdfd6b31077db90311c84eca80edccb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ee04155d75d20563b25bb64026326870d3fc837df025cddea10712a6c64c18a4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2fc673de00dac51c5135a2cdc4bba15d8a63d05f7cefaa5c14cb5c200445b9b3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "059ec88b4c4715f2ef62bebae897a1c7d18a9daba1dacba7ea6fd82b1b33a9bf"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2cc7a71aa8236732bf5fdbfa4c75801e15343d33b1f5259cae041dbc0054520e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0486a0b1929e16b77a782b918e8dcb8f8c840e0ab4405db3146202b32b21d1b4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e0ea8be6e507bd2e794f0bf336bec5eae0a8cf4fd22217df13ffbffcb0ad56bf"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1da1fdd3a34380d7f3fb53cb3fbd8b37b11cab7d96415bd0e5f4e5fc14d45937"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "98f7af1be5157af10c731b49c8b8cab9d93790b090ae861ccad8afbc6875e399"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2626573_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7851e2eb8662ed1e6a1286365285fc2276244bb161737e571666f95eb372c590"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f5622fd4babf4dcf786a7a994a0db29349bb11bcf8056addb4ae52e670822d2c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ffedcf761e7aa5aa11b62868fc100bfac579bfbcea5933a1189935b56112dd16"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "dd6e11a60e152852c3539be58dbe45c7c87667d630973cbf5040fbf7671ba0c7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "deaec64fa3f889958f1d2a3725cb6768a212b83bd166a901d48ecf0f7727c69e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4ca51945a5053f5bce0778095c328dd51ee8a3c2162dc4b9faa96a4434979b66"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b0dac3b5cff5b2ffb2f758c1c45685404368d1af02a9e59a020f0944f71da898"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0f6fb9fea5129e8e55f89fa3ac1ec2a7d2c1dcd3b3343b49998610b115bc012f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "d6766ea4a9f63b6be5a801c866e7fdcbb53d170863aff4e0a3f6e15b5f897859"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c29d22388fb858caa8150efedc7169879207d09be799fa76f74cfc3995dc1de2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "97a2a84976add2b8b3570c198c98f77c83c837f5c694fce1d1a8b4f633f4bb19"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2cabe163c8d3f3528a66a32fe60a67ee15bcf117a89a0dc23259559792c7a7b2"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "dd612288f510c5f683f9213477be654fe3603791d3147609f7e3f70064dcda7a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5184f032d4e1cb6059f48761d83661db316e5c53f766df6ebc76016938af7901"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fc6af2ebd98c15cbab83de90cbc544cc368e9d63b332d810c69465570e8378cb"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2832f5c63a57adfd5832023bb5857d064b3551d3c9e54ccf61b22ad5aefaca91"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e517ce7aa7ecf58ca600987ad1c89e4f0e21902439a769c3369ef369d0066044"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "fb02bc4e0bf1e854f8a8bc6890022627b5bdff8de4e7b52c850c95756d9f764f"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1ca1ae805abdc928e92083f8854d55ccb5e4fc8776dab49492edac4846c3b22c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2737631_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "40488218cdc789134ea615d2d5f447c86fbebb1d795467868171f6a853b50e1b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "85f0beea5bb7b860b005689f67efa5a73fb4e63552c75aa955960325fedbeeb7"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "7acc1f321e1eb575d1e43fb942e44858d16657c1a3feb90af5c21c592f7a726a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e05c94e3c8b96d4f6405bdd3bab5158b31212c63c1e4b89599ad30f8ecdbfaaa"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b2243027259366c073eac6f48f5560e922d36b65caec8345ba476f9cb42544e3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "02f0b29d6041b350edae426c8950f5d9a1c9d96fac86c2684f08c42720f525db"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "cbc2a31cdb8017de716981cc6c62b844371748ac3e6a21688d9a3ce28420b17c"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8bc97f9675a74028119594ec837c61939c414d362a56f7704b9ba4e10eacc555"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b610c3fc84d33fe37aa0b48e01cc32b5a48988a9da4a49ac8fb73f579bfc1dd5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e978fccb9b68c22df057f31376bdfbdfcd4e5ac2c9d5a5597bffad99af257a4e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "55c10a80818cd0bf31b7923d9b05b1e6d4d5141b45b1d0d2465ff3e23c0de368"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "4d615b5d68c7123ef68de126bcd07e073717fdd6cb1a63d3cd4d138c50b058dd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "36a0a88438e8af6930410c7c82f03a6f9263af93e0e95aef2d4c4dcd781a83d6"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f3a348c63cc0ab0d66fb3e6327038028a14c2d525567e479819652e502de3550"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8f391df8f89169efdd9575abbacb0d4b1c3f33d74b56c1d5cb3a22fc0d772808"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5942991aa4d71aeb06babace617b00c8f61ddb682feaf62878ee7321d49aba4e"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ae1b406d2fe203d618d5d13af809525605244f741875e4e593a33a07294316d4"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "bc765c6aa675662f2012123be2437617a2dc54f6ad4a42fdf29f41e01e8a912d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "aac093fa2c56d26fa57009fe5f2e7c53f7d0c9c006113ad54766e85ad2cbbc8a"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2848697_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "05d2da0bd60eadd1d5d56e4282188c73d63dc349eb69fa2bb3d1e8671c98c820"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block00/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "766954f95cfb2f79a002ede1c59fdf7d127842b0b709a23d97981d05ac765605"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "01ab0bff40b1e7e25e1e7fd4d7443724c46a3c06e0ee43eb2e34892b0425a8e5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e608f775bb10eff18191750bd79557c55eed3be21eb1aae6aab0da57fc32eee9"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "af42d26580b54c19cdc81754f2e59eab09e7a39ff004da6666f6ae54263d3db5"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "db0f2350590beb34941ffc6daf25cd2d3fa7d4bbacf608f98626a68cd301a130"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "89dfdff33916f9f55afd362656a07e469fbf71674f5d18a3bce647f074a07b27"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ad66e93f27c88415a922e86d7566692f0f808ddc616651ce9d32e6f6392a3b14"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1d3d24de173909b4c4068cc65f04331a4b68ae275bfff16659e3a876eeb1eed3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "24dc343800e6ae0e15eb3a3968c56c0ada0c941a139e31a23b6b64bd0b22b1be"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f1c811b07d6d2c3bb92f2c404819a536837fa5ca6c28f7c1e3d957eac56ec3e0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1f8b4f1a810ef7ed8da64a2bfa03777f44071d6554767bc70d8dffa258cce0c8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "619671710a9e8d854260e9ab5bf5c5f08dbbb2f4a44d80b4e783c23f3061eadd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b9a2b51985a71708a6ac51219f4138beddeaad580c375ab8eb8b2d41ef3b6d86"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5db5c0a63810d7a4ec67bc5df76ee26cb8eb2e9ac4c13ff281cbc2bed8564b28"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "09caae797be9cbf4213c6dea1b86d5b8f115ef928dab1ab1efc762fbf7c036cf"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0250271277adbba3c025214da32f21cddc38ec031ac6ae837d4c219470510f2b"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9621893f01bd1bb58c7ae0b004dc6409ac48ec2dc81d3380527a86ab2bedb109"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "63a60a8a44c97b3225cbc06290aac458be286393565ba5815863ff4618b84ab0"
+  },
+  "raw/released_checkpoint/navigation/eval_seed2959769_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0ee4c69888c67eacc21f82f576edcd1df14e10d0377be0f43d4b4f7618c9c070"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block01/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b504964623857dffd580e98288302f70b6b09845f676413b940b8ad647a61792"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block02/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c7ee1628657a76a1ecd060641afc8c961eb0c9ce7bfb65529905461a9bb2e283"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block03/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "92bb901d6a61dcca8b3bc3083b5ca77374bda9a94ffea6488a60fecc014b28a8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block04/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6077b6d097e2482eaa441fb0b28c501e346c5a557456e89380c121d20902261d"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block05/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "22e61544d42e6bc0749c10b99ff64304198ac3a11d463027a707ddd55ccb5553"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block06/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "5c99c0dcb0c15ad6c192e05e7bceb391962e8b366485d542a7b1ab75e7efecfa"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block07/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "c3939a7b7b9ad67c8957fe13a53fc639aea84da80f3275b68f4a953a5ae27e07"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block08/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "e08b6b5e6ea7e2fc37ea8eb7aaa1161e99ea7aa06906901f225b1100191b6d87"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block09/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1341e1e38e63e76640069014581219a199de6b22240524f38fa4c89a0a9a1a61"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block10/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "58b6497dffd5f56f31114d040bfad765366c1ba3d3d194c21cd24c7611b6b2a8"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block11/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1aaadbe5895f0cec3d274f1d5078bde7d778bdd65bef718f4f3a7ddc637fce79"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block12/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b552e01ca24ee94f11a8b36b5e3e01cccbf555121b185ce009e5899b52b5d588"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block13/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1dc306b722727090f1c362d74645d8cf2f67e88b874ef4ef06757b44ae2876a3"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block14/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b93c67bba33aaeb808340e05fa1e9678dffd1c055160fc413445df3afb44fcee"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block15/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "0f6dbc69fac054e2bce6476fda3cc5ce27c02bb6c6d1f7d61dbbfcbe73decb73"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block16/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "08116d1bbf76d039e2d929a0fbf9d9f2ea76f9c6a4f7583dd89bf5461beef2dd"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block17/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "9a0e696d6d514b058091f06731e27d506e68e8f15caf9c5f96bf9ceaa078a784"
+  },
+  "raw/released_checkpoint/navigation/eval_seed3070849_block18/episodes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "3dfbf4a0b4c1d57c3564dacc57252f2effc92ad0e2389a34f3911c3b7628413d"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "6dab6ce70fa4103ff4044d1c3b76f12ccb233ce96026a26871d43a571f09d846"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "e34da4c8d047270e31e9e36e0ad3ca370d9788a370df8de121e851e4fad7cac8"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "3278a9fe7262b7eddc93577a7ea271c413ff5bb826a2006e1c38607991e8d07b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "f81f93ab7fa50b702c84c7d13053ef5c027072d45d553c8459e3f5a7c398ad9e"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/seed4103303_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "9aef2e2bd4d55462a96659e2db127f459e3ac9d6238213064cc43b1efa5e11c2"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/seed4103303_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "39349f96ca5dbd6248d5765247b620a30e12c0f1eec9009b11c7d6b30097f27f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/seed4103303_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "e66bf255aa7ccb705523f16294422ab32f16225a01ae083ac6dd78f501dc809f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4103303/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "dd3e2c02ebdb0343d1ae4dd7c0b84018f8ac80626fe2da39d80d9e04afb6b69b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "4a21109f86f354742fa15418c1757ebaad03466cefeb931b0561b4a37f638b73"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "04b224f8fd7ef8abacc26a06cd3d549505c3b9e735b9ea025f060648dae138e3"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "ca68e2af53d1723f78cb842424a8496c96b9bdec609a33f7283060ef4aceab11"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/seed4214361_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "ffba07f70adff0ba15dde990f1977928605125f21a9095d3d5a83d674a7a75a0"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/seed4214361_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "66b8ae449bfc64739b472bfb89959978663e2f191aee4fa672bfadd5b9449e86"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/seed4214361_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "b6a93a7e31156d62cfccb96a1623b23d25192d0898d12c71474e757b9a96f3bf"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4214361/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "88c38be2524e9773840e317a2bf3bedd31e196c9c495a0bf3b89d131b370d211"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "dcf9f2d446ad0d5c2992c524a1fb9459897c1c6bf6c959dc13c136c77562612a"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "4daf31d53fb24b65503a6b8749ada2e67dbbf8c1e82244769379ff7a823970cd"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "8e5113359ac00fe545771012a0e9ad8b79a72ee4241e1cd034a5f0e3a0e79220"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/seed4325437_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "143f779be314a00edef283da41712a3ff55793be0a63b2394a015f7484021f88"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/seed4325437_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "c986b511736605f5421aba325c8f4b99b9c97ed53cf4aa3288b332e09a3cfb33"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/seed4325437_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "83626047d8367539b26cc15ef135a40aa4f68bea7ea8b2918df3558d24455a82"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4325437/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2300e278c0b2d10f1aa18190224cdd0a96d1bf954e24985f4977be714bc1eb41"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "97511c98bc1cc284e2a248057da27947fbd1d44c80c46f31dc6655c9f07290e0"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "e7206be3953d9c28f5ff8006b098f715dae687dddcc5578a487fe9519092f265"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "925b523d70a5a4e18396f2c69534cfae0812908775c7da3c9796006d4031fd22"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/seed4436521_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "69eb70364e272855fc51aafaafd0251606c7c0b2d982bb53f8a62d87bf1ffb96"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/seed4436521_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "bd276bb2716f9e6398d9956ec02fcaeebc8170370d4848b60bd728839066cff3"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/seed4436521_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "1e40a7821cfebb820aedc5726d39db3cc8260cb4013b36735844a588f8da21ab"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s0_eval4436521/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1e9e3f57e4b044b44361e9e57f3e978dde11062142ce84d891de847c5f41ef5b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "d51f3bf43b79d95770203f3adab35af6603c19055d3d95035e614b4898034a93"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "f78edc69f1155dcf248ff45413c82ae33b7f048c0227f21bf0ec637670c968ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "89e85a638bd375b0fe1fe859ed7e9e82dd01e5a0928079c863d79c77999b86cf"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/seed4103303_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "c262f3681fd68a47a911a3791b374f3dfbecaa45c407e8eb0deb44d36a49c0d3"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/seed4103303_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "573b668c5850ecd2dac664e1d9427058a5d4345af0345c8d3783049eded4601a"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/seed4103303_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "678a93b2cdbefe807007f28c2a63bd0379952a62202b49915274130297a53c3f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4103303/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "16c74584f8bf009ba35a87e9291398e9b207004417de6026f41678cc0e9b35bd"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "083a75185326e9b044c4e24084ef3aec28ca58841ba4d147402672e78ac5f144"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "45983605a4884b9b6b63294be5f4ae67176112df44889c2efb941dcc205e6961"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "54ce1914a170a11c2c6968b8997aaba9e966fda4983e7d52f52aa6b61bd427e8"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/seed4214361_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "68aae50c3baa5666ae65ccb9c38306bcf2359136167404baa0bc70f310c6262b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/seed4214361_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "8293fb3aa7c6fef649a75e51b2d925fa27b3926c7e2b802f099282b92299fdd9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/seed4214361_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "2f0463bc47aca413afb8a68430ebda7a1c8e42e17d316ddfc8c0ae6b073a2bd9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4214361/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "08816656349ddb30634366369f97dda6312471f4ae8c623d44b8260c28846804"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "8ea3ccb0040522a2ffb0c481fa0f58d40322f11c3122bf38e723f7002b47d742"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "e434998640becd6308123f4e1045be33ee4e1918f8a89742e75de809f1c2fad3"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "a59c77fe55a01133d3222da3cb579556f8b1b02ef1d151f113e84faecdfac47c"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/seed4325437_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "25ba4f3fa9f179944b31d16644cc3214cfcf087a7c6662ab1e112eaf559a2ae0"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/seed4325437_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "626121feb809fd69aeacf44aa60d7170612de7992198a7c883232957141f2b7a"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/seed4325437_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "d5629453194679aa1934c6d81bf3b527989bbe4328d323dd9c821cf1b4b66afc"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4325437/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "23358f29e23b20be3f974a6bc49393b09d8e25fb6a06dc752e0fc4936afda36a"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "d611c0ef5696e91a4465144777f6abcfc4984ffc192b77eb37d08ce70a24efe4"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "acbf2255a1f6983b683fd6afd1303425dc1f35d512ff759675c9ee0e54906973"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "4dd373316d3b7f52d58fda13a969eca94d18c22d202e7438318702e3613e3cd5"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/seed4436521_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "49b809fa07339f31938b143304b8f51effab3e136d428db95d8d9e0471f542dc"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/seed4436521_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "115677b67be4688ae48eaf61aa12b8e891dd8a5e075b8d59bc0345d2574c087c"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/seed4436521_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "5487edd24fb7ec0f03890558c03fd33d896cb6b04121d122c4e37405d0842a3f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s3_eval4436521/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "54b595571f258374888971cde5d87cd5ae17df88479dd2f6fda2799f21d27b6d"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "53ad08ad73dae0b0b58b42966f76e6e4492e6b3e6a2e30ec9ba5de2a2ed272bd"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "ed3d49c3535422389fb218f7dfe3c23406d14a5742c350badb1d3c99c66175bf"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "cff421fe70f793d432f7352fc980f7c83c8a683bc6e94a4f8a7f2d6f51fbd66b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/seed4103303_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "36155dd2af9387e9b46c675a6df37f1c068be7ad65aae601f10efbd829a2d3aa"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/seed4103303_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "16a75aecd42de73172352b7cc2bb1893e4c9747103868c2466e6af4dce4dc5d1"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/seed4103303_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "ec067d4119020650d50e60eaa865728b94bcd05c998864b732ed9dca77c4b863"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4103303/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "ad7c782fa2105a60730eacd3d3ca55bed84252ce1a40e12de849a8a886469537"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "14a2a6aa85a3093e7b43b57ff2995e694db305552ad4c81ac37c9ac9c46ebe57"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "59c0fc7956b4f776e4d04218d701e7d707a61f5cfb73aedea95579c6503d7d63"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "d4ddd618edadaf880f591ab89bb5da00343692fba5c767841b983adda4b25ed9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/seed4214361_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "f950574d2b2649b1f7df7e23677ff67686e25673ee2d59465cbb2a79162f089f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/seed4214361_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "1728c362ba2ab1f801bdd74f8db11194d28ee1c68f93957f2739b84ea7bd5079"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/seed4214361_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "be8830faf03765fe81afe0d167bf65376d2dcb949fe69689ed6e984ccfa02e87"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4214361/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "26af52a6ae3e2fd11fcb9d36111eb4bdd0599ac8f7a0d80c9c56218b5860b303"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "08d1ff1e7a4036e3bfb7c54559c3cb6b9e2f15c60c5b147ad1301b3439997258"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "a7af57931f8e878e931f1b4d35583d313921b42d25db2a05b7e1bab41a3a10d9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "c785acdd01a10fa56339f63701752209228280fd88972b2a407b803b92da31f0"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/seed4325437_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "ab9530696822e7c8fcde19572816c9ffec2dc4ce36a8c95b4561fed5a907bec9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/seed4325437_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "77651cde434c9fd5435dc2b5a94ff244f9c7d2bc114ea32014a2eed0c5452c00"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/seed4325437_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "68961c8a2afe93d0d2abd925ddb25b568b4fa66185cb69bd1f00c1d21c04e4b8"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4325437/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "66822fceffac4d191afe464151634712d95d3412050f06602b6dbdbff7cd7bc8"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "0f9ee1ec3931f160d6c2d2d6cce66a3c8e251f697ed974dca055f33979faa221"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "e31472121ca747b5cdb711daea2bfcec01f7098d78a0dd25149b5c6894c503e4"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "f87d7291142e620beb5eda7aed9800370b7e6ba043d80b740c39b8686db190d5"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/seed4436521_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "2a5c5c78ec5cf5f6c78839f6c0518da2840b62566e56a087c8d99a4328874db4"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/seed4436521_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "88fd00665326908e39087846d21464bb336ecadf1a22b60431c605c2d86392b4"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/seed4436521_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "8967175c62899852d0dddf7f9f715a13bb946fd47733479ee467c55142152992"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s6_eval4436521/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "b6de6b168dbb86d15b186239512a3d26f2b64e26c2f9b877da0276f24c66a581"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "8d2d2cff10f409a518816a5c65ce2400798086cce63a1b086d27984cfa1ac045"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "d257d930b1a763d48a6928c2e788be4cc31f3d7871133a35f0d854495075e405"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "f2429c95f4db5c5dc3ae1ee67bbce17c5a828846571a354f917803ec083a6017"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/seed4103303_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "c1e43737e2c6ddf5073f21a3e287d3cdebf2722f23e5e810fc2a74af8cd0ae1a"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/seed4103303_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "ee33396152250c6b23b6127c4262408e945aea01b69849de779580edb2497322"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/seed4103303_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "bbd975c6030975f8f44f96113b3363dc65697d29a37d27257717263c5c168171"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4103303/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "f4707294f86c2c92d83de4661bf8009c71dbd9030ff2bda73b836e7f75c98568"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "c2da97fb648d24764931c6556313eaeaaac85dcf06126ab5689da73ec6398ad9"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "9f74d645f727f10c1a67d18c188ca99449b7df0ae7f0711aa9f9c546dd2a57c7"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "6bbca4bbc7c0a1c5a57910181b01201613f23298558181f64fcc5599d436cabb"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/seed4214361_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "243462adc6025695f55b4c5c83594a9b2b18080e532419d86bb181c6a65a8d03"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/seed4214361_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "4011f50f9b7b472301751c2ed2ae3da341915edd6a8fcd56b044fb73b8aa3c70"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/seed4214361_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "f35575dc4ee99cb6ebec9a3fd8450860aa88f83f78f751eaea05303cc0ae9030"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4214361/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "2770acf73bd994d387a09d0050599fe8a27f57a0ba18401b186ceaecce481e9b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "40673b919c1830427621dce69fe6ef39b10b9cfed2a6350fe08038a11730ec3b"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "894297671fa453b3053c72e0fff857e1465da1d3e2b0c4386538b7417e8cfc04"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "beffc43aee269b2f741eda7967fe618fbcadfe568608504024ccceff3eaa18eb"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/seed4325437_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "1953335ad3a5ae9e32544b7b7902168b75cc37d7b29294d471f5e48b0dcdf6b3"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/seed4325437_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "1054e329f77326faf3da2b246ca13a2e9ee5ee26e1c96080d9e942435ec5d329"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/seed4325437_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "fee7df0a37a0a69b2e7e5d4311f0fcc7ec88bc7058ab27efff3df7b68d0b1344"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4325437/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "42003ec078f3901f016ae674266b0b8c87fb7a0e4937ba9ee90d00aa1ca8556e"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "9c60e7ca4ad3d349a558029c0a8b54c293cee8e83d93b9927c722e47a929d7d1"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "7132703d65214884861b558dcfe1bbd04a8fab10b01016340ec32ad00fd5162c"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "8cfca3c7837f9d4b29990df4a5d1a20aaf22baff9fb1540999727c8664f95d27"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/seed4436521_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "ecb58b0959f1c6b54358b2f21be27e147107003db390bb5ca2f7bd12a4c1c2cb"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/seed4436521_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "f51740fdcce817b7bc5aaba7f16ea918614e87fdb0f67005f376e343c30c439f"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/seed4436521_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "89f36f2cbf2581887e6abcf7f313266d31a1d2159eb6475b88fa64781bd34800"
+  },
+  "raw/released_checkpoint/replay/teacher_F11_s9_eval4436521/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "06a90995d194c6d8e5d79d2ec785db514a745199895ed5c2562de39b9945f934"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "d14dd07376fc83a12dd4d53c9d45ed908efd46e1aeb314fdbd511d224667d5b7"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "667132e6dfd25fa9e86b44968ff41a3b1bb4d484cf512d02aa5daa00ac463588"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "3f9a12c0efeaf0631b5942cde905d5841149ef894aac70b5905d009e14744e95"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/seed4103303_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "efc3c3b043ec13c16a7769ff9d19bc0302c092e87fd110ee77b8f9265594d87a"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/seed4103303_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "c7d07af33d8fd76c61866c13dfac226202e6b204a66b17ad0f092c7b3c1eaa52"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/seed4103303_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "85a48174c4d1c8ef3d1edbae404e46276854fec6c79821b39509ea32ab73c5dd"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4103303/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "8c1b81d35e1077447d445130799a966bf3e94408ed7fbac55eee1595e0ac702f"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "837079101e5057905d297a8af93b6a616b8877d747c87e1b16d0e77cd7220e7d"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "46e80b929f34902cdd968045e7faa471542f95a5888f882140f968fd601c1369"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "eb14d09b9c397055e3ceec5167a3c0fb234edcb5d169873e86e2803a0c435a10"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/seed4214361_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "59d20c1ebb1b5db314ebbbd3a03cd3e016277592bddedbb9799f23bdba515a78"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/seed4214361_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "7bdb01a916a30c9889390bae363cd9158044473bd100e241e857d4435fa5ad8e"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/seed4214361_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "cc94cf4268ee85261ff9b93229d89614bf00f77f81fd5c5e171a9e6005e0782e"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4214361/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "597629eb852212a40f11dc3a2e16f97b9ebdcc35a0533cf082158d00ce025714"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "357c067361979bf21ce145f3370080f0a5395beb4512954b3f7008a04ffd7301"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "d4486c4ce8a0fad852e0ce36db2ab234c9313e1ee22a4c01935ca03b05d51930"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "74f2ebec2c8ae80fc1b84474d399d6aaee887896dd080fa3e590390cdfaa0a82"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/seed4325437_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "7e286f5f28cc012e3f92418831d83f596221ad8c1e87eaeecc4d164d24d49245"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/seed4325437_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "4ddfc3a1ad209a63141650e3c3aee7b8551add9d80aee27fa01a945a0c07cebd"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/seed4325437_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "80dc5fca8c60e2af07ca42d55ddb8b409142afda8aadc6daddbab9510b06be86"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4325437/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/candidate_outcomes.csv": {
+    "paths_normalized": false,
+    "source_sha256": "1d09e635460b9b843f1bf79d7787bdf4bc38514f13f5eb9295ec7f1e5c6f4674"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/metadata.json": {
+    "paths_normalized": true,
+    "source_sha256": "8a44d4d0ded3dcc81a05a794413f4e37cecfba12e42817980eb64e2c5a27565e"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/protocol_identity.json": {
+    "paths_normalized": true,
+    "source_sha256": "de9c3297184d07fcf84cc9997c89df103819f476ce3e422c73508e8331e134ac"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/qualification_summary.json": {
+    "paths_normalized": false,
+    "source_sha256": "418427d27159d00306b679a3a0dc2da18fe667e56eaf56dc195b85672dbb03eb"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/replay_controls.json": {
+    "paths_normalized": false,
+    "source_sha256": "11bac9ebb06e713229dbd091e8cc97094d6c5018fd6b5e5fe9eea02e37887752"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/seed4436521_anchor128.npz": {
+    "paths_normalized": false,
+    "source_sha256": "f2d46192b8bfe1200c8a54e092a412d2d34c9be269ac15aecd28abb5d4564eb6"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/seed4436521_anchor384.npz": {
+    "paths_normalized": false,
+    "source_sha256": "9b29ad6e0a8ba9fa94b9026bbdf34c72bfe2b80b1e053499d52b8c032d44ebd6"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/seed4436521_anchor768.npz": {
+    "paths_normalized": false,
+    "source_sha256": "bed8eb81b891a8207785be3c89493e34dcfd1a2d87999ecc2acca0b78d5307e8"
+  },
+  "raw/released_checkpoint/replay/teacher_released_NavRL_eval4436521/usd_isolation.json": {
+    "paths_normalized": false,
+    "source_sha256": "27b5f887522d00a91f5a053092b620457135f4f40fce0ad4b973eaa100886054"
+  }
+}

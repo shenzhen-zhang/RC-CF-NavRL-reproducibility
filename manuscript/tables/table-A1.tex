@@ -1,0 +1,25 @@
+\begin{table}[!htbp]
+ \begin{adjustwidth}{-\extralength}{0cm}
+ \caption{Implementation settings for the two adaptation procedures.}
+ \label{tab:configuration}
+ \centering
+ \tablebodyfont
+ \renewcommand{\arraystretch}{1.16}
+ \setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\fulllength}{@{}lXX@{}}
+\toprule
+Setting & RC-CF-NavRL & PPO-Lagrangian \\
+\midrule
+Nominal branch & Frozen task encoder and Beta head & Actor and encoder updated jointly \\
+Safety representation & NavRL-initialized $256$--$256$ MLP & No separate safety encoder \\
+Cost critic & $256$--$256$ MLP; SiLU, LayerNorm; 32 ordered quantiles & Scalar critic \\
+Policy learning rate & $10^{-4}$ (gate and residual) & $5\times10^{-4}$ \\
+Safety/cost learning rate & $3\times10^{-4}$ & $3\times10^{-4}$ \\
+Adaptation schedule & 16 safety-only + 40 joint updates & 56 joint updates \\
+Correction parameters & $\delta_{\max}=0.06$; $T_g=1.75$ & Not applicable \\
+\bottomrule
+\end{tabularx}
+ \par\vspace{3pt}\noindent
+ \parbox{\fulllength}{\tablenotefont Shared settings: Adam; 56 updates (114,688 frames); PPO clipping 0.1, four epochs, 16 minibatches; mean-risk cost objective, $B=0.05$, discount 0.99, and target update coefficient 0.01. MLP: multilayer perceptron; SiLU: sigmoid linear unit.}
+ \end{adjustwidth}
+\end{table}

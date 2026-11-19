@@ -1,0 +1,21 @@
+{
+  "method": "RC_CF_NavRL",
+  "seed": 1183109,
+  "env_index": 0,
+  "point_count": 1940,
+  "goal_reach": 1.0,
+  "success": 1.0,
+  "first_goal_step": 1938,
+  "first_unsafe_step": -1,
+  "first_done_step": 2199,
+  "canonical_scene": {
+    "protocol": "canonical_navrl_dynamic_obstacles_v2",
+    "snapshot_path": "recorded://navrl_train_q2_20260726/configs/v19_paper_aligned_exact_scenes_20260810/configured_80_actual_80_seed7.json",
+    "snapshot_sha256": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3",
+    "creation_seed": 7,
+    "dynamic_obstacle_count": 80,
+    "dynamic_obstacle_origin_sha256": "2edbda8a2b69d94fe1163ad8acf8388935463271b68c89c0c25a86ccf6c34b7a",
+    "dynamic_obstacle_size_sha256": "bb51269e78ddf41988950fcbc0e6a33593492b31e17d4cb7c50fb29f216079da"
+  },
+  "artifact": "RC_CF_NavRL_seed1183109.npz"
+}

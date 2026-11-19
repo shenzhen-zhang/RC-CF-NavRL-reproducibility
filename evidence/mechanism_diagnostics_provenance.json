@@ -1,0 +1,26 @@
+{
+  "source_file": "recorded://RC-CF-NavRL/结果包/RC-CF-NavRL_v19_结果包_20260812/02_模块机制_消融与删减依据/模块专项分析/训练种子机制指标汇总.csv",
+  "source_sha256": "e0ba05d79ce1c4c18307a65c88dd93b562414035f2dc7fe53a279a80583c330d",
+  "included_variant": "mean_risk",
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "aggregation": "Per-training-seed arithmetic mean of six evaluation-seed diagnostics, as exported by analyze_v19_mechanisms.py.",
+  "definitions": {
+    "gate_groups": "Teacher intervention label, not simulator unsafe-event truth.",
+    "adapter_shift": "Euclidean norm of adapted mean local command minus frozen base mean local command, in m/s.",
+    "candidate_ordering": "Fraction of within-state candidate pairs with teacher-target gap > 0.05 ordered consistently by mean critic score; predicted ties receive half credit."
+  },
+  "analysis_sources": {
+    "代码包/tools/analyze_v19_mechanisms.py": "443846d13ee16386dcb88ebe41645539ca33647a0b5439ff76d67882b708acb8",
+    "代码包/methods/radcppo_navrl/evaluate_v19_canonical.py": "cab01231efdb7c7f6b0765e2fbc1beaa9d004f91bcc8d30a0f6560a842261388",
+    "代码包/methods/radcppo_navrl/radcppo_adapter.py": "43c27416080cd3af3fe23eaf296efc74710798d148a06dc281f3a09c4205d455"
+  },
+  "excluded_comparison": "Historical no_counterfactual diagnostics are not identified as a matched mean-risk removal; omit from new figure.",
+  "new_experiments": false,
+  "new_statistical_inference": false
+}

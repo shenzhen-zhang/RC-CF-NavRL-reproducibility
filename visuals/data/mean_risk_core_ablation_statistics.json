@@ -1,0 +1,525 @@
+{
+  "status": "passed",
+  "protocol": "v19_mean_risk_matched_core_ablations_20260811_v1",
+  "analysis_after_integrity_audit": true,
+  "checkpoint_selection_after_results": false,
+  "negative_results_retained": true,
+  "comparisons": {
+    "no_gate": {
+      "comparison": "mean_risk_full_vs_no_gate",
+      "training_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluation_seeds": [
+        1183109,
+        1294127,
+        1405151,
+        1516183,
+        1627211,
+        1738247,
+        1849289,
+        1960313,
+        2071349,
+        2182387,
+        2293429,
+        2404471,
+        2515519,
+        2626573,
+        2737631,
+        2848697,
+        2959769,
+        3070849
+      ],
+      "paired_episode_count": 5760,
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 20260811,
+      "inference_unit": "training-seed and evaluation-seed hierarchical paired bootstrap",
+      "metrics": {
+        "success": {
+          "full_mean": 0.43732638888888886,
+          "ablation_mean": 0.4473958333333333,
+          "paired_difference_full_minus_ablation": -0.010069444444444445,
+          "hierarchical_bootstrap_ci95": [
+            -0.023958333333333335,
+            0.0026041666666666665
+          ],
+          "training_seed_difference_sd": 0.008203010177032951,
+          "directionally_consistent_training_seed_count": 5,
+          "per_training_seed_difference": {
+            "0": -0.0078125,
+            "1": -0.017361111111111112,
+            "2": -0.019965277777777776,
+            "3": -0.003472222222222222,
+            "4": -0.001736111111111111
+          },
+          "mcnemar": {
+            "full_only": 389,
+            "ablation_only": 447,
+            "discordant": 836,
+            "exact_two_sided_p": 0.048614841316248845
+          }
+        },
+        "goal_reach": {
+          "full_mean": 0.43732638888888886,
+          "ablation_mean": 0.44722222222222224,
+          "paired_difference_full_minus_ablation": -0.009895833333333333,
+          "hierarchical_bootstrap_ci95": [
+            -0.02378472222222222,
+            0.002777777777777778
+          ],
+          "training_seed_difference_sd": 0.008429530129382093,
+          "directionally_consistent_training_seed_count": 5,
+          "per_training_seed_difference": {
+            "0": -0.0078125,
+            "1": -0.017361111111111112,
+            "2": -0.019965277777777776,
+            "3": -0.003472222222222222,
+            "4": -0.0008680555555555555
+          },
+          "mcnemar": {
+            "full_only": 390,
+            "ablation_only": 447,
+            "discordant": 837,
+            "exact_two_sided_p": 0.05284650024578034
+          }
+        },
+        "collision": {
+          "full_mean": 0.5336805555555556,
+          "ablation_mean": 0.5225694444444444,
+          "paired_difference_full_minus_ablation": 0.011111111111111112,
+          "hierarchical_bootstrap_ci95": [
+            -0.0010416666666666667,
+            0.024479166666666666
+          ],
+          "training_seed_difference_sd": 0.007602303488128929,
+          "directionally_consistent_training_seed_count": 5,
+          "per_training_seed_difference": {
+            "0": 0.015625,
+            "1": 0.018229166666666668,
+            "2": 0.015625,
+            "3": 0.0008680555555555555,
+            "4": 0.005208333333333333
+          },
+          "mcnemar": {
+            "full_only": 483,
+            "ablation_only": 419,
+            "discordant": 902,
+            "exact_two_sided_p": 0.03587596263608594
+          }
+        },
+        "near_miss": {
+          "full_mean": 0.3107638888888889,
+          "ablation_mean": 0.3194444444444444,
+          "paired_difference_full_minus_ablation": -0.008680555555555556,
+          "hierarchical_bootstrap_ci95": [
+            -0.02326388888888889,
+            0.0045138888888888885
+          ],
+          "training_seed_difference_sd": 0.009207119546699838,
+          "directionally_consistent_training_seed_count": 4,
+          "per_training_seed_difference": {
+            "0": -0.001736111111111111,
+            "1": -0.021701388888888888,
+            "2": -0.013888888888888888,
+            "3": -0.006944444444444444,
+            "4": 0.0008680555555555555
+          },
+          "mcnemar": {
+            "full_only": 508,
+            "ablation_only": 558,
+            "discordant": 1066,
+            "exact_two_sided_p": 0.13337406932612017
+          }
+        },
+        "path_efficiency": {
+          "full_mean": 0.40186546379700305,
+          "ablation_mean": 0.41110663077690535,
+          "paired_difference_full_minus_ablation": -0.009241166979902321,
+          "hierarchical_bootstrap_ci95": [
+            -0.02219412067387667,
+            0.0021434779936033398
+          ],
+          "training_seed_difference_sd": 0.007365580427494555,
+          "directionally_consistent_training_seed_count": 5,
+          "per_training_seed_difference": {
+            "0": -0.0073610092513263226,
+            "1": -0.015989114116463397,
+            "2": -0.01789375187622176,
+            "3": -0.0033947167814605767,
+            "4": -0.001567242874039544
+          }
+        },
+        "min_clearance_m": {
+          "full_mean": 0.029378912979478224,
+          "ablation_mean": 0.03029289945443452,
+          "paired_difference_full_minus_ablation": -0.0009139864749562952,
+          "hierarchical_bootstrap_ci95": [
+            -0.0028207331904700874,
+            0.001142766432891825
+          ],
+          "training_seed_difference_sd": 0.0013441932541128645,
+          "directionally_consistent_training_seed_count": 4,
+          "per_training_seed_difference": {
+            "0": -0.0014424314722418785,
+            "1": -0.0019517376480911884,
+            "2": -0.002131550018222899,
+            "3": 0.0009849044031903355,
+            "4": -2.911763941584569e-05
+          }
+        },
+        "empirical_cost_cvar": {
+          "full_mean": 0.670604037364117,
+          "ablation_mean": 0.6704648902381046,
+          "paired_difference_full_minus_ablation": 0.00013914712601237827,
+          "hierarchical_bootstrap_ci95": [
+            -0.0025331656306257677,
+            0.003122045378485272
+          ],
+          "training_seed_difference_sd": 0.0027092134330297486,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.0012320959423151282,
+            "1": 0.000321081451450785,
+            "2": 2.880322022570504e-06,
+            "3": -0.0028414699740500916,
+            "4": 0.004445339772953755
+          }
+        },
+        "mean_command_acceleration_mps2": {
+          "full_mean": 6.046675597752134,
+          "ablation_mean": 6.044247905206349,
+          "paired_difference_full_minus_ablation": 0.0024276925457848444,
+          "hierarchical_bootstrap_ci95": [
+            -0.027553283580475384,
+            0.032013631932851325
+          ],
+          "training_seed_difference_sd": 0.018189766005958258,
+          "directionally_consistent_training_seed_count": 2,
+          "per_training_seed_difference": {
+            "0": -0.00899060070514679,
+            "1": 0.002236308323012458,
+            "2": -0.002493215103944143,
+            "3": -0.012024968655572997,
+            "4": 0.033410938870575696
+          }
+        },
+        "mean_command_jerk_mps3": {
+          "full_mean": 564.3624110354317,
+          "ablation_mean": 564.0104418529404,
+          "paired_difference_full_minus_ablation": 0.3519691824913025,
+          "hierarchical_bootstrap_ci95": [
+            -2.561820175250371,
+            3.3513501673936785
+          ],
+          "training_seed_difference_sd": 1.962242032937867,
+          "directionally_consistent_training_seed_count": 2,
+          "per_training_seed_difference": {
+            "0": -1.1016633576816983,
+            "1": 0.35933856169382733,
+            "2": -0.5555231041378446,
+            "3": -0.6728398005167643,
+            "4": 3.7305336130989923
+          }
+        },
+        "action_oscillation_rate": {
+          "full_mean": 0.30257686408133144,
+          "ablation_mean": 0.30264712190514226,
+          "paired_difference_full_minus_ablation": -7.025782381080919e-05,
+          "hierarchical_bootstrap_ci95": [
+            -0.0008083186602258744,
+            0.0007134721581436072
+          ],
+          "training_seed_difference_sd": 0.00017550794094295993,
+          "directionally_consistent_training_seed_count": 2,
+          "per_training_seed_difference": {
+            "0": 8.616379151741664e-05,
+            "1": -0.00014641937903232046,
+            "2": -0.0003419581464388304,
+            "3": 5.486162586344613e-06,
+            "4": 4.543845231334368e-05
+          }
+        },
+        "stop_rate": {
+          "full_mean": 0.011043743361288863,
+          "ablation_mean": 0.011034473943315486,
+          "paired_difference_full_minus_ablation": 9.269417973377535e-06,
+          "hierarchical_bootstrap_ci95": [
+            -0.0003362615774706986,
+            0.00036419431678647593
+          ],
+          "training_seed_difference_sd": 0.00019439750744848535,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": 6.78582004588356e-05,
+            "1": 5.815855224177035e-05,
+            "2": 0.00024755187829820596,
+            "3": -0.000283579767912872,
+            "4": -4.3641773219052186e-05
+          }
+        }
+      }
+    },
+    "no_counterfactual": {
+      "comparison": "mean_risk_full_vs_no_counterfactual",
+      "training_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluation_seeds": [
+        1183109,
+        1294127,
+        1405151,
+        1516183,
+        1627211,
+        1738247,
+        1849289,
+        1960313,
+        2071349,
+        2182387,
+        2293429,
+        2404471,
+        2515519,
+        2626573,
+        2737631,
+        2848697,
+        2959769,
+        3070849
+      ],
+      "paired_episode_count": 5760,
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 20260811,
+      "inference_unit": "training-seed and evaluation-seed hierarchical paired bootstrap",
+      "metrics": {
+        "success": {
+          "full_mean": 0.43732638888888886,
+          "ablation_mean": 0.44461805555555556,
+          "paired_difference_full_minus_ablation": -0.007291666666666667,
+          "hierarchical_bootstrap_ci95": [
+            -0.0234375,
+            0.007638888888888889
+          ],
+          "training_seed_difference_sd": 0.012437754937209786,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.019097222222222224,
+            "1": 0.003472222222222222,
+            "2": -0.019965277777777776,
+            "3": -0.0078125,
+            "4": 0.006944444444444444
+          },
+          "mcnemar": {
+            "full_only": 386,
+            "ablation_only": 428,
+            "discordant": 814,
+            "exact_two_sided_p": 0.15065950143836707
+          }
+        },
+        "goal_reach": {
+          "full_mean": 0.43732638888888886,
+          "ablation_mean": 0.44461805555555556,
+          "paired_difference_full_minus_ablation": -0.007291666666666667,
+          "hierarchical_bootstrap_ci95": [
+            -0.0234375,
+            0.007638888888888889
+          ],
+          "training_seed_difference_sd": 0.012437754937209786,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.019097222222222224,
+            "1": 0.003472222222222222,
+            "2": -0.019965277777777776,
+            "3": -0.0078125,
+            "4": 0.006944444444444444
+          },
+          "mcnemar": {
+            "full_only": 386,
+            "ablation_only": 428,
+            "discordant": 814,
+            "exact_two_sided_p": 0.15065950143836707
+          }
+        },
+        "collision": {
+          "full_mean": 0.5336805555555556,
+          "ablation_mean": 0.5262152777777778,
+          "paired_difference_full_minus_ablation": 0.007465277777777778,
+          "hierarchical_bootstrap_ci95": [
+            -0.006076388888888889,
+            0.0234418402777774
+          ],
+          "training_seed_difference_sd": 0.010973266036847559,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": 0.019097222222222224,
+            "1": 0.0,
+            "2": 0.016493055555555556,
+            "3": 0.008680555555555556,
+            "4": -0.006944444444444444
+          },
+          "mcnemar": {
+            "full_only": 459,
+            "ablation_only": 416,
+            "discordant": 875,
+            "exact_two_sided_p": 0.15560870929032813
+          }
+        },
+        "near_miss": {
+          "full_mean": 0.3107638888888889,
+          "ablation_mean": 0.3137152777777778,
+          "paired_difference_full_minus_ablation": -0.002951388888888889,
+          "hierarchical_bootstrap_ci95": [
+            -0.018055555555555554,
+            0.011631944444444445
+          ],
+          "training_seed_difference_sd": 0.01076528888744965,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.015625,
+            "1": 0.006944444444444444,
+            "2": -0.006944444444444444,
+            "3": -0.008680555555555556,
+            "4": 0.009548611111111112
+          },
+          "mcnemar": {
+            "full_only": 497,
+            "ablation_only": 514,
+            "discordant": 1011,
+            "exact_two_sided_p": 0.6148424095602952
+          }
+        },
+        "path_efficiency": {
+          "full_mean": 0.40186546379700305,
+          "ablation_mean": 0.4085791460755799,
+          "paired_difference_full_minus_ablation": -0.006713682278576824,
+          "hierarchical_bootstrap_ci95": [
+            -0.02176092120948144,
+            0.006861084696267626
+          ],
+          "training_seed_difference_sd": 0.011366469568438295,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.017248567142006423,
+            "1": 0.003454538838316997,
+            "2": -0.01819041759396593,
+            "3": -0.00788287471772896,
+            "4": 0.006298909222500192
+          }
+        },
+        "min_clearance_m": {
+          "full_mean": 0.029378912979478224,
+          "ablation_mean": 0.029469182375760284,
+          "paired_difference_full_minus_ablation": -9.026939628205986e-05,
+          "hierarchical_bootstrap_ci95": [
+            -0.001896424266245352,
+            0.0017208227561948404
+          ],
+          "training_seed_difference_sd": 0.001286016178234795,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.00031228795867516764,
+            "1": -0.0019542364324378367,
+            "2": -0.00031717206972340745,
+            "3": 0.000638697146011206,
+            "4": 0.0014936523334149064
+          }
+        },
+        "empirical_cost_cvar": {
+          "full_mean": 0.670604037364117,
+          "ablation_mean": 0.6708469149087453,
+          "paired_difference_full_minus_ablation": -0.00024287754462824928,
+          "hierarchical_bootstrap_ci95": [
+            -0.00335291653606368,
+            0.002807997870129636
+          ],
+          "training_seed_difference_sd": 0.0030281707575778283,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.0018484669401206905,
+            "1": 0.003772137738350365,
+            "2": -0.00029299111985084083,
+            "3": -0.004178918911040657,
+            "4": 0.001333851509520577
+          }
+        },
+        "mean_command_acceleration_mps2": {
+          "full_mean": 6.046675597752134,
+          "ablation_mean": 6.041140883105497,
+          "paired_difference_full_minus_ablation": 0.005534714646637439,
+          "hierarchical_bootstrap_ci95": [
+            -0.024564261231571436,
+            0.0380740637668512
+          ],
+          "training_seed_difference_sd": 0.020088109332065944,
+          "directionally_consistent_training_seed_count": 4,
+          "per_training_seed_difference": {
+            "0": -0.027843995640675228,
+            "1": 0.00701217001510991,
+            "2": 0.008156333739558855,
+            "3": 0.014593943539592955,
+            "4": 0.025755121579600707
+          }
+        },
+        "mean_command_jerk_mps3": {
+          "full_mean": 564.3624110354317,
+          "ablation_mean": 563.6253363013268,
+          "paired_difference_full_minus_ablation": 0.7370747341050042,
+          "hierarchical_bootstrap_ci95": [
+            -2.4041678896877503,
+            3.919564034475212
+          ],
+          "training_seed_difference_sd": 2.364702581803598,
+          "directionally_consistent_training_seed_count": 4,
+          "per_training_seed_difference": {
+            "0": -3.214719441201952,
+            "1": 1.6260250608126323,
+            "2": 0.7461569706598917,
+            "3": 1.4584895769755046,
+            "4": 3.069421503278944
+          }
+        },
+        "action_oscillation_rate": {
+          "full_mean": 0.30257686408133144,
+          "ablation_mean": 0.30266035207055714,
+          "paired_difference_full_minus_ablation": -8.348798922573527e-05,
+          "hierarchical_bootstrap_ci95": [
+            -0.0008961207444533808,
+            0.0006961155229105809
+          ],
+          "training_seed_difference_sd": 0.00035188637971345993,
+          "directionally_consistent_training_seed_count": 3,
+          "per_training_seed_difference": {
+            "0": -0.0006404087244946924,
+            "1": 0.00025302235735580325,
+            "2": -0.00010943795657820172,
+            "3": -0.00010326945792055792,
+            "4": 0.0001826538355089724
+          }
+        },
+        "stop_rate": {
+          "full_mean": 0.011043743361288863,
+          "ablation_mean": 0.011082662568353246,
+          "paired_difference_full_minus_ablation": -3.891920706438315e-05,
+          "hierarchical_bootstrap_ci95": [
+            -0.0003237860113808387,
+            0.0002420485270249628
+          ],
+          "training_seed_difference_sd": 0.00015100383362449068,
+          "directionally_consistent_training_seed_count": 2,
+          "per_training_seed_difference": {
+            "0": 8.292742495541461e-05,
+            "1": -0.00017740136819257814,
+            "2": 5.317515246537773e-05,
+            "3": -0.00022806911591841426,
+            "4": 7.477187136828434e-05
+          }
+        }
+      }
+    }
+  }
+}

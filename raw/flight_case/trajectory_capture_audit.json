@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "protocol": "frozen_d80_fixed_seed_fixed_env_index_trajectory_capture_v2",
+  "evaluation_seed": 1183109,
+  "env_index": 0,
+  "scene_sha256": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3",
+  "evaluation_episodes_sha256": "7b224be1a80699ebfb1a3bbea509ce63f5a09046923fa0165f1b2febe05a56f3",
+  "reference_evaluation_episodes_sha256": "7b224be1a80699ebfb1a3bbea509ce63f5a09046923fa0165f1b2febe05a56f3",
+  "methods": [
+    {
+      "method": "NavRL",
+      "npz": "NavRL_seed1183109.npz",
+      "npz_sha256": "6ac8058fb01e23ba04aae342fb47f6d30eda81ea7747dbc5403d270369594740",
+      "metadata": "NavRL_seed1183109.json",
+      "metadata_sha256": "695e75e4711082d0a875cc49e71bdb2672140b4e98dd13070761abd3b92d61d8",
+      "success": 0.0,
+      "first_goal_step": -1,
+      "first_unsafe_step": 705,
+      "point_count": 707,
+      "maximum_displacement_m": 14.650533676147461
+    },
+    {
+      "method": "NavRL_Safety_Shield",
+      "npz": "NavRL_Safety_Shield_seed1183109.npz",
+      "npz_sha256": "26d5100c999d8247c12cccd9682efa9fc3ddfeafd783e092f4dbfe3a05615f5d",
+      "metadata": "NavRL_Safety_Shield_seed1183109.json",
+      "metadata_sha256": "e9847aa8b5143dc122f7d5fb0db0359e228966fade08fa01c7aef16e2858fcc7",
+      "success": 0.0,
+      "first_goal_step": -1,
+      "first_unsafe_step": 708,
+      "point_count": 710,
+      "maximum_displacement_m": 14.661842346191406
+    },
+    {
+      "method": "PPO_Lagrangian",
+      "npz": "PPO_Lagrangian_seed1183109.npz",
+      "npz_sha256": "223e77be6c6bff6ed0d0c30eda8afca7d78c1808beb4fbe703c6fcac0338c5c9",
+      "metadata": "PPO_Lagrangian_seed1183109.json",
+      "metadata_sha256": "952c0ca3dbae5f6cdd0e0b299e8d8e60a6aafe808bb2e018653fd2e1918d64ec",
+      "success": 1.0,
+      "first_goal_step": 1984,
+      "first_unsafe_step": -1,
+      "point_count": 1986,
+      "maximum_displacement_m": 47.55143737792969
+    },
+    {
+      "method": "RC_CF_NavRL",
+      "npz": "RC_CF_NavRL_seed1183109.npz",
+      "npz_sha256": "c208db7be529b70013050aa5f007b0eeeb46c32d6e0dd235b09686311812fec6",
+      "metadata": "RC_CF_NavRL_seed1183109.json",
+      "metadata_sha256": "d39e7eb5b51ad41f5fe07ce44419aa87ae1b64c12e7d7698d0714a684b4e45af",
+      "success": 1.0,
+      "first_goal_step": 1938,
+      "first_unsafe_step": -1,
+      "point_count": 1940,
+      "maximum_displacement_m": 47.529083251953125
+    }
+  ]
+}

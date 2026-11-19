@@ -1,0 +1,175 @@
+{
+  "schema_version": 3,
+  "protocol": "v19_paper_aligned_exact_recheck_20260810_v2",
+  "claim_scope": "exact-count density test and corrected observation-noise test",
+  "official_navrl_commit": "3725bcc2e7c1be4ecf1455d922299ae85042603a",
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluation_seeds": [
+    1183109,
+    1294127,
+    1405151,
+    1516183,
+    1627211,
+    1738247
+  ],
+  "episodes_per_mode_per_noise_realization": 384,
+  "env_num_envs": 64,
+  "max_episode_length": 2200,
+  "dynamic_velocity_range_mps": [
+    0.5,
+    1.5
+  ],
+  "difficulty_scene_index": "recorded://navrl_train_q2_20260726/configs/v19_paper_aligned_exact_scenes_20260810/scene_index.json",
+  "difficulty_scene_index_sha256": "df41e1a0ab096267e724ac58851840fa902e2a11506310d819375fd790a22f00",
+  "difficulty_levels": [
+    {
+      "level": "d60",
+      "order": 1,
+      "configured_dynamic_obstacle_count": 60,
+      "actual_dynamic_obstacle_count": 60,
+      "dynamic_obstacle_category_counts": [
+        8,
+        7,
+        8,
+        7,
+        7,
+        8,
+        7,
+        8
+      ],
+      "configured_static_obstacle_count": 350,
+      "filename": "configured_60_actual_60_seed7.json",
+      "sha256": "b985437b3ae41dba6a9b14eaa2a6829dbf5678d88903a9142be2489781e9ab9a",
+      "origin_sha256": "b480f1c98841ffde5d473b8f8e3f73dda5d1623c65fd6f027a12eab2f1d8c3ee",
+      "size_sha256": "df3822b81b00a26e30b6afbcca6c2db66ea5e98dd5f2922f64a64d403d8fc424",
+      "creation_seed": 7
+    },
+    {
+      "level": "d80",
+      "order": 2,
+      "configured_dynamic_obstacle_count": 80,
+      "actual_dynamic_obstacle_count": 80,
+      "dynamic_obstacle_category_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "configured_static_obstacle_count": 350,
+      "filename": "configured_80_actual_80_seed7.json",
+      "sha256": "61d6825f64954ad72f360fb95f80e829f42496550f11423f5976907f6526e9d3",
+      "origin_sha256": "2edbda8a2b69d94fe1163ad8acf8388935463271b68c89c0c25a86ccf6c34b7a",
+      "size_sha256": "bb51269e78ddf41988950fcbc0e6a33593492b31e17d4cb7c50fb29f216079da",
+      "creation_seed": 7
+    },
+    {
+      "level": "d100",
+      "order": 3,
+      "configured_dynamic_obstacle_count": 100,
+      "actual_dynamic_obstacle_count": 100,
+      "dynamic_obstacle_category_counts": [
+        13,
+        12,
+        13,
+        12,
+        12,
+        13,
+        12,
+        13
+      ],
+      "configured_static_obstacle_count": 350,
+      "filename": "configured_100_actual_100_seed7.json",
+      "sha256": "7de9605798170e422a44823e22d37c27f3262a648a11ec9d2dfeff000cd2d103",
+      "origin_sha256": "57c7208f2c8678067660d5629e6659e10fe7f94663bd81156af28aef367af5d4",
+      "size_sha256": "9ebedf779af3944f954296149dd20a70561a784cf0c97e03a3df031f0a136174",
+      "creation_seed": 7
+    },
+    {
+      "level": "d120",
+      "order": 4,
+      "configured_dynamic_obstacle_count": 120,
+      "actual_dynamic_obstacle_count": 120,
+      "dynamic_obstacle_category_counts": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "configured_static_obstacle_count": 350,
+      "filename": "configured_120_actual_120_seed7.json",
+      "sha256": "cbf856adf2df0e3f3792c2e17a17eebb5a74e564a4c8a0bc3d47170b8f965895",
+      "origin_sha256": "c72e391604ac309b97823259ec0ea199f3fc9da5c2cd6567f858ce9c875634fa",
+      "size_sha256": "4f0f920158db5894c17a5e2ecaa4dc7e4dfffcc74e6545f91a4dd362928d1f3a",
+      "creation_seed": 7
+    }
+  ],
+  "exact_dynamic_obstacle_counts": true,
+  "dynamic_obstacle_category_allocation": "fixed balanced remainder across eight official shape categories",
+  "noise_levels": {
+    "mild": {
+      "enabled": true,
+      "lidar_std_m": 0.03,
+      "dynamic_position_std_m": 0.05,
+      "dynamic_velocity_std_mps": 0.05,
+      "sensor_range_m": 4.0,
+      "preserve_lidar_no_return": true,
+      "lidar_hit_threshold_m": 1e-06
+    },
+    "moderate": {
+      "enabled": true,
+      "lidar_std_m": 0.08,
+      "dynamic_position_std_m": 0.12,
+      "dynamic_velocity_std_mps": 0.1,
+      "sensor_range_m": 4.0,
+      "preserve_lidar_no_return": true,
+      "lidar_hit_threshold_m": 1e-06
+    }
+  },
+  "noise_realizations": {
+    "n0": 19871011,
+    "n1": 39871019,
+    "n2": 59871027
+  },
+  "noise_applies_to": "policy_and_optional_shield_input_only",
+  "outcome_observation_source": "unmodified_simulator_observation",
+  "outcome_definition": "unchanged first-event success and collision definitions",
+  "checkpoint_selection": {
+    "official_navrl": "publisher-provided saved best checkpoint",
+    "trained_methods": "one frozen checkpoint for each preregistered training seed",
+    "highest_success_summary": "maximum across the five frozen training-seed checkpoints; reported with the five-seed mean and confidence interval",
+    "test_set_checkpoint_selection": false
+  },
+  "checkpoint_sha256": {
+    "official_navrl": "51fa3dbdc6ba89626b5dad3a4638deb53d40aa6f0caa9b289657da4a8e0b60c3",
+    "mean_risk": {
+      "0": "d40af869a259f6999a5ef3d227c1cc94048f2e0b570e7d0b44cfb8c783345728",
+      "1": "60254c2873e82edc2de59d038023c945d4d8d0f076167ccb6ddb3f31a93e963d",
+      "2": "2e0b3a34fc45c3567eb5c846f7c46e945629b05867137774eed4d261a93ad0da",
+      "3": "a8125b44ea24d85d90bf7d5580350dce80cf86db57db65181a77f7cb5a85f1e1",
+      "4": "21246f4ac6f2d242980d3c3216d8331b45b31717f180f3872a6f5b6594357176"
+    },
+    "ppo_lagrangian": {
+      "0": "542b7a9c318ec75e02896ebc85367648fd80ec9c88b4307d068e856caddf3840",
+      "1": "c832ceb9b91dc2077ae50a9cb52dcb68deecd5bcb07865047bb751ae492e008b",
+      "2": "b2dc80600b5188b11b49083c4ff15d1739918759c708b4496885dda610e8b212",
+      "3": "367dc9ff57991142902af928c1488adc4ef946db0987c1f479ded90b808d1c6a",
+      "4": "6ae5274829797dfb3bf5117d7d317a631a2b34efd607aeb8da358c0261bf44fe"
+    }
+  },
+  "selection_after_results": false,
+  "negative_results_retained": true
+}

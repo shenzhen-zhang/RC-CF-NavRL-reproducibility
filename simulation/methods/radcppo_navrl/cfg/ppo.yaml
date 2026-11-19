@@ -1,0 +1,71 @@
+algo:
+  feature_extractor:
+    learning_rate: 5.0e-4
+    dyn_obs_num: 5
+
+  actor:
+    learning_rate: 5.0e-4
+    clip_ratio: 0.1
+    action_limit: 2.0
+
+  critic:
+    learning_rate: 5.0e-4
+    clip_ratio: 0.1
+
+  entropy_loss_coefficient: 1.0e-3
+  training_frame_num: 32
+  training_epoch_num: 4
+  num_minibatches: 16
+
+  method:
+    # Preserve the pretrained task policy and learn safety in a separate branch.
+    isolate_auxiliary_gradients: true
+    freeze_pretrained_task_policy: true
+    use_decoupled_safety_encoder: true
+    safety_warmup_updates: 0
+    num_quantiles: 32
+    safety_critic_hidden_dim: 256
+    safety_critic_learning_rate: 3.0e-4
+    safety_critic_coefficient: 1.0
+    initial_safety_probability: 0.02
+    safety_target_tau: 0.01
+    counterfactual_coefficient: 0.5
+    counterfactual_count: 12
+    cost_discount: 0.99
+    quantile_huber_kappa: 1.0
+    risk_measure: "cvar"
+    cvar_alpha: 0.9
+    safety_budget: 0.05
+    initial_safety_lambda: 0.0
+    dual_learning_rate: 5.0e-3
+    max_safety_lambda: 20.0
+    adaptive_safety_lambda: true
+    risk_selector:
+      enabled: false
+      action_step_mps: 0.08
+      activation_threshold: 0.20
+      minimum_risk_reduction: 0.015
+      deviation_penalty: 0.002
+      projection_blend: 1.0
+      projection_smoothing: 0.8
+    distillation_coefficient: 0.1
+    distillation_gap_scale: 0.35
+    safe_anchor_coefficient: 0.5
+    adapter_shift_coefficient: 0.5
+    safe_gate_coefficient: 0.15
+    actor_adapter:
+      enabled: true
+      gate_mode: "learned"
+      parameterization: "logit"
+      maximum_logit_bias: 0.5
+      maximum_mean_shift: 0.05
+      gate_temperature: 1.75
+      initial_gate_bias: -2.25
+      learning_rate: 1.5e-4
+      gate_coefficient: 0.2
+    teacher:
+      horizon_s: 0.8
+      horizon_steps: 4
+      max_acceleration_mps2: 8.0
+      static_point_budget: 48
+      rollout_model: "acceleration_limited"
