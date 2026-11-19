@@ -1,27 +1,69 @@
 # Data dictionary
 
-CSV files are UTF-8. JSON uses named fields. Numeric values are preserved from the original exports. Column names appear in the CSV headers. See the manuscript methods and appendix for formal definitions. `nan`, unavailable interval fields and explicit unavailable flags remain missing/undefined; they are not zero.
+CSV files use UTF-8 and JSON files use named fields. The [raw data index](../raw/README.md) groups files by experiment. The [released input manifest](released-inputs.json) records source checksums. A `recorded://` path identifies a source in the original experiment environment.
 
-The [input manifest](released-inputs.json) lists the source checksums for the released-checkpoint cohort and teacher replay. A `recorded://` path identifies a source in the original experiment environment. See the [raw data index](../raw/README.md) for the files distributed here.
+Treat `nan`, unavailable interval endpoints and explicit unavailable flags as missing. Values retain the units of the original exports.
 
-## Episode data and identifiers
-`mode` identifies policy family and training seed; `mean_risk_s0` through `mean_risk_s4` are the original RC-CF-NavRL, `ppolag_matched_s0` through `ppolag_matched_s4` the matched PPO-Lagrangian. Other mode names identify their original ablation/deployment or historical variant. `seed` is the shared evaluation randomization seed; `env_index` is a fixed environment case (0–63). `family`, `variant`, `deployment`, `condition`, `comparison`, `contrast`, `composite_key` label the exported study conditions and comparison; use the accompanying difference_definition instead of assuming comparison direction. `training_seed_index`, `training_seeds`, `evaluation_seeds`, `stratum_count`, `episode_count`, `paired_episode_count`, `referenced_paired_differences` and the various *_count fields are counts or identifiers, not measured rates.
+## Episode identifiers
+
+| Field | Meaning |
+| --- | --- |
+| `mode` | Policy family and training seed. `mean_risk_s0` through `mean_risk_s4` identify original RC-CF-NavRL runs. `ppolag_matched_s0` through `ppolag_matched_s4` identify the matched PPO-Lagrangian runs. |
+| `seed`, `env_index` | Shared evaluation randomization seed and fixed environment case (0–63). |
+| `family`, `variant`, `deployment`, `condition`, `comparison`, `contrast`, `composite_key` | Study and comparison labels. Read `difference_definition` for the subtraction order. |
+| `training_seed_index`, `training_seeds`, `evaluation_seeds`, `stratum_count`, `episode_count`, `paired_episode_count`, `referenced_paired_differences` | Seed identifiers or counts. Fields ending in `_count` are also counts. |
 
 ## Navigation outcomes
-`success`, `goal_reach`, `collision`, `out_of_bounds`, `truncated`, `near_miss` are per-episode indicator outcomes (0/1); their averages are proportions. First-event outcome and termination conventions are specified in the manuscript. `first_goal_step`, `first_unsafe_step`, `first_done_step`, `episode_len`, `anchor_step` are simulator steps; negative first-event steps indicate no recorded event. `time_to_goal_s` is seconds and may be unavailable for failed flights. `path_length_m`, `straight_distance_m`, `min_clearance_m` are metres; observed clearance is the simulator surface observation measure and may be negative. `path_efficiency` is the successful-flight straight-distance/path-length ratio with failed flights assigned zero, dimensionless. `return`, mean_safety_cost, empirical_cost_cvar and predicted_cost_cvar are dimensionless task return, recorded cost or learned cost quantities; predictions are not simulator outcomes. Mean-command acceleration uses m/s^2 and jerk m/s^3. `action_oscillation_rate`, `stop_rate`, intervention/selector/teacher rates and feasibility rates are dimensionless proportions. Command-shift and residual velocity norms marked *_mps use m/s.
 
-## Processed estimates and uncertainty
-`estimate`, `difference`, `paired_difference`, `full_mean`, `ablation_mean`, `method_mean`, `baseline_mean`, `five_seed_mean`, and `five_seed_mean_or_single_checkpoint_value` contain the named metric in its native unit. `ci95_low`, `ci95_high`, hierarchical_bootstrap_ci95 and bootstrap_ci_two_sided are 95% interval endpoints. Success/collision estimates are stored as proportions: multiply by 100 for percentages or percentage-point contrasts. Metre differences are multiplied by 100 for centimetres in the teacher figure. Original single-checkpoint fixed NavRL rates have no multi-training-seed interval. Probability/p-value columns are dimensionless; conditional sensitivity results are labeled separately from main inference. Runtime wall_mean_ms/cuda_mean_ms are milliseconds; reported table means and sample SD are over three repeat means; memory/storage fields marked MiB use 2^20 bytes. GPU and batch sizes are protocol metadata.
+| Field | Meaning and units |
+| --- | --- |
+| `success`, `goal_reach`, `collision`, `out_of_bounds`, `truncated`, `near_miss` | Episode indicators (0/1). Averages are proportions. The manuscript defines first-event and termination conventions. |
+| `first_goal_step`, `first_unsafe_step`, `first_done_step`, `episode_len`, `anchor_step` | Simulator steps. A negative first-event step indicates no recorded event. |
+| `time_to_goal_s` | Time in seconds. Failed flights can have missing values. |
+| `path_length_m`, `straight_distance_m`, `min_clearance_m` | Metres. The simulator's surface clearance measurement can be negative. |
+| `path_efficiency` | Straight distance divided by path length for a success. Failed flights receive zero. |
+| `return`, `mean_safety_cost`, `empirical_cost_cvar`, `predicted_cost_cvar` | Dimensionless task return, recorded costs or model predictions. |
+| Mean-command acceleration, jerk, and command shifts | Acceleration uses m/s² and jerk uses m/s³. Fields ending in `_mps` use m/s. |
+| `action_oscillation_rate`, `stop_rate`, intervention, selector, teacher and feasibility rates | Dimensionless proportions. |
 
-## Local replay and diagnostics
-Teacher CSV `source`/`family` distinguish anchor-generating checkpoints; `duration` identifies the 50- or 49-step replay. Metrics identify selected-minus-original-nominal collision, clearance and progress contrasts or prediction AUROC, average precision, and within-anchor candidate-order accuracy. Distance/progress values use metres, collision differences proportions, AUROC/accuracy dimensionless. `qualified_fraction` uses the planned anchor/environment panel denominator; `qualified_count` is actual accepted anchors. Bootstrap flags explicitly identify rare-event/undefined intervals. `gate_mean_danger`/`gate_mean_safe` are dimensionless mean gates conditional on teacher-intervention labels; these labels do not establish true simulator danger. Brier score, accuracy, calibration and quantile coverage errors are dimensionless. Adapter/gated residual norms are velocity quantities (m/s); Figure 9 converts adapter shifts to mm/s. Each mechanism diagnostic aggregates six evaluation seeds within a training seed; no new per-state interval is claimed. Exact metric names and aggregation logic are retained in original analysis sources and provenance.
+## Estimates, intervals and timing
 
-## Geometry and NPZ trajectories
-Scene/flight JSON metadata identify coordinate axes, obstacle positions/sizes and scene hashes. Positions, goal, drone paths and obstacle dimensions use metres; velocity uses m/s, recorded time uses seconds, steps use simulator indices. Flight display selects recorded data through termination and excludes automatic reset. Static obstacles are omitted in the illustrative plot and vertical display scale is expanded; data coordinates themselves are unaltered. Figures 1–2 are conceptual.
+- `estimate`, `difference`, `paired_difference`, `full_mean`, `ablation_mean`, `method_mean`, `baseline_mean`, `five_seed_mean` and `five_seed_mean_or_single_checkpoint_value` use the named metric's native unit.
+- `ci95_low`, `ci95_high`, `hierarchical_bootstrap_ci95` and `bootstrap_ci_two_sided` give 95% interval endpoints. The fixed original NavRL checkpoint has no interval across training seeds. Conditional sensitivity estimates have their own labels.
+- Multiply success or collision proportions by 100 for percentages and their differences by 100 for percentage points. The teacher figure converts metre differences to centimetres.
+- Probabilities and p-values are dimensionless. GPU and batch sizes describe the benchmark protocol.
+- `wall_mean_ms` and `cuda_mean_ms` use milliseconds. The timing table takes the mean and sample SD of three repeat means. Memory and storage fields ending in MiB use 2²⁰ bytes.
 
+## Local teacher replay
+
+| Field | Meaning |
+| --- | --- |
+| `source`, `family` | Checkpoints that generated the replay anchors. |
+| `duration` | 50- or 49-step replay. |
+| Collision, clearance and progress contrasts | Teacher-selected minus original nominal command. Collision uses proportions and distance uses metres. |
+| AUROC, average precision and candidate-order accuracy | Dimensionless measures of prediction or within-anchor ranking. |
+| `qualified_fraction`, `qualified_count` | Fraction of the planned anchor/environment panel and count of accepted anchors. Bootstrap flags identify rare-event or undefined intervals. |
+
+## Mechanism diagnostics
+
+`gate_mean_danger` and `gate_mean_safe` are dimensionless mean gates grouped by the teacher's intervention label. The labels describe the teacher’s decision for each observation. Brier score, accuracy, calibration and quantile coverage errors are dimensionless. Adapter and gated residual norms use m/s. Figure 9 converts adapter shifts to mm/s.
+
+Each archived diagnostic aggregates six evaluation seeds per training seed. See the [diagnostic provenance](../evidence/mechanism_diagnostics_provenance.json) for source fields and aggregation.
+
+## Geometry and trajectories
+
+Scene and flight metadata identify axes, obstacle positions and sizes, and scene hashes. Positions, goals and dimensions use metres. Velocities use m/s, times use seconds and steps use simulator indices.
+
+The flight plot uses records through termination and omits the automatic reset. The plotted illustration omits static obstacles and expands the vertical display scale. The archives preserve the original coordinates. Figures 1 and 2 are conceptual diagrams.
 
 ## Control-step safety costs
 
-Each schema-v3 NPZ in the [cost archive](ARCHIVES.md) contains one evaluation seed and checkpoint. The `safety_cost` and `clearance_m` arrays have shape [environment, time]. Costs are unitless in [0, 1] and clearance is in metres. `collision`, `reached_goal`, `terminated`, `truncated`, and `done` use the same shape and contain Boolean event masks. `final_steps` stores the first resolved event index per environment, starting at zero. Scalar fields bind the checkpoint name/hash, training seed, evaluation seed, source hashes and cost settings. The clearance sigmoid uses a preferred clearance of 0.35 m, a temperature of 0.15 m, and a normalized return with discount 0.99.
+Each schema-v3 NPZ in the [cost archive](ARCHIVES.md) covers one evaluation seed and checkpoint. It records the checkpoint name and hash, training and evaluation seeds, source hashes and cost settings.
 
-The cost workflow distinguishes the finite first-event return, first-event unsafe absorption, and lower/upper continuation bounds at environment termination. Its point bounds for the two incomplete component panels use the [planned missing blocks](../analysis/supplementary/missing-cases.json).
+| Field | Meaning |
+| --- | --- |
+| `safety_cost`, `clearance_m` | Arrays indexed by environment and time. Costs are dimensionless in [0, 1]. Clearance uses metres. |
+| `collision`, `reached_goal`, `terminated`, `truncated`, `done` | Boolean event masks indexed by environment and time. |
+| `final_steps` | Zero-based index of the first resolved event for each environment. |
+
+The clearance sigmoid uses a preferred clearance of 0.35 m and a temperature of 0.15 m. The normalized return uses a discount of 0.99. The [cost analysis](../analysis/reproduce_costs.py) computes finite first-event return, first-event unsafe absorption and termination continuation bounds. Bounds for the wider component comparisons use the [five planned missing blocks](../analysis/supplementary/missing-cases.json).
