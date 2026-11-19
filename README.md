@@ -37,11 +37,11 @@ Use a fresh output directory for each run. Statistics are saved there, figures g
 | --- | --- |
 | Check a result from the paper | [Figure and table index](manuscript/README.md) links each result to its inputs and reproduction scripts. |
 | Work with recorded experiments | [Raw data](raw/README.md) points to episode CSVs, replay NPZs, flight trajectories and timing repeats. [Field names and units](metadata/DATA_DICTIONARY.md) are documented. |
-| Download weights or control-step traces | [Data archives](metadata/ARCHIVES.md) lists the large files and the command for the safety-cost analysis. |
+| Download weights or control-step traces | [Data archives](metadata/ARCHIVES.md) links the Zenodo dataset and shows how to download the checkpoints and traces. |
 | Rerun training or evaluation | [Isaac Sim setup](simulation/README.md) lists the entry points, pinned NavRL version and released-cohort settings. |
 
 The released-checkpoint main comparisons use all 18 planned evaluation seeds. The wider released-checkpoint component analysis uses 17 shared seeds because five evaluation blocks are missing. Figure 9 uses archived seed-level summaries. The original five-seed cohort is represented by recorded evaluations. Its stage-0 and adapted checkpoints were unavailable in the checked backups. [See verification coverage](manuscript/README.md#analysis-coverage).
 
 ## Citation and license
 
-Use [CITATION.cff](CITATION.cff) to cite the software. Project code is [MIT](LICENSE), and the data and author-created figures and tables are [CC BY 4.0](metadata/LICENSE-CC-BY-4.0.txt). Upstream code carries the [NavRL license](simulation/LICENSE.NavRL).
+Cite the software using [CITATION.cff](CITATION.cff) and the archived data using [Zenodo DOI 10.5281/zenodo.24362473](https://doi.org/10.5281/zenodo.24362473). Project code is [MIT](LICENSE), and the data and author-created figures and tables are [CC BY 4.0](metadata/LICENSE-CC-BY-4.0.txt). Upstream code carries the [NavRL license](simulation/LICENSE.NavRL).

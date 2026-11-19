@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this software if you use the code or data."
+message: "Please cite this software if you use the code."
 type: software
 title: "RC-CF-NavRL: Reproducibility package for Learning Bounded Velocity Corrections for UAV Navigation among Moving Obstacles"
 authors:
