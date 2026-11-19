@@ -83,6 +83,26 @@ def check_released(output):
     print('Released cohort matches the reported 18-seed primary and common-17 analyses.', flush=True)
 
 
+def check_components_and_deployment(output):
+    components = Path('raw/original/component_ablation')
+    run('analysis/original/analyze_v19_mean_risk_matched_ablations.py',
+        '--episodes', components / 'episodes.csv',
+        '--evaluation-audit', components / 'evaluation-audit.json',
+        '--output-dir', output / 'component-ablation')
+    report = 'mean_risk_core_ablation_statistics.json'
+    check(read_json(output / 'component-ablation' / report) == read_json(Path('visuals/data', report)),
+          'Original component effects or confidence intervals differ')
+
+    run('analysis/original/analyze_v19_paper_aligned_shield_extension.py',
+        '--source-result-root', 'raw/original/density_noise',
+        '--extension-result-root', 'raw/original/deployment',
+        '--output-dir', output / 'deployment')
+    report = 'deployment_shield_paired_effects.csv'
+    check((output / 'deployment' / report).read_bytes() == Path('evidence', report).read_bytes(),
+          'Deployment shield effects or confidence intervals differ')
+    print('Original component and deployment effects match Tables A2 and A4.', flush=True)
+
+
 def check_replay(output):
     run('analysis/replay/analyze_teacher_replay.py', '--root', 'raw/released_checkpoint/replay',
         '--output', output / 'replay', '--bootstrap', 20_000)
@@ -172,6 +192,7 @@ def main():
         for name in ('paper_aligned_summary.csv', 'paper_aligned_paired_effects.csv'):
             check((output / 'density-noise' / name).read_bytes() == Path('evidence', name).read_bytes(),
                   f'Density or noise statistics differ in {name}')
+        check_components_and_deployment(output)
         check_replay(output)
     print(f'Checks passed. Recomputed statistics are in {output}', flush=True)
 

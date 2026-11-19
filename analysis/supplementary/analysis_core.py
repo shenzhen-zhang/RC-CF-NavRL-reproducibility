@@ -122,11 +122,15 @@ def sensitivity_rows(panels,plan,missing_cases,paired,replicates=REPLICATES):
    rows.append({'contrast':name,'metric':metric,'finite_original18_point_lower':float(lows[ci,mi]),'finite_original18_point_upper':float(highs[ci,mi]),'bootstrap_sensitivity_envelope_lower_q025':float(np.quantile(lowdraw[:,ci,mi],.025)),'bootstrap_sensitivity_envelope_upper_q975':float(np.quantile(highdraw[:,ci,mi],.975)),'bootstrap_replicates':replicates,'bootstrap_seed':SEED,'training_seeds':len(plan['training_seeds']),'evaluation_seeds':len(plan['evaluation_seeds']),'fixed_environment_cases':plan['num_envs'],'interpretation':'Marginal bounded-missing-outcome sensitivity; not a confirmatory95% coverage guarantee','p_value_or_significance_decision':None,'joint_completion_optimality_claimed':False})
  return rows,{'lower_draw_sha256':hashlib.sha256(lowdraw.tobytes()).hexdigest(),'upper_draw_sha256':hashlib.sha256(highdraw.tobytes()).hexdigest(),'same_crossed_draws':True,'missingness_assumed_random':False,'simultaneous_coverage_guaranteed':False}
 
-def budget_rows(paths,plan,missing_cases,budget):
+def budget_rows(paths,plan,missing_cases,budget,weight_hashes=None):
  """Read genuine schema3 traces for F11/F01/F10 only, preserve four estimands."""
  target={'F11_full','F01_no_gate','F10_no_Lcf'};missing=set((n,int(e)) for n,e in missing_cases)
  expected={(j['variant']+'_s'+str(j['training_seed']),ev,env) for j in plan['training_jobs'] if j['variant'] in target for ev in plan['evaluation_seeds'] for env in range(plan['num_envs']) if (j['variant']+'_s'+str(j['training_seed']),ev) not in missing}
- weights={j['variant']+'_s'+str(j['training_seed']):j['expected_checkpoint'] for j in plan['training_jobs'] if j['variant'] in target};weight_hashes={name:budget.digest(path) for name,path in weights.items()};rows=[];keys=set()
+ if weight_hashes is None:
+  weights={j['variant']+'_s'+str(j['training_seed']):j['expected_checkpoint'] for j in plan['training_jobs'] if j['variant'] in target}
+  weight_hashes={name:budget.digest(path) for name,path in weights.items()}
+ require({name for name, _, _ in expected} <= weight_hashes.keys(),'A checkpoint hash is missing for the budget panel')
+ rows=[];keys=set()
  for path in paths:
   for row in budget.read_trace(path):
    key=(row['checkpoint_name'],row['evaluation_seed'],row['env_index']);require(key in expected and key not in keys,'Wrong/duplicate budget case or failed partial trace')
