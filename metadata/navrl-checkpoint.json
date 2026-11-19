@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/Zhefan-Xu/NavRL",
+  "commit": "3725bcc2e7c1be4ecf1455d922299ae85042603a",
+  "repository_path": "quick-demos/ckpts/navrl_checkpoint.pt",
+  "download_url": "https://raw.githubusercontent.com/Zhefan-Xu/NavRL/3725bcc2e7c1be4ecf1455d922299ae85042603a/quick-demos/ckpts/navrl_checkpoint.pt",
+  "bytes": 723925,
+  "sha256": "51fa3dbdc6ba89626b5dad3a4638deb53d40aa6f0caa9b289657da4a8e0b60c3",
+  "git_blob_sha1": "7418aeeb4c30bba403835a4459e528c0ad6d83e4"
+}

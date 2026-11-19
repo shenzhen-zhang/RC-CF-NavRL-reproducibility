@@ -2,6 +2,8 @@
 
 CSV files are UTF-8. JSON uses named fields. Numeric values are preserved from the original exports. Column names appear in the CSV headers. See the manuscript methods and appendix for formal definitions. `nan`, unavailable interval fields and explicit unavailable flags remain missing/undefined; they are not zero.
 
+The [input manifest](released-inputs.json) lists the source checksums for the released-checkpoint cohort and teacher replay. A `recorded://` path identifies a source in the original experiment environment. See the [raw data index](../raw/README.md) for the files distributed here.
+
 ## Episode data and identifiers
 `mode` identifies policy family and training seed; `mean_risk_s0` through `mean_risk_s4` are the original RC-CF-NavRL, `ppolag_matched_s0` through `ppolag_matched_s4` the matched PPO-Lagrangian. Other mode names identify their original ablation/deployment or historical variant. `seed` is the shared evaluation randomization seed; `env_index` is a fixed environment case (0–63). `family`, `variant`, `deployment`, `condition`, `comparison`, `contrast`, `composite_key` label the exported study conditions and comparison; use the accompanying difference_definition instead of assuming comparison direction. `training_seed_index`, `training_seeds`, `evaluation_seeds`, `stratum_count`, `episode_count`, `paired_episode_count`, `referenced_paired_differences` and the various *_count fields are counts or identifiers, not measured rates.
 
@@ -16,3 +18,10 @@ Teacher CSV `source`/`family` distinguish anchor-generating checkpoints; `durati
 
 ## Geometry and NPZ trajectories
 Scene/flight JSON metadata identify coordinate axes, obstacle positions/sizes and scene hashes. Positions, goal, drone paths and obstacle dimensions use metres; velocity uses m/s, recorded time uses seconds, steps use simulator indices. Flight display selects recorded data through termination and excludes automatic reset. Static obstacles are omitted in the illustrative plot and vertical display scale is expanded; data coordinates themselves are unaltered. Figures 1–2 are conceptual.
+
+
+## Control-step safety costs
+
+Each schema-v3 NPZ in the [cost archive](ARCHIVES.md) contains one evaluation seed and checkpoint. The `safety_cost` and `clearance_m` arrays have shape [environment, time]. Costs are unitless in [0, 1] and clearance is in metres. `collision`, `reached_goal`, `terminated`, `truncated`, and `done` use the same shape and contain Boolean event masks. `final_steps` stores the first resolved event index per environment, starting at zero. Scalar fields bind the checkpoint name/hash, training seed, evaluation seed, source hashes and cost settings. The clearance sigmoid uses a preferred clearance of 0.35 m, a temperature of 0.15 m, and a normalized return with discount 0.99.
+
+The cost workflow distinguishes the finite first-event return, first-event unsafe absorption, and lower/upper continuation bounds at environment termination. Its point bounds for the two incomplete component panels use the [planned missing blocks](../analysis/supplementary/missing-cases.json).
