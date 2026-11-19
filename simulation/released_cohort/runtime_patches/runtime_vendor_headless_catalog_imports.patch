@@ -1,0 +1,49 @@
+--- a/third_party/OmniDrones/omni_drones/envs/__init__.py
++++ b/third_party/OmniDrones/omni_drones/envs/__init__.py
+@@ -21,22 +21,29 @@
+ # SOFTWARE.
+ 
+ 
+-from .single import Hover, Track, TrackV1
+-from .platform import PlatformHover, PlatformFlyThrough
+-from .inv_pendulum import InvPendulumHover, InvPendulumFlyThrough
+-from .transport import TransportHover, TransportFlyThrough, TransportTrack
+-from .formation import Formation
+-from .payload import PayloadTrack, PayloadFlyThrough
+-from .dragon import DragonHover
+-from .rearrange import Rearrange
+-from .isaac_env import IsaacEnv
++import os
+ 
+-try:
+-    from .pinball import Pinball
+-    from .forest import Forest
+-except ModuleNotFoundError:
+-    print(
+-        "To run the environments which use `ContactSensor` and `RayCaster`,"
+-        "please install Isaac Orbit (https://github.com/NVIDIA-Omniverse/orbit)."
+-    )
++# NavRL defines NavigationEnv directly; other task catalogs require UI-only
++# debug-draw extensions that are intentionally absent in explicit headless mode.
++if os.environ.get("NAVRL_HEADLESS_NO_VIEWPORT") == "1":
++    from .isaac_env import IsaacEnv
++else:
++    from .single import Hover, Track, TrackV1
++    from .platform import PlatformHover, PlatformFlyThrough
++    from .inv_pendulum import InvPendulumHover, InvPendulumFlyThrough
++    from .transport import TransportHover, TransportFlyThrough, TransportTrack
++    from .formation import Formation
++    from .payload import PayloadTrack, PayloadFlyThrough
++    from .dragon import DragonHover
++    from .rearrange import Rearrange
++    from .isaac_env import IsaacEnv
+ 
++    try:
++        from .pinball import Pinball
++        from .forest import Forest
++    except ModuleNotFoundError:
++        print(
++            "To run the environments which use `ContactSensor` and `RayCaster`,"
++            "please install Isaac Orbit (https://github.com/NVIDIA-Omniverse/orbit)."
++        )
++

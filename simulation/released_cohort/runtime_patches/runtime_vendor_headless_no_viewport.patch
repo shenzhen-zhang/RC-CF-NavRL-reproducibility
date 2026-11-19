@@ -1,0 +1,111 @@
+--- a/third_party/OmniDrones/omni_drones/envs/isaac_env.py
++++ b/third_party/OmniDrones/omni_drones/envs/isaac_env.py
+@@ -22,6 +22,7 @@
+ 
+ 
+ import abc
++import os
+ 
+ from typing import Dict, List, Optional, Tuple, Type, Union, Callable
+ 
+@@ -43,10 +44,9 @@
+ from omni_drones.robots.robot import RobotBase
+ from omni_drones.utils.torchrl import AgentSpec
+ 
+-from omni.isaac.debug_draw import _debug_draw
+-
+ class DebugDraw:
+     def __init__(self):
++        from omni.isaac.debug_draw import _debug_draw
+         self._draw = _debug_draw.acquire_debug_draw_interface()
+     
+     def clear(self):
+@@ -88,7 +88,12 @@
+         # store inputs to class
+         self.cfg = cfg
+         self.enable_render(not headless)
+-        self.enable_viewport = True
++        # Explicit runtime compatibility flag: physics and structured sensors
++        # keep their original paths; only headless viewport/RGB work is omitted.
++        self._headless_no_viewport = (
++            bool(headless) and os.environ.get("NAVRL_HEADLESS_NO_VIEWPORT") == "1"
++        )
++        self.enable_viewport = not self._headless_no_viewport
+         # extract commonly used parameters
+         self.num_envs = self.cfg.env.num_envs
+         self.max_episode_length = self.cfg.env.max_episode_length
+@@ -155,10 +160,11 @@
+         
+         central_env_pos = self.envs_positions[self.central_env_idx].cpu().numpy()
+         # print("central env pos: ", central_env_pos)
+-        set_camera_view(
+-            eye=np.asarray(self.cfg.viewer.eye), 
+-            target=np.asarray(self.cfg.viewer.lookat)
+-        )
++        if self.enable_viewport:
++            set_camera_view(
++                eye=np.asarray(self.cfg.viewer.eye),
++                target=np.asarray(self.cfg.viewer.lookat)
++            )
+         
+         RobotBase._envs_positions = self.envs_positions.unsqueeze(1)
+ 
+@@ -171,7 +177,7 @@
+             global_paths=global_prim_paths,
+         )
+         self.sim.reset()
+-        self.debug_draw = DebugDraw()
++        self.debug_draw = None if self._headless_no_viewport else DebugDraw()
+ 
+         self._tensordict = TensorDict(
+             {
+@@ -286,8 +292,15 @@
+         raise NotImplementedError
+ 
+     def _set_seed(self, seed: Optional[int] = -1):
+-        import omni.replicator.core as rep
+-        rep.set_global_seed(seed)
++        if self._headless_no_viewport:
++            if seed < 0:
++                raise ValueError(f"Seed must be a non-negative integer, got {seed}")
++            # set_global_seed only updates this setting and a Replicator graph
++            # variable. The unused RGB graph is absent in this explicit mode.
++            carb.settings.get_settings().set_int("/omni/replicator/globalSeed", seed)
++        else:
++            import omni.replicator.core as rep
++            rep.set_global_seed(seed)
+         torch.manual_seed(seed)
+ 
+     def _configure_simulation_flags(self, sim_params: dict = None):
+@@ -304,6 +317,11 @@
+         # note: helpful when creating contact reporting over limited number of objects in the scene
+         # if sim_params["disable_contact_processing"]:
+         #     carb_settings_iface.set_bool("/physics/disableContactProcessing", True)
++
++        # The original constructor always enabled scene queries via its
++        # forced viewport. Preserve this PhysX flag when omitting that viewport.
++        if self._headless_no_viewport:
++            sim_params["enable_scene_query_support"] = True
+ 
+         # set flags based on whether rendering is enabled or not
+         # note: enabling extensions is order-sensitive. please do not change the order.
+@@ -327,7 +345,8 @@
+                 enable_extension("omni.kit.window.status_bar")
+         # enable isaac replicator extension
+         # note: moved here since it requires to have the viewport extension to be enabled first.
+-        enable_extension("omni.replicator.isaac")
++        if not self._headless_no_viewport:
++            enable_extension("omni.replicator.isaac")
+ 
+     def to(self, device) -> EnvBase:
+         if torch.device(device) != self.device:
+@@ -382,6 +401,9 @@
+     def _create_viewport_render_product(self):
+         """Create a render product of the viewport for rendering."""
+         # set camera view for "/OmniverseKit_Persp" camera
++        if self._headless_no_viewport:
++            carb.log_info("Explicit headless mode: viewport RGB product is disabled.")
++            return
+         set_camera_view(eye=self.cfg.viewer.eye, target=self.cfg.viewer.lookat)
+ 
+         # check if flatcache is enabled

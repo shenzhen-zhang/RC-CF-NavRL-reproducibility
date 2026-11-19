@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "protocol": "navrl_native_training_scenes_v1",
+  "selection_rule": "first_native_construction_per_seed_no_policy_no_rollout",
+  "num_envs_at_capture": 64,
+  "static_obstacle_count": 350,
+  "dynamic_obstacle_count": 80,
+  "scenes": {
+    "0": {
+      "seed": 0,
+      "snapshot": "training_scene_seed0.json",
+      "sha256": "336e8fdee889a8f7b904bf337e22a2cc33128af21f2772729cce7415016b2fed",
+      "source_sha256": "b5f6fb709f4eb2f2f93a78dd91d6eb619110b78705860f78105e5d9804925a64"
+    },
+    "1": {
+      "seed": 1,
+      "snapshot": "training_scene_seed1.json",
+      "sha256": "b22e9d2cc840638369ecf838a58743c485b9b7fc437483ec2d61d852ad51fb51",
+      "source_sha256": "65f598a7b8ef986e65e1e0b2aeb9bc99fb830af12980f0e6091fff16c22705e8"
+    },
+    "2": {
+      "seed": 2,
+      "snapshot": "training_scene_seed2.json",
+      "sha256": "d5d5d6335940359d9b26be7ab67d37dd5044f50f8f9c7763b7b39c59d3cec359",
+      "source_sha256": "9aad17a3208066e4829966998004c114784e858350518f33671fdab6baf382a0"
+    },
+    "3": {
+      "seed": 3,
+      "snapshot": "training_scene_seed3.json",
+      "sha256": "c0e1033fa982c3a919fa48d7b170aff9e492d4b20909a0ce20c58dc1e4184330",
+      "source_sha256": "d0e903df3dc1801a046ae1040ab0f812998096dd36a4833ab2b5641fdfd4d5d0"
+    },
+    "4": {
+      "seed": 4,
+      "snapshot": "training_scene_seed4.json",
+      "sha256": "8803c3134d3001c5dc3b4f7fd382def628990988f1308879179489d3e6293a63",
+      "source_sha256": "0d1ddea5bdefaf2407b294d3743daf054744efe10490b0273a662b75c8ddc8c5"
+    },
+    "5": {
+      "seed": 5,
+      "snapshot": "training_scene_seed5.json",
+      "sha256": "e0ff00a175751fd0f18fc9b715c84e48001ea1eb9a37bc22f14f11fa4d92a06c",
+      "source_sha256": "81c6cf50cb9aefcd6969008c6bc9ac445c2cd569d1ef268361e6d0c9012c972f"
+    },
+    "6": {
+      "seed": 6,
+      "snapshot": "training_scene_seed6.json",
+      "sha256": "9ae862a74d16517438b079476da9ad4d0d75430693b29f580cf12902131dbfff",
+      "source_sha256": "a00a26ef33a29d74515d66b0cb03bcc312377b8b414d343576f6fba35e434e4b"
+    },
+    "7": {
+      "seed": 7,
+      "snapshot": "training_scene_seed7.json",
+      "sha256": "f0a3c59757f25af15d625ca6df37d812194ee3d0e3947ce87361f42f3fcdb6fa",
+      "source_sha256": "8ae932185ebdee584f0e60f57e17d412415cce901dad2b3c6585c6eab1dae083"
+    },
+    "8": {
+      "seed": 8,
+      "snapshot": "training_scene_seed8.json",
+      "sha256": "21bda2b230b31b72906dfaae880c49c83e0165ca4bbb14d1b436a4d203719a85",
+      "source_sha256": "954cbb0ef9ea6dc064e4ac85f0221210231441840d9948539eee0cf41bc03ed6"
+    },
+    "9": {
+      "seed": 9,
+      "snapshot": "training_scene_seed9.json",
+      "sha256": "76043e9f3e173fc332e47b71852412853bc22ce3d19cd211741f61674fc47495",
+      "source_sha256": "93584d296fdf87e5f54eae441682da3c15881fcf7cf2b1dc9a98dd48e80ca28e"
+    },
+    "7001": {
+      "seed": 7001,
+      "snapshot": "training_scene_seed7001.json",
+      "sha256": "5563d0cb4f4aa56b657e5b19a2809b04838d23a1a97fbca9a39fb0111104400b",
+      "source_sha256": "0a98f7c9a14cb19d51bf9ed3f60400dd889541c28ae1aa25e39a650496ba1e45"
+    }
+  },
+  "seed_semantics": "capture_config_seed_only_terrain_generator_resets_numpy_and_torch_to_0",
+  "upstream_terrain_seed": 0,
+  "independent_random_maps_claimed": false,
+  "inference_scope": "Condition on these prespecified fixed scene inputs; methods sharing a training seed receive exactly the same file",
+  "capture_matrix_sha256": "ed800f09cdf24b7c4c0ac89f94b9f702fdc553fefe891278d5ee6999b5b1005c",
+  "capture_completion_sha256": "470eec85f88ccc1510c28884d6f11f6934ef9db7d72cf2385a85f25f7dc62fce",
+  "static_geometry_sha256": "b01ca8c9dcecb9db3a610aa0cbfa2bf6f8e7aba4bbf3cafc23ae8ce62a98c980",
+  "training_case7_origin_differs_from_heldout_canonical7": true,
+  "sealed_at_utc": "2026-10-21T03:50:40.788756+00:00"
+}

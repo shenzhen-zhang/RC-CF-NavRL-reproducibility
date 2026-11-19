@@ -1,0 +1,112 @@
+--- pristine/env.py
++++ runtime/env.py
+@@ -16,6 +16,10 @@
+ import omni.isaac.orbit.sim as sim_utils
+ import omni.isaac.orbit.utils.math as math_utils
+ from omni.isaac.orbit.assets import RigidObject, RigidObjectCfg
++from radcppo_navrl.dynamic_obstacle_counts import (
++    balanced_dynamic_obstacle_category_counts,
++    dynamic_obstacle_category_slices,
++)
+ import time
+ 
+ class NavigationEnv(IsaacEnv):
+@@ -154,8 +158,15 @@
+         self.max_obs_2d_height = 5.0
+         self.dyn_obs_width_res = max_obs_width/float(N_w)
+         dyn_obs_category_num = N_w * N_h
+-        self.dyn_obs_num_of_each_category = int(self.cfg.env_dyn.num_obstacles / dyn_obs_category_num)
+-        self.cfg.env_dyn.num_obstacles = self.dyn_obs_num_of_each_category * dyn_obs_category_num # in case of the roundup error
++        self.dyn_obs_category_counts = balanced_dynamic_obstacle_category_counts(
++            int(self.cfg.env_dyn.num_obstacles)
++        )
++        self.dyn_obs_category_slices = dynamic_obstacle_category_slices(
++            self.dyn_obs_category_counts
++        )
++        self.dyn_obs_cuboid_count = sum(
++            self.dyn_obs_category_counts[: int(dyn_obs_category_num / N_h)]
++        )
+ 
+ 
+         # Dynamic obstacle info
+@@ -181,8 +192,10 @@
+         prev_pos_list = [] # for distance check
+         cuboid_category_num = cylinder_category_num = int(dyn_obs_category_num/N_h)
+         for category_idx in range(cuboid_category_num + cylinder_category_num):
++            category_start, category_stop = self.dyn_obs_category_slices[category_idx]
++            category_count = self.dyn_obs_category_counts[category_idx]
+             # create all origins for 3D dynamic obstacles of this category (size)
+-            for origin_idx in range(self.dyn_obs_num_of_each_category):
++            for origin_idx in range(category_count):
+                 # random sample an origin until satisfy the evenly distributed condition
+                 start_time = time.time()
+                 while (True):
+@@ -203,9 +216,10 @@
+                         break
+                 curr_obs_dist = obs_dist
+                 origin = [ox, oy, oz]
+-                self.dyn_obs_origin[origin_idx+category_idx*self.dyn_obs_num_of_each_category] = torch.tensor(origin, dtype=torch.float, device=self.cfg.device)     
+-                self.dyn_obs_state[origin_idx+category_idx*self.dyn_obs_num_of_each_category, :3] = torch.tensor(origin, dtype=torch.float, device=self.cfg.device)                        
+-                prim_utils.create_prim(f"/World/Origin{origin_idx+category_idx*self.dyn_obs_num_of_each_category}", "Xform", translation=origin)
++                obstacle_index = category_start + origin_idx
++                self.dyn_obs_origin[obstacle_index] = torch.tensor(origin, dtype=torch.float, device=self.cfg.device)
++                self.dyn_obs_state[obstacle_index, :3] = torch.tensor(origin, dtype=torch.float, device=self.cfg.device)
++                prim_utils.create_prim(f"/World/Origin{obstacle_index}", "Xform", translation=origin)
+ 
+             # Spawn various sizes of dynamic obstacles 
+             if (category_idx < cuboid_category_num):
+@@ -213,7 +227,7 @@
+                 obs_width = width = float(category_idx+1) * max_obs_width/float(N_w)
+                 obs_height = self.max_obs_3d_height
+                 cuboid_cfg = RigidObjectCfg(
+-                    prim_path=f"/World/Origin{construct_input(category_idx*self.dyn_obs_num_of_each_category, (category_idx+1)*self.dyn_obs_num_of_each_category)}/Cuboid",
++                    prim_path=f"/World/Origin{construct_input(category_start, category_stop)}/Cuboid",
+                     spawn=sim_utils.CuboidCfg(
+                         size=[width, width, self.max_obs_3d_height],
+                         rigid_props=sim_utils.RigidBodyPropertiesCfg(),
+@@ -230,7 +244,7 @@
+                 obs_height = self.max_obs_2d_height
+                 # spawn for 2D dynamic obstacles
+                 cylinder_cfg = RigidObjectCfg(
+-                    prim_path=f"/World/Origin{construct_input(category_idx*self.dyn_obs_num_of_each_category, (category_idx+1)*self.dyn_obs_num_of_each_category)}/Cylinder",
++                    prim_path=f"/World/Origin{construct_input(category_start, category_stop)}/Cylinder",
+                     spawn=sim_utils.CylinderCfg(
+                         radius = radius,
+                         height = self.max_obs_2d_height, 
+@@ -243,7 +257,7 @@
+                 )
+                 dynamic_obstacle = RigidObject(cfg=cylinder_cfg)
+             self.dyn_obs_list.append(dynamic_obstacle)
+-            self.dyn_obs_size[category_idx*self.dyn_obs_num_of_each_category:(category_idx+1)*self.dyn_obs_num_of_each_category] \
++            self.dyn_obs_size[category_start:category_stop] \
+                 = torch.tensor([obs_width, obs_width, obs_height], dtype=torch.float, device=self.cfg.device)
+ 
+ 
+@@ -268,7 +282,7 @@
+         self.dyn_obs_goal[:, 0] = torch.clamp(self.dyn_obs_goal[:, 0], min=-self.map_range[0], max=self.map_range[0])
+         self.dyn_obs_goal[:, 1] = torch.clamp(self.dyn_obs_goal[:, 1], min=-self.map_range[1], max=self.map_range[1])
+         self.dyn_obs_goal[:, 2] = torch.clamp(self.dyn_obs_goal[:, 2], min=0., max=self.map_range[2])
+-        self.dyn_obs_goal[int(self.dyn_obs_goal.size(0)/2):, 2] = self.max_obs_2d_height/2. # for 2d obstacles
++        self.dyn_obs_goal[self.dyn_obs_cuboid_count:, 2] = self.max_obs_2d_height/2. # for 2d obstacles
+ 
+ 
+         # Step 2: Random sample velocity for roughly every 2 seconds
+@@ -284,7 +298,8 @@
+ 
+         # Step 4: Update Visualized Location in Simulation
+         for category_idx, dynamic_obstacle in enumerate(self.dyn_obs_list):
+-            dynamic_obstacle.write_root_state_to_sim(self.dyn_obs_state[category_idx*self.dyn_obs_num_of_each_category:(category_idx+1)*self.dyn_obs_num_of_each_category]) 
++            category_start, category_stop = self.dyn_obs_category_slices[category_idx]
++            dynamic_obstacle.write_root_state_to_sim(self.dyn_obs_state[category_start:category_stop])
+             dynamic_obstacle.write_data_to_sim()
+             dynamic_obstacle.update(self.cfg.sim.dt)
+ 
+@@ -483,7 +498,7 @@
+             # Find the N closest and within range obstacles for each drone
+             dyn_obs_pos_expanded = self.dyn_obs_state[..., :3].unsqueeze(0).repeat(self.num_envs, 1, 1)
+             dyn_obs_rpos_expanded = dyn_obs_pos_expanded[..., :3] - self.root_state[..., :3] 
+-            dyn_obs_rpos_expanded[:, int(self.dyn_obs_state.size(0)/2):, 2] = 0.
++            dyn_obs_rpos_expanded[:, self.dyn_obs_cuboid_count:, 2] = 0.
+             dyn_obs_distance_2d = torch.norm(dyn_obs_rpos_expanded[..., :2], dim=2)  # Shape: (1000, 40). calculate 2d distance to each obstacle for all drones
+             _, closest_dyn_obs_idx = torch.topk(dyn_obs_distance_2d, self.cfg.algo.feature_extractor.dyn_obs_num, dim=1, largest=False) # pick top N closest obstacle index
+             dyn_obs_range_mask = dyn_obs_distance_2d.gather(1, closest_dyn_obs_idx) > self.lidar_range

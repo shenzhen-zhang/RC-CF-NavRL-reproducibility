@@ -1,0 +1,1108 @@
+{
+  "schema_version": 1,
+  "protocol": "canonical_navrl_dynamic_obstacles_v2",
+  "official_navrl_commit": "3725bcc2e7c1be4ecf1455d922299ae85042603a",
+  "source": "Prespecified first native N64 construction for one training input; no policy, training, rollout, or sample selection",
+  "creation_seed": 3,
+  "dynamic_obstacle_count": 80,
+  "dynamic_obstacle_origin": [
+    [
+      9.994513511657715,
+      -9.286426544189453,
+      2.4308626651763916
+    ],
+    [
+      0.9442664384841919,
+      9.24742317199707,
+      1.7531307935714722
+    ],
+    [
+      -6.9242401123046875,
+      -15.218254089355469,
+      1.98394775390625
+    ],
+    [
+      -6.806549549102783,
+      11.660659790039062,
+      3.530883312225342
+    ],
+    [
+      19.145217895507812,
+      -3.2126071453094482,
+      3.99224853515625
+    ],
+    [
+      18.534976959228516,
+      12.892594337463379,
+      3.428256034851074
+    ],
+    [
+      -15.962946891784668,
+      -19.56831932067871,
+      0.6298518180847168
+    ],
+    [
+      -4.44444465637207,
+      16.843429565429688,
+      0.6001212000846863
+    ],
+    [
+      2.8993284702301025,
+      1.4320203065872192,
+      0.7238461375236511
+    ],
+    [
+      11.707015037536621,
+      -18.605464935302734,
+      0.35430625081062317
+    ],
+    [
+      13.832464218139648,
+      -6.156746864318848,
+      4.428359508514404
+    ],
+    [
+      -10.545122146606445,
+      16.019155502319336,
+      2.5821733474731445
+    ],
+    [
+      -7.49568510055542,
+      -0.9243754744529724,
+      3.0405449867248535
+    ],
+    [
+      -4.355799198150635,
+      -6.211788177490234,
+      0.40327781438827515
+    ],
+    [
+      -4.272454738616943,
+      2.846266746520996,
+      4.483517646789551
+    ],
+    [
+      -15.273683547973633,
+      12.187400817871094,
+      2.5461413860321045
+    ],
+    [
+      -1.0722975730895996,
+      -1.8118064403533936,
+      1.046507477760315
+    ],
+    [
+      -9.04643440246582,
+      -7.057231426239014,
+      0.008019075728952885
+    ],
+    [
+      1.6587333679199219,
+      19.59650421142578,
+      1.4769779443740845
+    ],
+    [
+      3.8089640140533447,
+      -5.6737260818481445,
+      2.1393115520477295
+    ],
+    [
+      6.545692443847656,
+      -2.0053000450134277,
+      3.8015921115875244
+    ],
+    [
+      15.395133972167969,
+      2.3756704330444336,
+      1.8999676704406738
+    ],
+    [
+      -14.750042915344238,
+      4.549763202667236,
+      1.4292975664138794
+    ],
+    [
+      9.228832244873047,
+      19.049217224121094,
+      0.838538408279419
+    ],
+    [
+      -18.526288986206055,
+      -11.894296646118164,
+      2.54099178314209
+    ],
+    [
+      -14.759160041809082,
+      -5.158201694488525,
+      0.8765023350715637
+    ],
+    [
+      -12.000399589538574,
+      -1.0350202322006226,
+      2.693324089050293
+    ],
+    [
+      16.291728973388672,
+      19.9770565032959,
+      3.285871982574463
+    ],
+    [
+      14.458833694458008,
+      -12.506318092346191,
+      0.08658198267221451
+    ],
+    [
+      1.4060252904891968,
+      -16.82711410522461,
+      2.5775043964385986
+    ],
+    [
+      6.5962090492248535,
+      -13.259498596191406,
+      1.3933690786361694
+    ],
+    [
+      19.068443298339844,
+      -18.275270462036133,
+      1.7739355564117432
+    ],
+    [
+      -18.931156158447266,
+      18.15223503112793,
+      0.9183626174926758
+    ],
+    [
+      -10.29672908782959,
+      6.636183738708496,
+      3.159821033477783
+    ],
+    [
+      14.02491283416748,
+      7.9569902420043945,
+      0.09603622555732727
+    ],
+    [
+      7.666624069213867,
+      2.4729976654052734,
+      1.1348247528076172
+    ],
+    [
+      3.074791431427002,
+      13.981751441955566,
+      0.9479323029518127
+    ],
+    [
+      17.61884307861328,
+      -9.136553764343262,
+      0.44879743456840515
+    ],
+    [
+      -12.560676574707031,
+      -12.406891822814941,
+      2.493894338607788
+    ],
+    [
+      6.612430572509766,
+      -19.141183853149414,
+      4.268341064453125
+    ],
+    [
+      0.10742358863353729,
+      -12.547255516052246,
+      2.5
+    ],
+    [
+      7.457904815673828,
+      9.930634498596191,
+      2.5
+    ],
+    [
+      8.02662181854248,
+      14.53964614868164,
+      2.5
+    ],
+    [
+      -19.87894058227539,
+      -2.8641953468322754,
+      2.5
+    ],
+    [
+      -1.4182037115097046,
+      13.496034622192383,
+      2.5
+    ],
+    [
+      -3.7832486629486084,
+      -18.698190689086914,
+      2.5
+    ],
+    [
+      12.096717834472656,
+      -0.795430064201355,
+      2.5
+    ],
+    [
+      19.643569946289062,
+      7.540469646453857,
+      2.5
+    ],
+    [
+      13.694772720336914,
+      13.0084228515625,
+      2.5
+    ],
+    [
+      -19.371978759765625,
+      3.6790592670440674,
+      2.5
+    ],
+    [
+      -19.96749496459961,
+      12.020336151123047,
+      2.5
+    ],
+    [
+      -13.622654914855957,
+      19.662494659423828,
+      2.5
+    ],
+    [
+      -10.424859046936035,
+      -18.501794815063477,
+      2.5
+    ],
+    [
+      4.277711391448975,
+      5.88937520980835,
+      2.5
+    ],
+    [
+      -17.917034149169922,
+      7.984234809875488,
+      2.5
+    ],
+    [
+      -3.8942129611968994,
+      7.679622650146484,
+      2.5
+    ],
+    [
+      19.46284294128418,
+      -13.314218521118164,
+      2.5
+    ],
+    [
+      -0.16843213140964508,
+      4.732853889465332,
+      2.5
+    ],
+    [
+      19.949016571044922,
+      1.5397303104400635,
+      2.5
+    ],
+    [
+      -19.885610580444336,
+      -16.953866958618164,
+      2.5
+    ],
+    [
+      -19.727079391479492,
+      -7.201301574707031,
+      2.5
+    ],
+    [
+      -4.705310821533203,
+      -10.910309791564941,
+      2.5
+    ],
+    [
+      10.23525333404541,
+      5.848433494567871,
+      2.5
+    ],
+    [
+      9.798486709594727,
+      -3.8569815158843994,
+      2.5
+    ],
+    [
+      11.149572372436523,
+      10.480854988098145,
+      2.5
+    ],
+    [
+      -16.162614822387695,
+      15.791010856628418,
+      2.5
+    ],
+    [
+      -0.612740159034729,
+      -6.996675491333008,
+      2.5
+    ],
+    [
+      15.983022689819336,
+      -16.343791961669922,
+      2.5
+    ],
+    [
+      15.45584774017334,
+      -2.2589633464813232,
+      2.5
+    ],
+    [
+      -7.931048393249512,
+      19.780874252319336,
+      2.5
+    ],
+    [
+      -15.763319969177246,
+      -15.188549041748047,
+      2.5
+    ],
+    [
+      6.170898914337158,
+      -9.335009574890137,
+      2.5
+    ],
+    [
+      -15.060619354248047,
+      0.858360230922699,
+      2.5
+    ],
+    [
+      12.486886024475098,
+      16.715808868408203,
+      2.5
+    ],
+    [
+      -8.556647300720215,
+      2.6836955547332764,
+      2.5
+    ],
+    [
+      -11.431474685668945,
+      10.074685096740723,
+      2.5
+    ],
+    [
+      -16.158836364746094,
+      -8.587273597717285,
+      2.5
+    ],
+    [
+      10.365184783935547,
+      -13.294514656066895,
+      2.5
+    ],
+    [
+      19.98206901550293,
+      17.9525089263916,
+      2.5
+    ],
+    [
+      16.239049911499023,
+      16.086009979248047,
+      2.5
+    ]
+  ],
+  "dynamic_obstacle_origin_sha256": "aa2ce05d007111a00648c8ed3fee9da9e9fd0882f55bef743d05ea7593f82b8d",
+  "dynamic_obstacle_size": [
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      0.5,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      0.75,
+      0.75,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.25,
+      0.25,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.5,
+      0.5,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      0.75,
+      0.75,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ],
+    [
+      1.0,
+      1.0,
+      5.0
+    ]
+  ],
+  "dynamic_obstacle_size_sha256": "bb51269e78ddf41988950fcbc0e6a33593492b31e17d4cb7c50fb29f216079da",
+  "map_range": [
+    20.0,
+    20.0,
+    4.5
+  ],
+  "creation_seed_semantics": "capture_config_seed_only_terrain_generator_resets_numpy_and_torch_to_0",
+  "upstream_terrain_seed": 0,
+  "training_scene_capture": {
+    "selection_rule": "first_native_construction_per_seed_no_policy_no_rollout",
+    "capture_config_seed": 3,
+    "num_envs": 64,
+    "configured_static_obstacles": 350,
+    "policy_created": false,
+    "measured_env_transitions": 0,
+    "environment_action_commands": 0,
+    "construction_rng_before": {
+      "numpy": "d332efde874b4121b2410465391a44533e3e9e825928b696827909e66fc5aac0",
+      "torch_cpu": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+      "python": "1ff13511b14f0c2d85f17bca527d63dfa1a8333f22f76f1aa0904d72377ea531"
+    },
+    "construction_rng_after": {
+      "numpy": "707df8518d53a7e5573f75083978b0033715542fb303f3a3988a43a80410ba89",
+      "torch_cpu": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+      "python": "1ff13511b14f0c2d85f17bca527d63dfa1a8333f22f76f1aa0904d72377ea531"
+    },
+    "rng_state_immediately_before_origin_available": false,
+    "rng_audit_note": "Official terrain generator hardcodes seed0 and reseeds NumPy/Torch. No tracing/patching of the wall-time rejection loop is introduced.",
+    "independent_random_maps_claimed": false,
+    "simulation_step_after_native_constructor": 1,
+    "simulation_time_after_native_constructor_s": 0.016129031777381897,
+    "capture_utc": "2026-10-21T03:46:29.007847+00:00",
+    "source_sha256": {
+      "recorded://official_runtime/isaac-training/third_party/OmniDrones/omni_drones/robots/drone/hummingbird.py": "0f27e6f51dde152ff3fe018981558b51cdd0d3b57bf71d009b272c957eee4543",
+      "recorded://fresh_project_scenefix1/src/radcppo_navrl/training_scene.py": "9dc3fc80380959d2a974975cbac620d206e5d45b8aeb1a6674aa21385712454e",
+      "recorded://fresh_project_scenefix1/methods/radcppo_navrl/evaluate_v19_canonical.py": "8c8114296620d0148cb6cd5c7dac7b724ec25e937835ecb3b0361c0767c6835c",
+      "recorded://fresh_project_scenefix1/src/radcppo_navrl/canonical_scene.py": "56631199ae33b3b128e0fcc321e8fa96f19d22cc5e45c9945670b31171069a0d",
+      "recorded://fresh_project_scenefix1/methods/radcppo_navrl/isaac_app.py": "28866e82f97b82ceb4a429c57c7689b8b7b161804527750f3f9adf9796c7e806",
+      "recorded://official_runtime/isaac-training/third_party/OmniDrones/omni_drones/envs/isaac_env.py": "b8ff15101f87c931f08c805ba04c9ab041c678008caf3a0d20d771c16bdd5578",
+      "recorded://fresh_project_scenefix1/methods/radcppo_navrl/cfg/ppo.yaml": "a29e4679af0224a85f851b7bfc0046314f05a554b9f6730adc5b2bed6fcd73e0",
+      "recorded://official_runtime/isaac-training/training/scripts/env.py": "50c53d44b2663841e9f7fa1a86599407a87043f089dd8c6125048d999ff3541d",
+      "recorded://public_assets/capture_native_training_scene.py": "1563e8a68a482a95cdd5b8f96e62bcc9186a25e659415e9df8269fb9e333bc12",
+      "recorded://official_runtime/isaac-training/third_party/orbit/source/extensions/omni.isaac.orbit/omni/isaac/orbit/terrains/terrain_importer.py": "ed8df8c3c84a396e96cfc7e7c6126aa21ac3fa80b0f01a7695d8fac32135ebd2",
+      "recorded://runtime/native_execution/native_bootstrap.py": "e2ce9e6a7ec5814b5763cd0aedb78a5c9d810b4866e4a9aac945ea2ac35fb004",
+      "recorded://official_runtime/isaac-training/third_party/orbit/source/extensions/omni.isaac.orbit/omni/isaac/orbit/terrains/terrain_generator.py": "1cd39b3b26b15c8bc2c9d6aa76c7691c3d2478568a7515f2be78f1ffbf156e63",
+      "recorded://fresh_project_scenefix1/methods/radcppo_navrl/cfg/train.yaml": "8415b7ae3c0e0fa9dd01a159986feedd7c9dea9b0be7861703e5d0cb828cf10e"
+    },
+    "resolved_config": {
+      "headless": true,
+      "device": "cuda:0",
+      "seed": 3,
+      "max_frame_num": 30000000.0,
+      "eval_interval": 250,
+      "save_interval": 250,
+      "checkpoint": null,
+      "checkpoint_suite_manifest": null,
+      "process_replicate": null,
+      "canonical_dynamic_scene_snapshot": null,
+      "canonical_dynamic_scene_snapshot_sha256": null,
+      "allow_from_scratch": false,
+      "reset_training_schedule_on_load": false,
+      "output_dir": "results/isaac_evaluation",
+      "train_output_dir": "results/isaac_training",
+      "evaluation_modes": [
+        "actor",
+        "projected"
+      ],
+      "revision_cost_trace_dir": null,
+      "evaluation_seeds": [
+        6101,
+        7207,
+        8311,
+        9413,
+        10501
+      ],
+      "evaluation_observation_noise": {
+        "enabled": false,
+        "lidar_std_m": 0.0,
+        "dynamic_position_std_m": 0.0,
+        "dynamic_velocity_std_mps": 0.0,
+        "preserve_lidar_no_return": true,
+        "lidar_hit_threshold_m": 1e-06,
+        "seed_offset": 19871011
+      },
+      "env": {
+        "num_envs": 64,
+        "max_episode_length": 2200,
+        "env_spacing": 8.0,
+        "num_obstacles": 350
+      },
+      "env_dyn": {
+        "num_obstacles": 80,
+        "vel_range": [
+          0.5,
+          1.5
+        ],
+        "local_range": [
+          5.0,
+          5.0,
+          4.5
+        ]
+      },
+      "viewer": {
+        "eye": [
+          0.0,
+          40.0,
+          40.0
+        ],
+        "lookat": [
+          0.0,
+          2.5,
+          0.0
+        ],
+        "resolution": [
+          960,
+          720
+        ]
+      },
+      "wandb": {
+        "project": "RA-DC-PPO-NavRL",
+        "name": "radcppo_navigation_training",
+        "entity": null,
+        "mode": "offline",
+        "run_id": null
+      },
+      "drone": {
+        "model_name": "hummingbird"
+      },
+      "sensor": {
+        "lidar_range": 4.0,
+        "lidar_vfov": [
+          -10,
+          20
+        ],
+        "lidar_vbeams": 4,
+        "lidar_hres": 10.0
+      },
+      "algo": {
+        "feature_extractor": {
+          "learning_rate": 0.0005,
+          "dyn_obs_num": 5
+        },
+        "actor": {
+          "learning_rate": 0.0005,
+          "clip_ratio": 0.1,
+          "action_limit": 2.0
+        },
+        "critic": {
+          "learning_rate": 0.0005,
+          "clip_ratio": 0.1
+        },
+        "entropy_loss_coefficient": 0.001,
+        "training_frame_num": 32,
+        "training_epoch_num": 4,
+        "num_minibatches": 16,
+        "method": {
+          "isolate_auxiliary_gradients": true,
+          "freeze_pretrained_task_policy": true,
+          "use_decoupled_safety_encoder": true,
+          "safety_warmup_updates": 16,
+          "num_quantiles": 32,
+          "safety_critic_hidden_dim": 256,
+          "safety_critic_learning_rate": 0.0003,
+          "safety_critic_coefficient": 1.0,
+          "initial_safety_probability": 0.02,
+          "safety_target_tau": 0.01,
+          "counterfactual_coefficient": 1.0,
+          "counterfactual_count": 12,
+          "cost_discount": 0.99,
+          "quantile_huber_kappa": 1.0,
+          "risk_measure": "mean",
+          "cvar_alpha": 0.9,
+          "safety_budget": 0.05,
+          "initial_safety_lambda": 0.0,
+          "dual_learning_rate": 0.005,
+          "max_safety_lambda": 20.0,
+          "adaptive_safety_lambda": true,
+          "risk_selector": {
+            "enabled": true,
+            "action_step_mps": 0.08,
+            "activation_threshold": 0.2,
+            "minimum_risk_reduction": 0.015,
+            "deviation_penalty": 0.002,
+            "projection_blend": 1.0,
+            "projection_smoothing": 0.8,
+            "require_tail_dominance": true
+          },
+          "distillation_coefficient": 0.15,
+          "distillation_gap_scale": 0.35,
+          "safe_anchor_coefficient": 0.75,
+          "adapter_shift_coefficient": 0.25,
+          "safe_gate_coefficient": 0.2,
+          "actor_adapter": {
+            "enabled": true,
+            "gate_mode": "learned",
+            "parameterization": "mean",
+            "maximum_logit_bias": 0.0,
+            "maximum_mean_shift": 0.06,
+            "gate_temperature": 1.75,
+            "initial_gate_bias": -3.0,
+            "learning_rate": 0.0001,
+            "gate_coefficient": 0.2
+          },
+          "teacher": {
+            "horizon_s": 0.8,
+            "horizon_steps": 4,
+            "max_acceleration_mps2": 8.0,
+            "static_point_budget": 48,
+            "rollout_model": "acceleration_limited"
+          },
+          "reviewer_freeze_nominal_during_warmup": true,
+          "reviewer_shared_initialization": true
+        }
+      },
+      "sim": {
+        "dt": 0.016,
+        "substeps": 1,
+        "gravity": [
+          0,
+          0,
+          -9.81
+        ],
+        "replicate_physics": false,
+        "use_flatcache": true,
+        "use_gpu_pipeline": true,
+        "device": "cuda:0",
+        "solver_type": 1,
+        "use_gpu": true,
+        "bounce_threshold_velocity": 0.2,
+        "friction_offset_threshold": 0.04,
+        "friction_correlation_distance": 0.025,
+        "enable_stabilization": true,
+        "enable_scene_query_support": true,
+        "gpu_max_rigid_contact_count": 524288,
+        "gpu_max_rigid_patch_count": 163840,
+        "gpu_found_lost_pairs_capacity": 4194304,
+        "gpu_found_lost_aggregate_pairs_capacity": 33554432,
+        "gpu_total_aggregate_pairs_capacity": 4194304,
+        "gpu_max_soft_body_contacts": 1048576,
+        "gpu_max_particle_contacts": 1048576,
+        "gpu_heap_capacity": 67108864,
+        "gpu_temp_buffer_capacity": 16777216,
+        "gpu_max_num_partitions": 8
+      },
+      "capture_scene": {
+        "seed": 3,
+        "output": "recorded://native_scene_capture_scenefix1/seed_3"
+      }
+    }
+  },
+  "static_geometry": {
+    "protocol": "usd_ground_mesh_geometry_v1",
+    "root_path": "/World/ground",
+    "mesh_count": 1,
+    "meshes": [
+      {
+        "prim_path": "/World/ground/terrain/mesh",
+        "vertices": {
+          "dtype": "float32_le",
+          "shape": [
+            159051,
+            3
+          ],
+          "sha256": "a6e1a2950123e9cfe404ca909b3741db70b146013c6a802f176f7a013d447739"
+        },
+        "face_vertex_counts": {
+          "dtype": "int32_le",
+          "shape": [
+            320008
+          ],
+          "sha256": "bbb4e823df35fe65864e5be3ce8a507e04c12b01922205005056e54ed7ead962"
+        },
+        "face_vertex_indices": {
+          "dtype": "int32_le",
+          "shape": [
+            960024
+          ],
+          "sha256": "1149c6ffc09f3ada81f9121ef7f111d3355ca65213650e328b788757cc9fe66e"
+        },
+        "world_transform": {
+          "dtype": "float64_le",
+          "shape": [
+            4,
+            4
+          ],
+          "sha256": "ccc7977ae7987f37c2235e57c320a5142d6b58413825b6457a4a1c9fe469ac1c"
+        },
+        "collision_enabled": true,
+        "collision_approximation": "",
+        "orientation": "rightHanded",
+        "subdivision_scheme": "bilinear"
+      }
+    ],
+    "sha256": "b01ca8c9dcecb9db3a610aa0cbfa2bf6f8e7aba4bbf3cafc23ae8ce62a98c980"
+  }
+}

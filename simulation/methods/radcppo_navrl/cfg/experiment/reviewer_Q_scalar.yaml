@@ -1,0 +1,42 @@
+# @package _global_
+
+algo:
+  method:
+    isolate_auxiliary_gradients: true
+    freeze_pretrained_task_policy: true
+    use_decoupled_safety_encoder: true
+    safety_warmup_updates: 16
+    safety_critic_coefficient: 1.0
+    counterfactual_coefficient: 1.0
+    adaptive_safety_lambda: true
+    dual_learning_rate: 0.005
+    initial_safety_lambda: 0.0
+    distillation_coefficient: 0.15
+    safe_anchor_coefficient: 0.75
+    adapter_shift_coefficient: 0.25
+    safe_gate_coefficient: 0.2
+    risk_measure: mean
+    cvar_alpha: 0.9
+    safety_budget: 0.05
+    actor_adapter:
+      enabled: true
+      gate_mode: learned
+      parameterization: mean
+      maximum_logit_bias: 0.0
+      maximum_mean_shift: 0.06
+      gate_temperature: 1.75
+      initial_gate_bias: -3.0
+      learning_rate: 0.0001
+      gate_coefficient: 0.2
+    risk_selector:
+      enabled: true
+      action_step_mps: 0.08
+      activation_threshold: 0.2
+      minimum_risk_reduction: 0.015
+      deviation_penalty: 0.002
+      projection_blend: 1.0
+      projection_smoothing: 0.8
+      require_tail_dominance: true
+    num_quantiles: 1
+    reviewer_freeze_nominal_during_warmup: true
+    reviewer_shared_initialization: true

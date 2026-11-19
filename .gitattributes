@@ -1,3 +1,4 @@
 # Preserve recorded inputs and sealed source bytes across checkouts.
 * -text whitespace=cr-at-eol
 visuals/environment_setup/reference_d80_distribution.svg whitespace=cr-at-eol,-blank-at-eol
+simulation/released_cohort/runtime_patches/** whitespace=cr-at-eol,-blank-at-eol

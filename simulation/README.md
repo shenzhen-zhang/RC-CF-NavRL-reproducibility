@@ -12,4 +12,6 @@ The experiments used NVIDIA Isaac Sim `2023.1.0-hotfix.1` and [NavRL at commit `
 
 The original cohort started from a matched stage-0 checkpoint. The second cohort started from [NavRL's public checkpoint](https://github.com/Zhefan-Xu/NavRL/blob/3725bcc2e7c1be4ecf1455d922299ae85042603a/quick-demos/ckpts/navrl_checkpoint.pt). The paper's [training settings](../manuscript/tables/table-A1.tex) and [released-cohort study plan](../analysis/supplementary/study_plan.json) record the experiment overrides. Use those settings when reading the Hydra configuration defaults.
 
-This release was verified by recomputing from recorded experiment data on CPU. Rerunning training or simulation evaluation requires the simulator, checkpoints, and matching scene setup. The original stage-0 checkpoint and adapted policy weights are outside this package.
+## Reproducing the GPU experiments
+
+The [CPU workflow](../README.md#reproduce-on-cpu) verifies results from recorded data. Rerunning the GPU experiments requires Isaac Sim, the matching scenes, and the checkpoint for each policy. For the second cohort, use the [released-checkpoint setup](released_cohort/README.md), which includes the original training scene geometry, runtime patches, and ordered evaluation manifests. The [archive guide](../metadata/ARCHIVES.md) describes the separate weight archive. The original five-seed cohort’s stage-0 and adapted checkpoints were unavailable in the checked backups.

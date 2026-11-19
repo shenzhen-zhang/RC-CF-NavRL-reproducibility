@@ -1,0 +1,74 @@
+defaults:
+  - _self_
+  - drone
+  - ppo
+  - sim
+  - experiment: full
+
+headless: true
+device: "cuda:0"
+seed: 0
+
+# The method is designed for fine-tuning a pinned NavRL checkpoint. Full
+# from-scratch replication can override this to the official frame budget.
+max_frame_num: 3.0e7
+eval_interval: 250
+save_interval: 250
+checkpoint: null
+# Fresh controlled cohort: each training seed indexes one pre-captured native
+# input, shared by every variant. These are not evaluation seed7 snapshots.
+training_scene_manifest: null
+training_scene_manifest_sha256: null
+training_scene_snapshot: null
+training_scene_snapshot_sha256: null
+checkpoint_suite_manifest: null
+process_replicate: null
+canonical_dynamic_scene_snapshot: null
+canonical_dynamic_scene_snapshot_sha256: null
+allow_from_scratch: false
+# A new fine-tuning stage may deliberately restart method warmup while loading
+# actor/critic weights from the preceding task-training stage.
+reset_training_schedule_on_load: false
+output_dir: "results/isaac_evaluation"
+train_output_dir: "results/isaac_training"
+evaluation_modes: ["actor", "projected"]
+# Reviewer study: save observed costs and event masks for independent auditing.
+revision_cost_trace_dir: null
+# Rollout/reset seeds are disjoint from training learning seeds; construction
+# terrain seed is separately fixed by the official environment.
+evaluation_seeds: [6101, 7207, 8311, 9413, 10501]
+
+# Evaluation-only sensor noise. The policy and an optional deployment shield
+# receive the perturbed observation; outcome metrics retain the true simulator
+# observation. Every rollout resets a dedicated generator from its eval seed.
+evaluation_observation_noise:
+  enabled: false
+  lidar_std_m: 0.0
+  dynamic_position_std_m: 0.0
+  dynamic_velocity_std_mps: 0.0
+  preserve_lidar_no_return: true
+  lidar_hit_threshold_m: 1.0e-6
+  seed_offset: 19871011
+
+env:
+  num_envs: 2
+  max_episode_length: 2200
+  env_spacing: 8.0
+  num_obstacles: 350
+
+env_dyn:
+  num_obstacles: 80
+  vel_range: [0.5, 1.5]
+  local_range: [5.0, 5.0, 4.5]
+
+viewer:
+  eye: [0.0, 40.0, 40.0]
+  lookat: [0.0, 2.5, 0.0]
+  resolution: [960, 720]
+
+wandb:
+  project: RA-DC-PPO-NavRL
+  name: radcppo_navigation_training
+  entity: null
+  mode: offline
+  run_id: null
