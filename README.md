@@ -17,7 +17,7 @@ python -m pip install -r requirements.txt
 python analysis/reproduce.py --quick --output recomputed/quick
 ```
 
-The quick check recomputes the two navigation cohorts and checks the flight trajectory and timing aggregates. It also renders seven figures and rebuilds all five tables. Run the full CPU check to also recompute the density, noise, unseen-layout, and teacher replay analyses.
+The quick check recomputes the two navigation cohorts and checks the flight trajectory and timing aggregates. It also renders seven figures and rebuilds all five tables. Run the full CPU check to also recompute the density, noise, unseen-layout, original component ablation, VO deployment, and teacher replay analyses.
 
 ```bash
 python analysis/reproduce.py --output recomputed/full
@@ -34,11 +34,11 @@ Across 5,760 paired episodes in the original cohort, RC-CF-NavRL increased succe
 | Where | Contents |
 | --- | --- |
 | [Figure and table index](manuscript/README.md) | Submitted figures and tables, with a link to the data and script for each |
-| [Raw data](raw/) · [Data dictionary](metadata/DATA_DICTIONARY.md) | Per-episode CSVs, flight and teacher replay NPZs, scenes, and timing repeats |
-| [Analysis](analysis/) · [Evidence](evidence/) · [Supplementary estimates](processed/supplementary/) | Statistical code, reference estimates, and protocol exports |
+| [Raw data](raw/README.md) · [Data dictionary](metadata/DATA_DICTIONARY.md) | Per-episode CSVs, flight and teacher replay NPZs, scenes, and timing repeats |
+| [Analysis](analysis/README.md) · [Evidence](evidence/README.md) · [Supplementary estimates](processed/README.md) | Statistical code, reference estimates, and protocol exports |
 | [Simulation](simulation/README.md) | Policy implementation, training and evaluation entry points, Isaac Sim setup |
 
-The package reproduces reported analyses from recorded outputs. The adapted policy weights, original-cohort initialization, and step-level cost traces are outside this release. Some diagnostics and appendix intervals use frozen estimates as documented in the [figure and table index](manuscript/README.md).
+See the [data archive guide](metadata/ARCHIVES.md) for the large files and the [figure and table index](manuscript/README.md) for CPU verification coverage. The original five-seed cohort is available as recorded evaluation outputs. Its stage-0 and adapted checkpoints were unavailable in the checked backups.
 
 ## Citation and license
 
